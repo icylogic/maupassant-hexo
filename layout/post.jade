@@ -12,6 +12,6 @@ block content
     if page.tags
       .tags
         for tag in page.tags.toArray()
-          a(href=url_for(tag.path))= tag.tag
+          a(href=url_for(tag.path))= tag.name
     include _partial/comments
     include _partial/paginator
