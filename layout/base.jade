@@ -25,9 +25,8 @@ html
         a#logo(href='/')= config.title
         p.description= config.description
       #nav-menu
-        +a_with_selected('/', _p('blog'),'nav_blog')
-        +a_with_selected(config.archive_dir, _p('archive'))
-
+        +a_with_selected('/', __('blog'),'nav_blog')
+        +a_with_selected(config.archive_dir, __('archive')) 
     #layout.pure-g
       .pure-u-1.pure-u-md-3-4: .content_container
         block content
@@ -43,7 +42,7 @@ html
     #footer= '© '
       a(href='/', real="nofollow")= config.title + '.'
       i  Powered by 
-      a(rel="nofollow", target="_blank", href="https://www.farbox.com") Hexo 
-      i Theme by 
+      a(rel="nofollow", target="_blank", href="https://hexo.io") Hexo 
+      a(rel="nofollow", target="_blank", href="https://hexo.io") Hexo 
       a(rel="nofollow", target="_blank", href="http://chopstack.com") cho
 
