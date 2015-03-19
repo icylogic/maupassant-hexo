@@ -21,7 +21,7 @@ npm install hexo-renderer-jade --save
 
 - Check version of hexo and review ![Migrating from 2.x to 3.0](https://github.com/hexojs/hexo/wiki/Migrating-from-2.x-to-3.0)
 - Check if your terminal's current directory is hexo's root directory which contains `source/`, `themes/`, etc.
-- Feel free to open an [issue](https://github.com/icylogic/maupassant/issues/new)
+- Feel free to open an [issue](https://github.com/icylogic/maupassant-hexo/issues/new)
 
 ###Maupassant on different platform:
 
