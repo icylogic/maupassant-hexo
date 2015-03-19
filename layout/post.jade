@@ -13,5 +13,5 @@ block content
       .tags
         for tag in page.tags.toArray()
           a(href=url_for(tag.path))= tag.tag
-    include _partial/paginator.jade
-    include _partial/comments.jade
+    include _partial/comments
+    include _partial/paginator

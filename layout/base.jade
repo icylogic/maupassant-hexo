@@ -23,10 +23,10 @@ html
       .site-name
         h1.hidden= current_title
         a#logo(href='/')= config.title
-        p.description= config.description
+        p.description= config.subtitle
       #nav-menu
-        +a_with_selected('/', __('blog'),'nav_blog')
-        +a_with_selected(config.archive_dir, __('archive')) 
+        +a_with_current(config.root, __('blog'),'nav_blog')
+        +a_with_current(config.archive_dir, __('archive')) 
     #layout.pure-g
       .pure-u-1.pure-u-md-3-4: .content_container
         block content
@@ -44,4 +44,13 @@ html
       i  Powered by 
       a(rel="nofollow", target="_blank", href="https://hexo.io") Hexo 
       a(rel="nofollow", target="_blank", href="http://chopstack.com") cho
+
+    if theme.fancybox
+      != js(['/js/jquery.min.js', '/js/fancybox.pack.js'])
+      != css('/css/jquery.fancybox.css')
+      script.
+        $(document).ready(function() {
+          $("img").fancybox();
+        });
+
 
