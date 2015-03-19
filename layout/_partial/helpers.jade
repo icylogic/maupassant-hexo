@@ -1,0 +1,13 @@
+mixin a_with_selected(path, content, id)
+  - var url = url_for(path)
+  if is_current(url)
+    a.selected(id=id, href=url)= content
+  else
+    a(id=id, href=url)= content
+
+mixin title(page)
+  if page
+    if page.title
+      = page.title
+    else
+      = _p('no-title')

@@ -1,0 +1,11 @@
+extends base
+block content
+  .post
+    .post-archive
+      ul.listing
+        for post in page.posts.toArray()
+          li
+            span.date= post.date.format('l')
+            a(href=url_for(post.path), title=post.title)
+              +title(post)
+  include _partial/paginator.jade

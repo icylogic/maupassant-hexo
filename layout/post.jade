@@ -1,0 +1,17 @@
+extends base
+
+block title
+  title= page.title + " - " + config.title
+
+block content
+  .post.post-page
+    h1.post-title= page.title
+    .post-meta= page.date.format('MMMM DD, YYYY')
+    .post-content
+      != page.content
+    if page.tags
+      .tags
+        for tag in page.tags.toArray()
+          a(href=url_for(tag.path))= tag.tag
+    include _partial/paginator.jade
+    include _partial/comments.jade
