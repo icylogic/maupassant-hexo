@@ -7,7 +7,7 @@ A simple Farbox template with great performance on different devices.
 
 ## Install
 
-1. install renderers
+- install renderers
 
 ```
 git clone https://github.com/icylogic/maupassant-hexo.git themes/maupassant
@@ -15,7 +15,7 @@ npm install hexo-renderer-sass --save
 npm install hexo-renderer-jade --save
 ```
 
-2. Edit _config.yml in hexo root, change `theme` to `maupassant`
+- Edit _config.yml in hexo root, change `theme` to `maupassant`
 
 ## Probable solutions
 
