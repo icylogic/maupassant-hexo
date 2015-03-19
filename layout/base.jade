@@ -50,7 +50,12 @@ html
       != css('/css/jquery.fancybox.css')
       script.
         $(document).ready(function() {
-          $("img").fancybox();
+          $("img").wrap(function() {
+            return '<a href="' + $(this).attr("src") + '" rel="group" />'});
+        });
+      script.
+        $(document).ready(function() {
+          $("a[href$='.jpg'],a[href$='.png'],a[href$='.gif']").attr('rel', 'gallery').fancybox();
         });
 
 
