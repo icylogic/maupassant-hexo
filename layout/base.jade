@@ -1,4 +1,6 @@
 include _partial/helpers
+include _partial/totop
+
 if page.title
   - var current_title = page.title
 else
@@ -17,7 +19,14 @@ html
     link(rel='stylesheet', type='text/css', href='/css/normalize.css')
     link(rel='stylesheet', type='text/css', href='/css/pure-min.css')
     link(rel='stylesheet', type='text/css', href='/css/grids-responsive-min.css')
+    link(rel='stylesheet', type='text/css', href='/css/font-awesome.min.css')
     link(rel='stylesheet', type='text/css', href='/css/style.css')
+    link(rel='Shortcut Icon', type='image/x-icon',href='/favicon.ico')
+    link(rel='apple-touch-icon', href='/img/apple.png')
+    link(rel='apple-touch-icon-precomposed', href='/img/apple.png')
+    link(rel='alternate', type='application/atom+xml', href='/atom.xml')
+
+
   body: .body_container 
     #header
       .site-name
@@ -25,26 +34,47 @@ html
         a#logo(href='/')= config.title
         p.description= config.subtitle
       #nav-menu
-        +a_with_current(config.root, __('blog'),'nav_blog')
+        +a_with_current(config.root, __('home'))
         +a_with_current(config.archive_dir, __('archive')) 
+        +a_with_current(config.about_dir, __('about'))
+        +a_with_current(config.history_dir, __('history')) 
+        +a_with_current(config.guestbook_dir, __('guestbook')) 
+        +a_with_current('/atom.xml', __('rss'))
+
+
+
+
     #layout.pure-g
       .pure-u-1.pure-u-md-3-4: .content_container
         block content
 
       .pure-u-1-4: #sidebar
         .widget
-          #search
-          != search_form()
+          .widget-title= __('categories')
+          != list_categories({show_count: false})
         .widget
           .widget-title= __('recent')
-          != list_posts()
+          != list_posts({amount: 10})
+        .widget
+          .comments-title= __('recent_comments')
+          .ds-recent-comments(data-num-items='5' data-show-avatars='0' data-show-time='1' data-show-admin='0' data-excerpt-length='32' data-show-title='1')
+        .widget
+          .widget-title= __('blogroll')
+          ul: != link_to('http://www.yalanbooks.net/', '雅岚文艺博客', {external: true})
+          ul: != link_to('http://www.jzwalk.com/', '羽中漫步', {external: true})
+          ul: != link_to('http://bestcherish.com/', '灰常记忆', {external: true})
+          ul: != link_to('http://imnerd.org/', '怡红院落', {external: true})
+          ul: != link_to('http://louishan.com/', '生活志', {external: true})
+          ul: != link_to('http://haozer.com/', '浩子', {external: true})
+          ul: != link_to('http://wittyfox.me/', 'Sloger', {external: true})
+
 
     #footer= '© '
       a(href='/', real="nofollow")= config.title + '.'
       i  Powered by 
       a(rel="nofollow", target="_blank", href="https://hexo.io") Hexo 
-      a(rel="nofollow", target="_blank", href="http://chopstack.com") cho
-
+    
+    
     if theme.fancybox
       != js(['/js/jquery.min.js', '/js/fancybox.pack.js'])
       != css('/css/jquery.fancybox.css')
@@ -58,4 +88,13 @@ html
           $("a[href$='.jpg'],a[href$='.png'],a[href$='.gif']").attr('rel', 'gallery').fancybox();
         });
 
-
+  script.
+    var duoshuoQuery = {short_name:"!{theme.duoshuo}"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+            || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();

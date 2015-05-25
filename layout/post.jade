@@ -1,7 +1,7 @@
 extends base
 
 block title
-  title= page.title + " - " + config.title
+  title= page.title + " | " + config.title
 
 block content
   .post.post-page
@@ -13,5 +13,6 @@ block content
       .tags
         for tag in page.tags.toArray()
           a(href=url_for(tag.path))= tag.name
+
     include _partial/comments
     include _partial/paginator

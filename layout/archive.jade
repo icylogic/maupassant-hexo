@@ -1,11 +1,19 @@
 extends base
+
+block title
+  if page.category || page.tag || page.archive
+     title= page.category || page.tag || "归档" + " | " + config.title
+
 block content
+  if page.category || page.tag
+      h1.label-title=  __('reading_label', page.category || page.tag)
   .post
     .post-archive
       ul.listing
         for post in page.posts.toArray()
           li
-            span.date= post.date.format('l')
+            span.date= post.date.format('YYYY/MM/DD')
             a(href=url_for(post.path), title=post.title)
               +title(post)
   include _partial/paginator.jade
+
