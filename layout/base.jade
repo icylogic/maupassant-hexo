@@ -38,7 +38,7 @@ html
         +a_with_current(config.about_dir, __('about'))
         +a_with_current(config.history_dir, __('history')) 
         +a_with_current(config.guestbook_dir, __('guestbook')) 
-        +a_with_current('/atom.xml', __('rss'))
+        +a_with_current(config.feed.path, __('rss'))
 
 
 
@@ -69,13 +69,17 @@ html
 
 
     #footer= '© '
-      a(href='/', real="nofollow")= config.title + '.'
-      i  Powered by 
-      a(rel="nofollow", target="_blank", href="https://hexo.io") Hexo 
+      a(href='/', real="nofollow")= config.title + '. '
+      | Powered by 
+      a(rel="nofollow", target="_blank", href="https://hexo.io") Hexo. 
+      | Theme by 
+      a(rel="nofollow", target="_blank", href="https://chopstack.com") Cho
     
-    
+  != js(['/js/jquery.min.js', '/js/totop.js'])
+
+
     if theme.fancybox
-      != js(['/js/jquery.min.js', '/js/fancybox.pack.js'])
+      != js(['/js/fancybox.pack.js'])
       != css('/css/jquery.fancybox.css')
       script.
         $(document).ready(function() {

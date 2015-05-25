@@ -438,3 +438,18 @@ pre{
 	visibility: visible;
 	opacity: 1;
 }
+#rocket.launch {
+	background-position: 50% -62px;
+	opacity: 0;
+	-webkit-transform: translateY(-500px);
+	-moz-transform: translateY(-500px);
+	-ms-transform: translateY(-500px);
+	transform: translateY(-500px);
+	pointer-events: none;
+}
+#rocket.launch i {
+	background-position: 50% 100%;
+	-webkit-transform: scale(1.4, 3.2);
+	-moz-transform: scale(1.4, 3.2);
+	transform: scale(1.4, 3.2);
+}
