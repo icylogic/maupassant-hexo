@@ -1,7 +1,2 @@
 fancybox: false
-duoshuo: haomwei
-
-favicon: favicon.ico   ## size:32px*32px,`.ico` is recommended,please put image into the blog folder `/source`.
-apple_icon: img/apple.jpg ## size:114px*114px, please put image into the theme folder `/maupassant/source/img`.
-
-##友情链接在/maupassant/layout/base.jade中添加
+duoshuo: duoshuo_shortname
