@@ -55,6 +55,7 @@ html
         .widget
           .comments-title= __('recent_comments')
           .ds-recent-comments(data-num-items='5' data-show-avatars='0' data-show-time='1' data-show-admin='0' data-excerpt-length='32' data-show-title='1')
+          | <script type="text/javascript" src="http://disqus_shortname.disqus.com/recent_comments_widget.js?num_items=5&hide_avatars=1&avatar_size=32&excerpt_length=20&hide_mods=1"></script>
         .widget
           .widget-title= __('blogroll')
           ul: != link_to('http://example1/', 'site-name 1', {external: true})
@@ -88,13 +89,14 @@ html
           $("a[href$='.jpg'],a[href$='.png'],a[href$='.gif']").attr('rel', 'gallery').fancybox();
         });
 
-  script.
-    var duoshuoQuery = {short_name:"!{theme.duoshuo}"};
-    (function() {
-        var ds = document.createElement('script');
-        ds.type = 'text/javascript';ds.async = true;
-        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-        ds.charset = 'UTF-8';
-        (document.getElementsByTagName('head')[0] 
-            || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
+    if theme.duoshuo
+      script.
+        var duoshuoQuery = {short_name:"!{theme.duoshuo}"};
+        (function() {
+            var ds = document.createElement('script');
+            ds.type = 'text/javascript';ds.async = true;
+            ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//dn-comment.qbox.me/embed.js';
+            ds.charset = 'UTF-8';
+            (document.getElementsByTagName('head')[0] 
+                || document.getElementsByTagName('body')[0]).appendChild(ds);
+        })();

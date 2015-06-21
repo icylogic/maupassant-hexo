@@ -32,6 +32,8 @@ You can add an **favicon.ico** for your website, please put it into the blog fol
 
 You can add an website logo for apple devices, please put an image named **apple.jpg** into the theme folder `/maupassant/source/img`, recommended size: 114px*114px
 
+If you want to use the code highlight style of *monokai_sublime*, please set the `highlight/enable` in `blog/_config.yml` to "false".
+
 
 ## Maupassant on different platform:
 
