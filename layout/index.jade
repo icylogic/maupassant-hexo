@@ -12,6 +12,7 @@ block content
         a(href=url_for(post.path))
           +title(post)
       .post-meta= post.date.format('MMMM DD, YYYY')
+      span.ds-thread-count(data-thread-key=post.path) 
       if post.description
         .post-content= post.description
       else if post.excerpt

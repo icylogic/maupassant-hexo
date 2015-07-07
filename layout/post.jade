@@ -7,6 +7,7 @@ block content
   .post.post-page
     h1.post-title= page.title
     .post-meta= page.date.format('MMMM DD, YYYY')
+    span.ds-thread-count(data-thread-key=page.path)
     .post-content
       != page.content
     if page.tags
