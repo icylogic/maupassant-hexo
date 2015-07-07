@@ -13,6 +13,10 @@ block content
       .tags
         for tag in page.tags.toArray()
           a(href=url_for(tag.path))= tag.name
+    if page.categories
+      .categories 分类于  
+        for category in page.categories.toArray()
+          a(href=url_for(category.path))= category.name
 
     include _partial/comments
     include _partial/paginator
