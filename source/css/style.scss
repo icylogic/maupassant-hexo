@@ -127,6 +127,13 @@ a:focus{
 			display: block;
 			font-weight: normal;
 		}
+		.tagcloud {
+			margin-top: 10px;
+			a {
+				line-height: 1.5;
+				padding: 5px;
+		      }
+		}
 		ul {
 			list-style: none;
 			padding: 0;
