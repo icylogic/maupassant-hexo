@@ -183,25 +183,26 @@ a:focus{
 	}
 	.post-meta {
 		padding: 0;
-		margin: 9px 0 0;
+		margin: 12px 0 0;
 		color: #999;
-		text-align: left;
-		display: block;
+		float: left;
+		display: inline;
 		text-indent: .15em;
 	}
-	.ds-thread-count {
+	.ds-thread-count { 
 		padding: 0;
-		margin: -15px 0;
+		margin: 12px 0 0;
 		color: #999;
-		text-align: right;
-		display: block;
+		float: right;
+		display: inline;
 		text-indent: .15em;
 	}
 	.post-content {
+		clear: both;
 		font-size: 15px;
 		line-height: 1.77;
 		color: #444;
-		padding-top: 27px;
+		padding-top: 20px;
 		overflow: hidden;
 		h2, h3 {
 			margin: 1.4em 0 1.1em;
