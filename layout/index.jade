@@ -12,12 +12,12 @@ block content
         a(href=url_for(post.path))
           +title(post)
       .post-meta= post.date.format('MMMM DD, YYYY')
-      span.ds-thread-count(data-thread-key=post.path) 
+      span.ds-thread-count(data-thread-key=post.path)
       if post.description
         .post-content= post.description
-      else if post.excerpt
-        .post-content= post.excerpt
-      else
-        .post-content= post.content.replace(/<(?:.|\n)*?>/gm, '').substr(0, 300)
+      else if page.excerpt
+        .post-content= page.excerpt
+      else if post.content
+        .post-content= strip_html(post.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 300)
 
   include _partial/paginator
