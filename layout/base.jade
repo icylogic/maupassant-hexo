@@ -95,11 +95,19 @@ html
       script.
         $(document).ready(function() {
           $("img").wrap(function() {
+            if ($(this).hasClass('nofancybox')) return;
             return '<a href="' + $(this).attr("src") + '" rel="group" />'});
         });
       script.
         $(document).ready(function() {
-          $("a[href$='.jpg'],a[href$='.png'],a[href$='.gif']").attr('rel', 'gallery').fancybox();
+          $("a[href$='.jpg'],a[href$='.png'],a[href$='.gif']").attr('rel', 'gallery').fancybox({
+           helpers : {
+           title: { type: 'inside'}
+           },
+           afterLoad: function(){
+           this.title = this.title + ' ' + $(this.element).find('img').attr('alt');
+           }
+         });
         });
 
     if theme.duoshuo
