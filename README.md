@@ -22,7 +22,7 @@ npm install hexo-renderer-jade --save
 
 - Check if your terminal's current directory is hexo's root directory which contains `source/`, `themes/`, etc.
 
-- Feel free to open an [issue](https://github.com/icylogic/maupassant-hexo/issues/new).
+- Feel free to open an [issue](https://github.com/tufu9441/maupassant-hexo/issues/new).
  
 
 ## Usage
