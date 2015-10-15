@@ -4,7 +4,7 @@ extends base
 block title
   title= config.title + " | " + config.subtitle
 block content
-     
+
   for post in page.posts.toArray()
     .post
       h2.post-title
@@ -19,5 +19,7 @@ block content
         .post-content= page.excerpt
       else if post.content
         .post-content= strip_html(post.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 300)
+      p(class="readmore")
+        a(href=url_for(post.path)) 阅读全文
 
   include _partial/paginator
