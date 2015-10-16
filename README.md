@@ -7,7 +7,7 @@ A simple Hexo template with great performance on different devices, ported from 
 
 ## Installation
 
-- Install theme and renderers
+- Install theme and renderers:
 
 ```
 git clone https://github.com/tufu9441/maupassant-hexo.git themes/maupassant
@@ -15,7 +15,7 @@ npm install hexo-renderer-sass --save
 npm install hexo-renderer-jade --save
 ```
 
-- Edit _config.yml in hexo root, change `theme` to `maupassant`
+- Edit `_config.yml` in hexo root, change `theme` to `maupassant`.
 
 ## Probable solutions
 
@@ -27,11 +27,19 @@ npm install hexo-renderer-jade --save
 
 ## Usage
 
-- You can set your friendly links in `/themes/maupassant/layout/base.jade`.
-
 - You can set a **favicon.ico** for your website, please put it into  `/source` folder of hexo directory, recommended size: 32px*32px.
 
 - You can add a website logo for apple devices, please put an image named **apple-touch-icon.png** into `/source` folder of hexo directory, recommended size: 114px*114px.
+
+- You can set your friendly links in `/themes/maupassant/layout/base.jade` like this:
+
+```
+ .widget
+   .widget-title= __('blogroll')
+   ul: != link_to('http://example1.com/', 'site-name 1', {external: true})
+   ul: != link_to('http://example2.com/', 'site-name 2', {external: true})
+   ul: != link_to('http://example3.com/', 'site-name 3', {external: true})
+```
 
 - If you want to use the theme's own highlighted code showcase, please set the `highlight` option in `/_config.yml` of hexo directory like this:
 
@@ -42,7 +50,31 @@ highlight:
   tab_replace:
 ```
 
-- If you want to disable the fancybox effect on some images, please add a "nofancybox" class to them.
+- To customize pages, after creating new folders including `index.md` in `/source`, don't forget to add corresponding contents in `/themes/maupassant/layout/base.jade`:
+
+```
+#nav-menu
+        +a_with_current(config.root, __('home'))
+        +a_with_current(config.archive_dir, __('archive')) 
+        +a_with_current(config.about_dir, __('about'))
+        +a_with_current(config.feed.path, __('rss'))
+```
+
+and `/_config.yml` of hexo directory. Just follow the format of existing items.
+
+```
+    # Directory
+    source_dir: source
+    public_dir: public
+    tag_dir: tags
+    category_dir: categories
+    archive_dir: archives/
+    about_dir: about/
+    code_dir: downloads/code
+    i18n_dir: :lang
+    skip_render:
+```
+- If you want to disable the fancybox effect on certain images, please add a "nofancybox" class to them.
 
 ## Maupassant on other platforms:
 

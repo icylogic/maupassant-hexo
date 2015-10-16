@@ -27,7 +27,7 @@ html
     link(rel='alternate', type='application/atom+xml', href='/atom.xml')
 
 
-  body: .body_container 
+  body: .body_container
     #header
       .site-name
         h1.hidden= current_title
@@ -35,7 +35,7 @@ html
         p.description= config.subtitle
       #nav-menu
         +a_with_current(config.root, __('home'))
-        +a_with_current(config.archive_dir, __('archive')) 
+        +a_with_current(config.archive_dir, __('archive'))
         +a_with_current(config.about_dir, __('about'))
         +a_with_current(config.feed.path, __('rss'))
 
@@ -71,21 +71,21 @@ html
             | <script type="text/javascript" src="http://!{theme.disqus}.disqus.com/recent_comments_widget.js?num_items=5&hide_avatars=1&avatar_size=32&excerpt_length=20&hide_mods=1"></script>
         .widget
           .widget-title= __('blogroll')
-          ul: != link_to('http://example1/', 'site-name 1', {external: true})
+          ul: != link_to('http://example1.com/', 'site-name 1', {external: true})
           ul: != link_to('http://example2.com/', 'site-name 2', {external: true})
           ul: != link_to('http://example3.com/', 'site-name 3', {external: true})
-    
+
     != js(['/js/highlight.pack.js'])
      script.
        hljs.initHighlightingOnLoad();
 
     #footer= '© '
       a(href='/', real="nofollow")= config.title + '. '
-      | Powered by 
-      a(rel="nofollow", target="_blank", href="https://hexo.io") Hexo. 
-      | Theme by 
+      | Powered by
+      a(rel="nofollow", target="_blank", href="https://hexo.io") Hexo.
+      | Theme by
       a(rel="nofollow", target="_blank", href="https://chopstack.com") Cho
-    
+
   != js(['/js/jquery.min.js', '/js/totop.js'])
 
 
@@ -118,7 +118,7 @@ html
             ds.type = 'text/javascript';ds.async = true;
             ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
             ds.charset = 'UTF-8';
-            (document.getElementsByTagName('head')[0] 
+            (document.getElementsByTagName('head')[0]
                 || document.getElementsByTagName('body')[0]).appendChild(ds);
         })();
 
