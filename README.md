@@ -33,7 +33,7 @@ npm install hexo-renderer-jade --save
 
 - You can add a website logo for apple devices, please put an image named **apple-touch-icon.png** into `/source` folder of hexo directory, recommended size: 114px*114px.
 
-- If you want to use the code highlight style of ***monokai_sublime***, please set the `highlight` option in `/_config.yml` of hexo directory like this:
+- If you want to use the theme's own highlighted code showcase, please set the `highlight` option in `/_config.yml` of hexo directory like this:
 
 ```
 highlight:
