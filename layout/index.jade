@@ -20,6 +20,6 @@ block content
       else if post.content
         .post-content= strip_html(post.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 300)
       p(class="readmore")
-        a(href=url_for(post.path)) 阅读全文
+        a(href=url_for(post.path))= __('Readmore')
 
   include _partial/paginator

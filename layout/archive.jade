@@ -6,7 +6,7 @@ block title
   if page.tag
      title= page.tag + " | " + config.title
   if page.archive
-     title= "归档" + " | " + config.title
+     title= __('archive') + " | " + config.title
 block content
   if page.category || page.tag
       h1.label-title=  __('reading_label', page.category || page.tag)

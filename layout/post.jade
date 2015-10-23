@@ -15,7 +15,7 @@ block content
         for tag in page.tags.toArray()
           a(href=url_for(tag.path))= tag.name
     if page.categories.length > 0
-      .categories 分类于  
+      .categories= __('belongsto')
         for category in page.categories.toArray()
           a(href=url_for(category.path))= category.name
 
