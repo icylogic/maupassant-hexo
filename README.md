@@ -76,6 +76,8 @@ and `/_config.yml` of hexo directory. Just follow the format of existing items.
 ```
 - If you want to disable the fancybox effect on certain images, please add a "nofancybox" class to them.
 
+- Two languages are available for this theme currently, English (en) and Chinese (zh-CN). Translation works to other languages are welcome.
+
 ## Maupassant on other platforms:
 
 + Typecho：https://github.com/pagecho/maupassant/
