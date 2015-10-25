@@ -11,7 +11,7 @@ block content
         include _partial/helpers
         a(href=url_for(post.path))
           +title(post)
-      .post-meta= post.date.format('MMMM DD, YYYY')
+      .post-meta= post.date.format(config.date_format)
       span.ds-thread-count(data-thread-key=post.path)
       if post.description
         .post-content= post.description
