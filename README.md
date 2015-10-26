@@ -18,21 +18,15 @@ npm install hexo-renderer-jade --save
 
 - Edit `_config.yml` in hexo root, change `theme` to `maupassant`.
 
-## Probable solutions
+## Configuration
 
-
-- Check if your Terminal's current directory is in hexo's root directory which contains `source/`, `themes/`, etc.
-
-- Feel free to open an [issue](https://github.com/tufu9441/maupassant-hexo/issues/new).
- 
-
-## Usage
-
+#### Logo
 - You can set a **favicon.ico** for your website, please put it into  `/source` folder of hexo directory, recommended size: 32px*32px.
 
 - You can add a website logo for apple devices, please put an image named **apple-touch-icon.png** into `/source` folder of hexo directory, recommended size: 114px*114px.
 
-- You can set your friendly links in `/themes/maupassant/layout/base.jade` like this:
+#### Blogroll
+- You can manage your friendly links in `/themes/maupassant/layout/base.jade` like this:
 
 ```
  .widget
@@ -42,15 +36,7 @@ npm install hexo-renderer-jade --save
    ul: != link_to('http://example3.com/', 'site-name 3', {external: true})
 ```
 
-- If you want to use the theme's own highlighted code showcase, please set the `highlight` option in `/_config.yml` of hexo directory like this:
-
-```
-highlight:
-  enable: false
-  line_number: false
-  tab_replace:
-```
-
+#### Pages
 - To customize pages, after creating new folders including `index.md` in `/source`, don't forget to add corresponding contents in `/themes/maupassant/layout/base.jade`:
 
 ```
@@ -61,7 +47,7 @@ highlight:
         +a_with_current(config.feed.path, __('rss'))
 ```
 
-and `/_config.yml` of hexo directory. Just follow the format of existing items.
+and `_config.yml` of hexo directory. Just follow the format of existing items.
 
 ```
     # Directory
@@ -75,9 +61,41 @@ and `/_config.yml` of hexo directory. Just follow the format of existing items.
     i18n_dir: :lang
     skip_render:
 ```
+
+#### Abstract
+- You can control the abstract of a post shown at index, by either filling a `description` item in `front-matter` of the `post.md`, or just inserting a `<!--more-->` before your hidden content.
+
+#### Syntax Highlighting
+- If you want to use the theme's own highlighted code showcase, please set the `highlight` option in `_config.yml` of hexo directory like this:
+
+```
+highlight:
+  enable: false
+  line_number: false
+  tab_replace:
+```
+
+#### Fancybox
+- Fancybox can be enabled by setting the fancybox option in theme `_config.yml` to "true".
+
+```
+fancybox: true
+duoshuo: #duoshuo_shortname
+disqus: #disqus_shortname
+swiftype: #swiftype_key
+tinysou: #tinysou_key
+```
+
 - If you want to disable the fancybox effect on certain images, please add a "nofancybox" class to them.
 
-- Two languages are available for this theme currently, English (en) and Chinese (zh-CN). Translation works to other languages are welcome.
+#### Languages
+- Two languages are available for this theme currently, English (en) and Simplified Chinese (zh-CN). Contributions of translating to other languages will be highly appreciated.
+
+## Solutions
+
+- Check whether your Terminal's current directory is in hexo's root directory which contains `source/`, `themes/`, etc.
+
+- If you have any trouble in using this theme, please feel free to open an [issue](https://github.com/tufu9441/maupassant-hexo/issues).
 
 ## Maupassant on other platforms:
 
