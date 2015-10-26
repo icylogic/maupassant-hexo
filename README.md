@@ -66,12 +66,13 @@ and `_config.yml` of hexo directory. Just follow the format of existing items.
 - You can control the abstract of a post shown at index, by either filling a `description` item in `front-matter` of the `post.md`, or just inserting a `<!--more-->` before your hidden content.
 
 #### Syntax Highlighting
-- If you want to use the theme's own highlighted code showcase, please set the `highlight` option in `_config.yml` of hexo directory like this:
+- Highlighted code showcase is supported, please set the `highlight` option in `_config.yml` of hexo directory like this:
 
 ```
 highlight:
-  enable: false
-  line_number: false
+  enable: true
+  auto_detect: true
+  line_number: true
   tab_replace:
 ```
 

@@ -19,7 +19,6 @@ html
     link(rel='stylesheet', type='text/css', href='/css/normalize.css')
     link(rel='stylesheet', type='text/css', href='/css/pure-min.css')
     link(rel='stylesheet', type='text/css', href='/css/grids-responsive-min.css')
-    link(rel='stylesheet', type='text/css', href='/css/highlight.css')
     link(rel='stylesheet', type='text/css', href='/css/style.css')
     link(rel='Shortcut Icon', type='image/x-icon',href='/favicon.ico')
     link(rel='apple-touch-icon', href='/apple-touch-icon.png')
@@ -74,10 +73,6 @@ html
           ul: != link_to('http://example1.com/', 'site-name 1', {external: true})
           ul: != link_to('http://example2.com/', 'site-name 2', {external: true})
           ul: != link_to('http://example3.com/', 'site-name 3', {external: true})
-
-    != js(['/js/highlight.pack.js'])
-     script.
-       hljs.initHighlightingOnLoad();
 
     #footer= '© '
       a(href='/', rel='nofollow')= config.title + '.'
