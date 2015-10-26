@@ -250,7 +250,7 @@ a:focus{
 			}
 		}
 		table{
-			margin: 2em 0;
+			margin: 0;
 		}
 	}
 	.tags {
@@ -646,11 +646,12 @@ pre,
 .highlight {
   background: #2d2d2d;
   margin: 20px 0;
-  padding: 15px;
+  padding: 5px;
   overflow: auto;
   font-size: 13px;
   color: #ccc;
   line-height: 1.6;
+  border-radius: 7px;
 }
 .highlight .gutter pre,
 .gist .gist-file .gist-data .line-numbers {
