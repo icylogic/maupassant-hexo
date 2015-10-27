@@ -33,10 +33,10 @@ html
         a#logo(href='/')= config.title
         p.description= config.subtitle
       #nav-menu
-        +a_with_current(config.root, __('home'))
-        +a_with_current(config.archive_dir, __('archive'))
-        +a_with_current(config.about_dir, __('about'))
-        +a_with_current(config.feed.path, __('rss'))
+        +a_with_current(config.root, __('home'), 'icon-home')
+        +a_with_current(config.archive_dir, __('archive'), 'icon-archives')
+        +a_with_current(config.about_dir, __('about'), 'icon-about')
+        +a_with_current(config.feed.path, __('rss'), 'icon-rss')
 
     #layout.pure-g
       .pure-u-1.pure-u-md-3-4: .content_container
@@ -83,7 +83,6 @@ html
       a(rel='nofollow', target='_blank', href='https://github.com/pagecho')  Cho.
 
   != js(['/js/jquery.min.js', '/js/totop.js'])
-
 
     if theme.fancybox
       != js(['/js/fancybox.pack.js'])
