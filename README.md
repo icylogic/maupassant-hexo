@@ -41,10 +41,10 @@ npm install hexo-renderer-jade --save
 
 ```
 #nav-menu
-        +a_with_current(config.root, __('home'))
-        +a_with_current(config.archive_dir, __('archive')) 
-        +a_with_current(config.about_dir, __('about'))
-        +a_with_current(config.feed.path, __('rss'))
+    +a_with_current(config.root, __('home'), 'icon-home')
+    +a_with_current(config.archive_dir, __('archive'), 'icon-archive')
+    +a_with_current(config.about_dir, __('about'), 'icon-about')
+    +a_with_current(config.feed.path, __('rss'), 'icon-rss')
 ```
 
 and `_config.yml` of hexo directory. Just follow the format of existing items.
@@ -61,6 +61,8 @@ and `_config.yml` of hexo directory. Just follow the format of existing items.
     i18n_dir: :lang
     skip_render:
 ```
+
+- [IcoMoon](https://icomoon.io) icon fonts have been integrated to the nav-menu, and you can choose other icons you like [here](https://icomoon.io/app/#/select) and use them according to the  [instruction](https://icomoon.io/#docs).
 
 #### Abstract
 - You can control the abstract of a post shown at index, by either filling a `description` item in `front-matter` of the `post.md`, or just inserting a `<!--more-->` before your hidden content.
