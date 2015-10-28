@@ -6,6 +6,11 @@ if page.title
 else
   - var current_title = config.title
 
+if (config.root != '/')
+  - var root = config.root
+else
+  - var root = ''
+
 html
   head
     meta(http-equiv="content-type", content="text/html; charset=utf-8")
@@ -16,10 +21,10 @@ html
     meta(name="description", content=config.description)
     block title
     //+get_resource("blog_basic.css")
-    link(rel='stylesheet', type='text/css', href='/css/normalize.css')
-    link(rel='stylesheet', type='text/css', href='/css/pure-min.css')
-    link(rel='stylesheet', type='text/css', href='/css/grids-responsive-min.css')
-    link(rel='stylesheet', type='text/css', href='/css/style.css')
+    link(rel='stylesheet', type='text/css', href=root + '/css/normalize.css')
+    link(rel='stylesheet', type='text/css', href=root + '/css/pure-min.css')
+    link(rel='stylesheet', type='text/css', href=root + '/css/grids-responsive-min.css')
+    link(rel='stylesheet', type='text/css', href=root + '/css/style.css')
     link(rel='Shortcut Icon', type='image/x-icon',href='/favicon.ico')
     link(rel='apple-touch-icon', href='/apple-touch-icon.png')
     link(rel='apple-touch-icon-precomposed', href='/apple-touch-icon.png')
@@ -82,11 +87,11 @@ html
       |  by
       a(rel='nofollow', target='_blank', href='https://github.com/pagecho')  Cho.
 
-  != js(['/js/jquery.min.js', '/js/totop.js'])
+  != js([root + '/js/jquery.min.js', root + '/js/totop.js'])
 
     if theme.fancybox
-      != js(['/js/fancybox.pack.js'])
-      != css('/css/jquery.fancybox.css')
+      != js([root + '/js/fancybox.pack.js'])
+      != css(root + '/css/jquery.fancybox.css')
       script.
         $(document).ready(function() {
           $("img").wrap(function() {
