@@ -1,10 +1,12 @@
 Maupassant
 ==========
 
-A simple Hexo template with great performance on different devices, ported from a Typecho theme by [Cho](https://github.com/pagecho), forked and modified from [icylogic](https://github.com/icylogic/maupassant-hexo/).
+- A simple Hexo template with great performance on different devices, ported from a Typecho theme by [Cho](https://github.com/pagecho/maupassant/), forked and modified from [icylogic](https://github.com/icylogic/maupassant-hexo/).
 
 ![template preview](http://ooo.0o0.ooo/2015/10/24/562b5be12177e.jpg
  "Maupassant template preview")
+ 
+- See [DEMO](https://www.haomwei.com).
 
 ## Installation
 
