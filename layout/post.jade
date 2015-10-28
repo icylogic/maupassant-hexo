@@ -18,6 +18,7 @@ block content
       .tags
         for tag in page.tags.toArray()
           a(href=url_for(tag.path))= tag.name
+    include _partial/post-nav
     if theme.duoshuo
       div(class='ds-share flat' data-thread-key=page.path, data-title=page.title, data-url=page.permalink)
          .ds-share-inline
@@ -34,4 +35,3 @@ block content
                 a(class='ds-wechat' href='javascript:void(0);' data-service='wechat') 微信
             .ds-share-icons-more
     include _partial/comments
-    include _partial/paginator

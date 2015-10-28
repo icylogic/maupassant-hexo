@@ -815,11 +815,11 @@ pre .javascript .function {
 /* IcoMoon*/
 @font-face {
 	font-family: 'icomoon';
-	src:url('../fonts/icomoon.eot?g43wbc');
-	src:url('../fonts/icomoon.eot?g43wbc#iefix') format('embedded-opentype'),
-		url('../fonts/icomoon.ttf?g43wbc') format('truetype'),
-		url('../fonts/icomoon.woff?g43wbc') format('woff'),
-		url('../fonts/icomoon.svg?g43wbc#icomoon') format('svg');
+	src:url('../fonts/icomoon.eot?5xv1e3');
+	src:url('../fonts/icomoon.eot?5xv1e3#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.ttf?5xv1e3') format('truetype'),
+		url('../fonts/icomoon.woff?5xv1e3') format('woff'),
+		url('../fonts/icomoon.svg?5xv1e3#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -849,9 +849,40 @@ i {
 .icon-about:before {
 	content: "\e903";
 }
+.icon-rss:before {
+	content: "\e905";
+}
+.icon-previous:before {
+	content: "\e908";
+}
+.icon-next:before {
+	content: "\e909";
+}
 .icon-archive:before {
 	content: "\e904";
 }
-.icon-rss:before {
-	content: "\e905";
+
+/* Post Navigator*/
+.post-nav {
+	overflow: hidden;
+  	margin-top: 15px;
+  	margin-bottom: 20px;
+  	padding: 10px;
+  	white-space: nowrap;
+  	border-top: 1px solid #eee;
+	a {
+		display: inline-block;
+		line-height: 25px;
+		font-size: 15px;
+		color: #555;
+		border-bottom: none;
+		float: left;
+		&.next {
+			float: right;
+		}
+		&:hover {
+			border-bottom: none;
+      		color: #222;
+		}
+	}
 }
