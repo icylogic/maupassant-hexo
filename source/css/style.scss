@@ -280,6 +280,9 @@ a:focus{
 		padding: 5px 20px;
 		border: 1px solid #DDD;
 		float: left;
+		&.pre {
+			float: left;
+		}
 		&.next {
 			float: right;
 		}
@@ -877,6 +880,9 @@ i {
 		color: #555;
 		border-bottom: none;
 		float: left;
+		&.pre {
+			float: left;
+		}
 		&.next {
 			float: right;
 		}
