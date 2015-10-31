@@ -197,13 +197,19 @@ a:focus{
 		display: inline;
 		text-indent: .15em;
 	}
-	.post-content {
+	.post-abstract {
 		clear: both;
 		font-size: 15px;
 		line-height: 1.77;
 		color: #444;
 		padding-top: 20px;
 		overflow: hidden;
+	}
+	.post-content {
+		font-size: 15px;
+		line-height: 1.77;
+		color: #444;
+		padding-top: 20px;
 		h2, h3 {
 			margin: 1.4em 0 1.1em;
 		}
@@ -892,4 +898,29 @@ i {
       		color: #222;
 		}
 	}
+}
+
+/*toc*/
+.toc-article {
+  border: 1px solid #bbb;
+  border-radius: 7px;
+  margin: 2em 0 0 0.6em;
+  padding: 0.2em;
+  max-width: 40%;
+ }
+#toc {
+  line-height: 1em;
+  float: right;
+  .toc {
+    padding: 0;
+    margin: 0.5em;
+    line-height: 1.8em;
+    li {
+      list-style-type: none;
+    }
+   }
+  .toc-child {
+    margin-left: 1em;
+    padding-left: 0;
+  }
 }

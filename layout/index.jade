@@ -14,11 +14,19 @@ block content
       .post-meta= post.date.format(config.date_format)
       span.ds-thread-count(data-thread-key=post.path)
       if post.description
-        .post-content= post.description
+        .post-content
+          != post.description
       else if page.excerpt
-        .post-content= page.excerpt
+        .post-content
+          != post.excerpt
       else if post.content
-        .post-content= strip_html(post.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 300)
+        - var br = post.content.indexOf('\n')
+        if br < 0
+          .post-abstract
+            != post.content
+        else
+          .post-abstract
+            != post.content.substring(0, br)
       p(class="readmore")
         a(href=url_for(post.path))= __('Readmore')
 

@@ -69,6 +69,9 @@ and `_config.yml` of hexo directory. Just follow the format of existing items.
 #### Abstract
 - You can control the abstract of a post shown at index, by either filling a `description` item in `front-matter` of the `post.md`, or just inserting a `<!--more-->` before your hidden content.
 
+#### Table of Contents
+- TOC in a post can be enabled by adding a `toc: true` item in `front-matter`.
+
 #### Syntax Highlighting
 - Highlighted code showcase is supported, please set the `highlight` option in `_config.yml` of hexo directory like this:
 
