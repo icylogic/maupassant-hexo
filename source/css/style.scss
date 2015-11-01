@@ -904,10 +904,13 @@ i {
 .toc-article {
   border: 1px solid #bbb;
   border-radius: 7px;
-  margin: 2em 0 0 0.6em;
-  padding: 0.2em;
+  margin: 2em 0 0 2em;
+  padding: 0.7em 0.7em 0 0.7em;
   max-width: 40%;
- }
+}
+.toc-title {
+  font-size: 120%;
+}
 #toc {
   line-height: 1em;
   float: right;

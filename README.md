@@ -1,6 +1,10 @@
 Maupassant
 ==========
 
+> 大道至简
+
+[Preview](https://www.haomwei.com)｜[中文文档](https://www.haomwei.com/technology/maupassant-hexo.html)
+
 - A simple Hexo template with great performance on different devices, ported from a Typecho theme by [Cho](https://github.com/pagecho/maupassant/), forked and modified from [icylogic](https://github.com/icylogic/maupassant-hexo/).
 
 ![template preview](http://ooo.0o0.ooo/2015/10/24/562b5be12177e.jpg
@@ -23,9 +27,9 @@ npm install hexo-renderer-jade --save
 ## Configuration
 
 #### Logo
-- You can set a **favicon.ico** for your website, please put it into  `/source` folder of hexo directory, recommended size: 32px*32px.
+- You can set a **favicon.ico** for your website, please put it into  `source` folder of hexo directory, recommended size: 32px*32px.
 
-- You can add a website logo for apple devices, please put an image named **apple-touch-icon.png** into `/source` folder of hexo directory, recommended size: 114px*114px.
+- You can add a website logo for apple devices, please put an image named **apple-touch-icon.png** into `source` folder of hexo directory, recommended size: 114px*114px.
 
 #### Blogroll
 - You can manage your friendly links in `/themes/maupassant/layout/base.jade` like this:
@@ -67,7 +71,7 @@ and `_config.yml` of hexo directory. Just follow the format of existing items.
 - [IcoMoon](https://icomoon.io) icon fonts have been integrated to the nav-menu, and you can choose other icons you like [here](https://icomoon.io/app/#/select) and use them according to the  [instruction](https://icomoon.io/#docs).
 
 #### Abstract
-- You can control the abstract of a post shown at index, by either filling a `description` item in `front-matter` of the `post.md`, or just inserting a `<!--more-->` before your hidden content.
+- You can control the abstract of a post shown at index, by either filling a `description:` item in `front-matter` of the `post.md`, or just inserting a `<!--more-->` before your hidden content.
 
 #### Table of Contents
 - TOC in a post can be enabled by adding a `toc: true` item in `front-matter`.

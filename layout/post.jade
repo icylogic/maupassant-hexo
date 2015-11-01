@@ -15,6 +15,7 @@ block content
     if page.toc
       div(class="clear")
         div(id="toc" class="toc-article")
+          div(class="toc-title")= __('contents')
           != toc(page.content)
     .post-content
       != page.content
