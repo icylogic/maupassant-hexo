@@ -22,10 +22,10 @@ block content
       else if post.content
         - var br = post.content.indexOf('\n')
         if br < 0
-          .post-abstract
+          .post-content
             != post.content
         else
-          .post-abstract
+          .post-content
             != post.content.substring(0, br)
       p(class="readmore")
         a(href=url_for(post.path))= __('Readmore')
