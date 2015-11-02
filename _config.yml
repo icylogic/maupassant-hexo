@@ -3,3 +3,4 @@ duoshuo: #duoshuo_shortname
 disqus: #disqus_shortname
 swiftype: #swiftype_key
 tinysou: #tinysou_key
+rss: atom.xml
