@@ -74,9 +74,9 @@ html
             | <script type="text/javascript" src="http://!{theme.disqus}.disqus.com/recent_comments_widget.js?num_items=5&hide_avatars=1&avatar_size=32&excerpt_length=20&hide_mods=1"></script>
         .widget
           .widget-title= __('blogroll')
-          ul: != link_to('http://example1.com/', 'site-name 1', {external: true})
-          ul: != link_to('http://example2.com/', 'site-name 2', {external: true})
-          ul: != link_to('http://example3.com/', 'site-name 3', {external: true})
+          - for (var i in theme.links)
+            ul
+            a(href='#{theme.links[i].url}' title='#{theme.links[i].title}' target='_blank') #{theme.links[i].title}
 
     #footer= '© '
       a(href='/', rel='nofollow')= config.title + '.'

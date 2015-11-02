@@ -4,3 +4,10 @@ disqus: #disqus_shortname
 swiftype: #swiftype_key
 tinysou: #tinysou_key
 rss: atom.xml
+links:
+  - title: site-name1
+    url: http://www.example1.com/
+  - title: site-name2
+    url: http://www.example2.com/
+  - title: site-name3
+    url: http://www.example3.com/

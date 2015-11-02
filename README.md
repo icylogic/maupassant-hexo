@@ -31,6 +31,13 @@ disqus: #disqus_shortname
 swiftype: #swiftype_key
 tinysou: #tinysou_key
 rss: atom.xml
+links:
+  - title: site-name1
+    url: http://www.example1.com/
+  - title: site-name2
+    url: http://www.example2.com/
+  - title: site-name3
+    url: http://www.example3.com/
 ```
 - fancybox - Enable [Fancybox](http://fancyapps.com/fancybox/)
 - duoshuo - [Duoshuo](http://duoshuo.com) shortname
@@ -38,23 +45,13 @@ rss: atom.xml
 - swiftype - [Swiftype Search](https://swiftype.com) key 
 - tinysou - [Tiny Search](http://tinysou.com) key
 - rss - RSS subscription link, learn more in [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed) 
+- links - Edit your blogroll here
 
 ##Features
 #### Logo
 You can set a **favicon.ico** for your website, please put it into  `source` folder of hexo directory, recommended size: 32px*32px.
 
 You can add a website logo for apple devices, please put an image named **apple-touch-icon.png** into `source` folder of hexo directory, recommended size: 114px*114px.
-
-#### Blogroll
-You can manage your friendly links in `/themes/maupassant/layout/base.jade` like this:
-
-```
- .widget
-   .widget-title= __('blogroll')
-   ul: != link_to('http://example1.com/', 'site-name 1', {external: true})
-   ul: != link_to('http://example2.com/', 'site-name 2', {external: true})
-   ul: != link_to('http://example3.com/', 'site-name 3', {external: true})
-```
 
 #### Pages
 To customize pages, after creating new folders including `index.md` in `/source`, don't forget to add corresponding contents in `/themes/maupassant/layout/base.jade`:
