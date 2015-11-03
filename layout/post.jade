@@ -11,7 +11,11 @@ block content
         span.categories= __('belongsto')
           for category in page.categories.toArray()
             a(href=url_for(category.path))= category.name
-    span.ds-thread-count(data-thread-key=page.path)
+    if theme.duoshuo
+      span.ds-thread-count(data-thread-key=page.path)
+    if theme.disqus
+      span.disqus-comment-count(data-disqus-identifier=page.path)
+      script(id='dsq-count-scr' src='//#{theme.disqus}.disqus.com/count.js' async)
     if page.toc
       div(class="clear")
         div(id="toc" class="toc-article")
@@ -46,4 +50,9 @@ block content
       span(class='st_googleplus_large' displayText='Google +')
       span(class='st_evernote_large' displayText='Evernote')
       span(class='st_email_large' displayText='Email')
+      script.
+        var switchTo5x=true;
+      script(src='//ws.sharethis.com/button/buttons.js')
+      script.
+        stLight.options({publisher: "1b379049-c412-4a2d-8d2e-69d5ef6bd922", doNotHash: true, doNotCopy: true, hashAddressBar: false});
     include _partial/comments
