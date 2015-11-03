@@ -71,7 +71,7 @@ html
         if theme.disqus
           .widget
             .widget-title= __('recent_comments')
-            | <script type="text/javascript" src="http://!{theme.disqus}.disqus.com/recent_comments_widget.js?num_items=5&hide_avatars=1&avatar_size=32&excerpt_length=20&hide_mods=1"></script>
+            script(type='text/javascript' src='https://#{theme.disqus}.disqus.com/recent_comments_widget.js?num_items=5&hide_avatars=1&avatar_size=32&excerpt_length=20&hide_mods=1')
         .widget
           .widget-title= __('blogroll')
           - for (var i in theme.links)
@@ -120,6 +120,9 @@ html
             (document.getElementsByTagName('head')[0]
                 || document.getElementsByTagName('body')[0]).appendChild(ds);
         })();
+
+    if theme.disqus
+      script(id='dsq-count-scr' src='//haomwei.disqus.com/count.js' async)
 
     if theme.tinysou
       script.

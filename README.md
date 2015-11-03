@@ -1,5 +1,7 @@
 # Maupassant
 
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](http://choosealicense.com/licenses/mit)
+
 > 大道至简
 
 [Preview](https://www.haomwei.com)｜[中文文档](https://www.haomwei.com/technology/maupassant-hexo.html)
@@ -19,7 +21,7 @@ npm install hexo-renderer-sass --save
 npm install hexo-renderer-jade --save
 ```
 
-Edit `_config.yml` in hexo root, change `theme` to `maupassant`.
+Then change your `theme` setting in `_config.yml` to `maupassant`.
 
 ## Configuration
 Default config:
@@ -106,6 +108,11 @@ Two languages are available for this theme currently, English (en) and Simplifie
 - Check whether your Terminal's current directory is in hexo's root directory which contains `source/`, `themes/`, etc.
 
 - If you have any trouble in using this theme, please feel free to open an [issue](https://github.com/tufu9441/maupassant-hexo/issues).
+
+## Contributing
+All kinds of contributions (enhancements, new features, documentation & code improvements, issues & bugs reporting) are welcome.
+
+Looking forward to your pull request.
 
 ## Maupassant on other platforms:
 
