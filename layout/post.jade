@@ -39,4 +39,11 @@ block content
               li
                 a(class='ds-wechat' href='javascript:void(0);' data-service='wechat') 微信
             .ds-share-icons-more
+    if theme.disqus
+      span(class='st_sina_large' displayText='Sina')
+      span(class='st_facebook_large' displayText='Facebook')
+      span(class='st_twitter_large' displayText='Tweet')
+      span(class='st_googleplus_large' displayText='Google +')
+      span(class='st_evernote_large' displayText='Evernote')
+      span(class='st_email_large' displayText='Email')
     include _partial/comments
