@@ -15,7 +15,6 @@ block content
       span.ds-thread-count(data-thread-key=page.path)
     if theme.disqus
       span.disqus-comment-count(data-disqus-identifier=page.path)
-      script(id='dsq-count-scr' src='//#{theme.disqus}.disqus.com/count.js' async)
     if page.toc
       div(class="clear")
         div(id="toc" class="toc-article")
@@ -50,6 +49,7 @@ block content
       span(class='st_googleplus_large' displayText='Google +')
       span(class='st_evernote_large' displayText='Evernote')
       span(class='st_email_large' displayText='Email')
+      script(id='dsq-count-scr' src='//#{theme.disqus}.disqus.com/count.js' async)
       script.
         var switchTo5x=true;
       script(src='//ws.sharethis.com/button/buttons.js')

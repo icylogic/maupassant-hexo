@@ -16,7 +16,6 @@ block content
         span.ds-thread-count(data-thread-key=post.path)
       if theme.disqus
         span.disqus-comment-count(data-disqus-identifier=post.path)
-        script(id='dsq-count-scr' src='//#{theme.disqus}.disqus.com/count.js' async)
       if post.description
         .post-content
           != post.description
@@ -35,3 +34,5 @@ block content
         a(href=url_for(post.path))= __('Readmore')
 
   include _partial/paginator
+  if theme.disqus
+    script(id='dsq-count-scr' src='//#{theme.disqus}.disqus.com/count.js' async)
