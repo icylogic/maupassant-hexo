@@ -1,6 +1,6 @@
 # Maupassant
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](http://choosealicense.com/licenses/mit)
+[![Build Status](https://travis-ci.org/tufu9441/maupassant-hexo.svg?branch=master)](https://travis-ci.org/tufu9441/maupassant-hexo)   [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](http://choosealicense.com/licenses/mit)
 
 > 大道至简
 
