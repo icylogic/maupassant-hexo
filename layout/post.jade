@@ -42,17 +42,5 @@ block content
               li
                 a(class='ds-wechat' href='javascript:void(0);' data-service='wechat') 微信
             .ds-share-icons-more
-    if theme.disqus
-      span(class='st_sina_large' displayText='Sina')
-      span(class='st_facebook_large' displayText='Facebook')
-      span(class='st_twitter_large' displayText='Tweet')
-      span(class='st_googleplus_large' displayText='Google +')
-      span(class='st_evernote_large' displayText='Evernote')
-      span(class='st_email_large' displayText='Email')
-      script(id='dsq-count-scr' src='//#{theme.disqus}.disqus.com/count.js' async)
-      script.
-        var switchTo5x=true;
-      script(src='//ws.sharethis.com/button/buttons.js')
-      script.
-        stLight.options({publisher: "1b379049-c412-4a2d-8d2e-69d5ef6bd922", doNotHash: true, doNotCopy: true, hashAddressBar: false});
+
     include _partial/comments
