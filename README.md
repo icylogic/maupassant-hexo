@@ -30,6 +30,8 @@ Default config:
 fancybox: true
 duoshuo: #duoshuo_shortname
 disqus: #disqus_shortname
+google_search: true
+baidu_search: #baidu_search
 swiftype: #swiftype_key
 tinysou: #tinysou_key
 rss: atom.xml
@@ -44,6 +46,8 @@ links:
 - fancybox - Enable [Fancybox](http://fancyapps.com/fancybox/)
 - duoshuo - [Duoshuo](http://duoshuo.com) shortname
 - disqus - [Disqus](https://disqus.com) shortname
+- google_search - Default search engine
+- baidu_search - Search engine for users in China
 - swiftype - [Swiftype Search](https://swiftype.com) key 
 - tinysou - [Tiny Search](http://tinysou.com) key
 - rss - RSS subscription link, learn more in [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed) 

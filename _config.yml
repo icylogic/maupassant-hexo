@@ -1,6 +1,8 @@
 fancybox: true
 duoshuo: #duoshuo_shortname
 disqus: #disqus_shortname
+google_search: true
+baidu_search: #baidu_search
 swiftype: #swiftype_key
 tinysou: #tinysou_key
 rss: atom.xml
