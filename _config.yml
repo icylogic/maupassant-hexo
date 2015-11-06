@@ -5,7 +5,6 @@ google_search: true
 baidu_search: #baidu_search
 swiftype: #swiftype_key
 tinysou: #tinysou_key
-rss: atom.xml
 menu:
   - page: home
     directory: /

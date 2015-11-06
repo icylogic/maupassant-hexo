@@ -34,7 +34,6 @@ google_search: true
 baidu_search: #baidu_search
 swiftype: #swiftype_key
 tinysou: #tinysou_key
-rss: atom.xml
 menu:
   - page: home
     directory: /
@@ -63,7 +62,6 @@ links:
 - baidu_search - Search engine for users in China
 - swiftype - [Swiftype Search](https://swiftype.com) key 
 - tinysou - [Tiny Search](http://tinysou.com) key
-- rss - RSS subscription link, learn more in [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed) 
 - menu - Customize your menu of pages here, just follow the format of existied items. [IcoMoon](https://icomoon.io) icon fonts have been integrated, and you can choose other icons you like [here](https://icomoon.io/app/#/select) and use them according to the  [instruction](https://icomoon.io/#docs)
 - links - Edit your blogroll here
 
