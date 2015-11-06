@@ -35,6 +35,19 @@ baidu_search: #baidu_search
 swiftype: #swiftype_key
 tinysou: #tinysou_key
 rss: atom.xml
+menu:
+  - page: home
+    directory: /
+    icon: icon-home
+  - page: archive
+    directory: archives/
+    icon: icon-archive
+  - page: about
+    directory: about/
+    icon: icon-about
+  - page: rss
+    directory: atom.xml
+    icon: icon-rss
 links:
   - title: site-name1
     url: http://www.example1.com/
@@ -51,6 +64,7 @@ links:
 - swiftype - [Swiftype Search](https://swiftype.com) key 
 - tinysou - [Tiny Search](http://tinysou.com) key
 - rss - RSS subscription link, learn more in [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed) 
+- menu - Customize your menu of pages here, just follow the format of existied items. [IcoMoon](https://icomoon.io) icon fonts have been integrated, and you can choose other icons you like [here](https://icomoon.io/app/#/select) and use them according to the  [instruction](https://icomoon.io/#docs)
 - links - Edit your blogroll here
 
 ##Features
@@ -58,34 +72,6 @@ links:
 You can set a **favicon.ico** for your website, please put it into  `source` folder of hexo directory, recommended size: 32px*32px.
 
 You can add a website logo for apple devices, please put an image named **apple-touch-icon.png** into `source` folder of hexo directory, recommended size: 114px*114px.
-
-#### Pages
-To customize pages, after creating new folders including `index.md` in `/source`, don't forget to add corresponding contents in `/themes/maupassant/layout/base.jade`:
-
-```
-#nav-menu
-    +a_with_current(config.root, __('home'), 'icon-home')
-    +a_with_current(config.archive_dir, __('archive'), 'icon-archive')
-    +a_with_current(config.about_dir, __('about'), 'icon-about')
-    +a_with_current(theme.rss, __('rss'), 'icon-rss')
-```
-
-and `_config.yml` of hexo directory. Just follow the format of existing items.
-
-```
-    # Directory
-    source_dir: source
-    public_dir: public
-    tag_dir: tags
-    category_dir: categories
-    archive_dir: archives/
-    about_dir: about/
-    code_dir: downloads/code
-    i18n_dir: :lang
-    skip_render:
-```
-
-[IcoMoon](https://icomoon.io) icon fonts have been integrated to the nav-menu, and you can choose other icons you like [here](https://icomoon.io/app/#/select) and use them according to the  [instruction](https://icomoon.io/#docs).
 
 #### Abstract
 You can control the abstract of a post shown at index, by either filling a `description:` item in `front-matter` of the `post.md`, or just inserting a `<!--more-->` before your hidden content.

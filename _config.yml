@@ -6,6 +6,19 @@ baidu_search: #baidu_search
 swiftype: #swiftype_key
 tinysou: #tinysou_key
 rss: atom.xml
+menu:
+  - page: home
+    directory: /
+    icon: icon-home
+  - page: archive
+    directory: archives/
+    icon: icon-archive
+  - page: about
+    directory: about/
+    icon: icon-about
+  - page: rss
+    directory: atom.xml
+    icon: icon-rss
 links:
   - title: site-name1
     url: http://www.example1.com/
