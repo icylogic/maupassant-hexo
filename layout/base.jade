@@ -104,18 +104,22 @@ html
       != css(root + '/css/jquery.fancybox.css')
       script.
         $(document).ready(function() {
-          $("img").wrap(function() {
+          $('img').each(function() {
+            if ($(this).parent().hasClass('fancybox')) return;
             if ($(this).hasClass('nofancybox')) return;
-            return '<a href="' + $(this).attr("src") + '" rel="group" />'});
+            var alt = this.alt;
+            if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+            $(this).wrap('<a href="' + ($(this).attr('data-src') == null ? this.src : $(this).attr('data-src')) + '" title="' + alt + '" class="fancybox"></a>');
+          });
+          $(this).find('.fancybox').each(function(){
+            $(this).attr('rel', 'article');
+          });
         });
       script.
         $(document).ready(function() {
           $("a[href$='.jpg'],a[href$='.png'],a[href$='.gif']").attr('rel', 'gallery').fancybox({
            helpers : {
            title: { type: 'inside'}
-           },
-           afterLoad: function(){
-           this.title = this.title + ' ' + $(this.element).find('img').attr('alt');
            }
          });
         });

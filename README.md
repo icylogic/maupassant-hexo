@@ -12,7 +12,6 @@ A simple Hexo template with great performance on different devices, ported from 
  "Maupassant template preview")
  
 ## Installation
-
 Install theme and renderers:
 
 ```
@@ -92,7 +91,6 @@ highlight:
 Two languages are available for this theme currently, English (en) and Simplified Chinese (zh-CN). Contributions of translating to other languages will be highly appreciated.
 
 ## Solutions
-
 - Check whether your Terminal's current directory is in hexo's root directory which contains `source/`, `themes/`, etc.
 
 - If you have any trouble in using this theme, please feel free to open an [issue](https://github.com/tufu9441/maupassant-hexo/issues).
@@ -102,8 +100,10 @@ All kinds of contributions (enhancements, new features, documentation & code imp
 
 Looking forward to your pull request.
 
+## Acknowledgements
+Thank [JamesPan](http://blog.jamespan.me) for his help to improve this theme
+. 
 ## Maupassant on other platforms:
-
 + Typecho：https://github.com/pagecho/maupassant/
 + Octopress：https://github.com/pagecho/mewpassant/
 + Farbox：https://github.com/pagecho/Maupassant-farbox/

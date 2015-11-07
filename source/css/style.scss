@@ -230,12 +230,20 @@ a:focus{
 				border: 1px solid #ddd;
 			}
 			a {
+				color: #01579f;
 				padding-bottom: 2px;
-				border-bottom: 1px solid #aaa;
 				word-break: break-all;
 				&:hover {
 					border-bottom-color: #444;
 				}
+			}
+			.caption {
+    			color: #444;
+    			display: block;
+ 				font-size: 0.9em;
+   				margin-top: 0.1em;
+   				position: relative;
+    			text-align: center;
 			}
 		}
 		hr {
@@ -246,7 +254,9 @@ a:focus{
 		}
 		img {
 			max-width: 100%;
-			padding: 1em 0;
+			padding: 0.5em 0;
+			margin: auto;
+			display: block;
 		}
 		ul, ol {
 			overflow: auto;
