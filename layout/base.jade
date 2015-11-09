@@ -1,5 +1,4 @@
 include _partial/helpers
-include _partial/totop
 
 if page.title
   - var current_title = page.title
@@ -11,7 +10,8 @@ if (config.root != '/')
 else
   - var root = ''
 
-html
+<!DOCTYPE html>
+html(lang="#{config.language}")
   head
     meta(http-equiv="content-type", content="text/html; charset=utf-8")
     meta(content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0", name="viewport")
@@ -28,7 +28,6 @@ html
     link(rel='apple-touch-icon', href='/apple-touch-icon.png')
     link(rel='apple-touch-icon-precomposed', href='/apple-touch-icon.png')
     link(rel='alternate', type='application/atom+xml', href='/atom.xml')
-
 
   body: .body_container
     #header
@@ -97,7 +96,8 @@ html
       |  by
       a(rel='nofollow', target='_blank', href='https://github.com/pagecho')  Cho.
 
-  != js([root + '/js/jquery.min.js', root + '/js/totop.js'])
+    include _partial/totop
+    != js([root + '/js/jquery.min.js', root + '/js/totop.js'])
 
     if theme.fancybox
       != js([root + '/js/fancybox.pack.js', root + '/js/jquery.fancybox.js'])
@@ -105,7 +105,7 @@ html
 
     if theme.duoshuo
       script.
-        var duoshuoQuery = {short_name:'!{theme.duoshuo}'};
+        var duoshuoQuery = {short_name:'＃{theme.duoshuo}'};
         (function() {
             var ds = document.createElement('script');
             ds.type = 'text/javascript';ds.async = true;
@@ -118,7 +118,7 @@ html
     if theme.tinysou
       script.
         var option = {
-          engineKey: '!{theme.tinysou}'
+          engineKey: '＃{theme.tinysou}'
         };
         (function(w,d,t,u,n,s,e){
           s = d.createElement(t);
@@ -139,4 +139,4 @@ html
         e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
         })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
 
-        _st('install','!{theme.swiftype}','2.0.0');
+        _st('install','＃{theme.swiftype}','2.0.0');
