@@ -105,7 +105,7 @@ html(lang="#{config.language}")
 
     if theme.duoshuo
       script.
-        var duoshuoQuery = {short_name:'＃{theme.duoshuo}'};
+        var duoshuoQuery = {short_name:'#{theme.duoshuo}'};
         (function() {
             var ds = document.createElement('script');
             ds.type = 'text/javascript';ds.async = true;
@@ -118,7 +118,7 @@ html(lang="#{config.language}")
     if theme.tinysou
       script.
         var option = {
-          engineKey: '＃{theme.tinysou}'
+          engineKey: '#{theme.tinysou}'
         };
         (function(w,d,t,u,n,s,e){
           s = d.createElement(t);
