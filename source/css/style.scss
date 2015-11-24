@@ -1012,3 +1012,12 @@ table {
     background-color: #E6FBFF;
   }
 }
+
+.highlight.bash{
+  table tr:nth-child(odd) {
+    background-color: #2D2D2D;
+  }
+  table tr, table td {
+    border: #2D2D2D;
+  }
+}
