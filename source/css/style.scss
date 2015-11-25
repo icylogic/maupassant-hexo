@@ -994,3 +994,31 @@ i {
     padding-left: 0;
   }
 }
+
+
+table {
+  border: 1px solid #666;
+  border-collapse: collapse;
+  tr, td {
+    border: 1px solid #666;
+  }
+  tr:nth-child(even) {
+    background: #CCC
+  }
+  tr:nth-child(odd) {
+    background-color: #FAFAFA;
+  }
+  td:hover:not(.code):not(.gutter) {
+    background-color: #E6FBFF;
+  }
+
+}
+
+.highlight{	
+  table tr:nth-child(odd) {
+    background-color: #2D2D2D;
+  }
+  table tr { 		
+    border: #2D2D2D;
+  }
+}
