@@ -1008,16 +1008,17 @@ table {
   tr:nth-child(odd) {
     background-color: #FAFAFA;
   }
-  td:hover {
+  td:hover:not(.code):not(.gutter) {
     background-color: #E6FBFF;
   }
+
 }
 
-.highlight.bash{
+.highlight{	
   table tr:nth-child(odd) {
     background-color: #2D2D2D;
   }
-  table tr, table td {
+  table tr { 		
     border: #2D2D2D;
   }
 }
