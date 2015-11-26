@@ -44,11 +44,11 @@ html(lang="#{config.language}")
         block content
 
       .pure-u-1-4: #sidebar
-        if theme.google_search
+        if theme.google_search == true
           .widget
             #search
               != search_form()
-        if theme.baidu_search
+        if theme.baidu_search == true
           .widget
              form(action="https://www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form")
                input(type="search" name="word" maxlength="20" class="search-form-input" placeholder="Search")
