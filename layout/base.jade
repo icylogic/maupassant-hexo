@@ -11,14 +11,14 @@ else
   - var root = ''
 
 <!DOCTYPE html>
-html(lang="#{config.language}")
+html(lang='#{config.language}')
   head
-    meta(http-equiv="content-type", content="text/html; charset=utf-8")
-    meta(content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0", name="viewport")
-    meta(content="yes", name="apple-mobile-web-app-capable")
-    meta(content="black-translucent", name="apple-mobile-web-app-status-bar-style")
-    meta(content="telephone=no", name="format-detection")
-    meta(name="description", content=config.description)
+    meta(http-equiv='content-type', content='text/html; charset=utf-8')
+    meta(content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0', name='viewport')
+    meta(content='yes', name='apple-mobile-web-app-capable')
+    meta(content='black-translucent', name='apple-mobile-web-app-status-bar-style')
+    meta(content='telephone=no', name='format-detection')
+    meta(name='description', content=config.description)
     block title
     link(rel='stylesheet', type='text/css', href=root + '/css/normalize.css')
     link(rel='stylesheet', type='text/css', href=root + '/css/pure-min.css')
@@ -46,17 +46,18 @@ html(lang="#{config.language}")
       .pure-u-1-4: #sidebar
         if theme.google_search == true
           .widget
-            #search
-              != search_form()
+             form(action='//www.google.com/search' method='get' accept-charset='utf-8' class='search-form' target='_blank')
+               input(type='text' name='q' maxlength='20' class='search-form-input' placeholder='Search')
+               input(type='hidden' name='sitesearch' value='#{config.url}')
         if theme.baidu_search == true
           .widget
-             form(action="https://www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form")
-               input(type="search" name="word" maxlength="20" class="search-form-input" placeholder="Search")
-               input(type="hidden" name="si" value="#{config.url.replace(/^https?:\/\//, '')}")
-               input(name="tn" type="hidden" value="bds")
-               input(name="cl" type="hidden" value="3")
-               input(name="ct" type="hidden" value="2097152")
-               input(name="s" type="hidden" value="on")
+             form(action='//www.baidu.com/baidu' method='get' accept-charset='utf-8' class='search-form' target='_blank')
+               input(type='search' name='word' maxlength='20' class='search-form-input' placeholder='Search')
+               input(type='hidden' name='si' value='#{config.url}')
+               input(name='tn' type='hidden' value='bds')
+               input(name='cl' type='hidden' value='3')
+               input(name='ct' type='hidden' value='2097152')
+               input(name='s' type='hidden' value='on')
         if theme.swiftype
           .widget
             input.st-default-search-input(placeholder='Search' type='text')
