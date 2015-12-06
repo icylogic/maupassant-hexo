@@ -767,6 +767,7 @@ pre {
     margin: 0;
     width: auto;
     border: none;
+    text-align: left;
   }
   td {
     border: none;
@@ -1014,6 +1015,7 @@ i {
 table {
   border: 1px solid #666;
   border-collapse: collapse;
+  text-align: center;
   th, tr, td {
     border: 1px solid #666;
     padding: 7px;
