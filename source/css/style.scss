@@ -235,7 +235,7 @@ a:focus{
 				padding-bottom: 2px;
 				word-break: break-all;
 				&:hover {
-					border-bottom-color: #444;
+					text-decoration: underline;
 				}
 			}
 			.caption {
@@ -270,8 +270,16 @@ a:focus{
 			ul {
 				margin: 0;
 			}
+			a {
+				color: #01579f;
+				padding-bottom: 2px;
+				word-break: break-all;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
 		}
-		table{
+		table {
 			margin: 0;
 		}
 	}
@@ -1006,6 +1014,7 @@ i {
 table {
   border: 1px solid #666;
   border-collapse: collapse;
+  text-align: center;
   th, tr, td {
     border: 1px solid #666;
     padding: 7px;
