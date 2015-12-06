@@ -734,7 +734,7 @@ pre {
   padding: 15px;
   overflow: auto;
   font-size: 13px;
-  color: #4d4d4c;
+  color: #444;
   line-height:  1.6;
   code {
     background: none;
@@ -748,7 +748,7 @@ pre {
   padding: 15px;
   overflow: auto;
   font-size: 13px;
-  color: #4d4d4c;
+  color: #444;
   line-height:  1.6;
   pre {
     border: none;
@@ -763,6 +763,12 @@ pre {
   td {
     border: none;
     padding: 0;
+  }
+  table tr:nth-child(odd) {
+    background-color: #2D2D2D;
+  }
+  table tr {
+    border: #2D2D2D;
   }
   figcaption {
     font-size: 0.85em;
@@ -1012,15 +1018,5 @@ table {
   }
   td:hover:not(.code):not(.gutter) {
     background-color: #E6FBFF;
-  }
-
-}
-
-.highlight{
-  table tr:nth-child(odd) {
-    background-color: #2D2D2D;
-  }
-  table tr {
-    border: #2D2D2D;
   }
 }
