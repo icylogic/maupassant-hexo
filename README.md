@@ -10,7 +10,7 @@ A simple Hexo template with great performance on different devices, ported from 
 
 ![template preview](http://ooo.0o0.ooo/2015/10/24/562b5be12177e.jpg
  "Maupassant template preview")
- 
+
 ## Installation
 Install theme and renderers:
 
@@ -33,6 +33,7 @@ google_search: true ## Use Google search, true/false
 baidu_search: ## Use Baidu search, true/false
 swiftype: ## Your swiftype_key, e.g. m7b11ZrsT8Me7gzApciT
 tinysou: ## Your tinysou_key, e.g. 4ac092ad8d749fdc6293
+ga: ## Your Google Analytics tracking id, e.g. UA-42425684-2
 menu:
   - page: home
     directory: /
@@ -59,8 +60,9 @@ links:
 - disqus - [Disqus](https://disqus.com) shortname
 - google_search - Default search engine
 - baidu_search - Search engine for users in China
-- swiftype - [Swiftype Search](https://swiftype.com) key 
+- swiftype - [Swiftype Search](https://swiftype.com) key
 - tinysou - [Tiny Search](http://tinysou.com) key
+- ga - [Google Analytics](https://www.google.com/analytics/) tracking id
 - menu - Customize your menu of pages here, just follow the format of existied items. [IcoMoon](https://icomoon.io) icon fonts have been integrated, and you can choose other icons you like [here](https://icomoon.io/app/#/select) and use them according to the  [instruction](https://icomoon.io/#docs)
 - links - Edit your blogroll here
 
@@ -88,7 +90,7 @@ highlight:
 ```
 
 #### Languages
-Two languages are available for this theme currently, English (en) and Simplified Chinese (zh-CN). Contributions of translating to other languages will be highly appreciated.
+Four languages are available for this theme currently: Simplified Chinese (zh-CN), Traditional Chinese (zh-TW), English (en) and Spanish (es-ES). Contributions of translating to other languages will be highly appreciated.
 
 ## Solutions
 - Check whether your Terminal's current directory is in hexo's root directory which contains `source/`, `themes/`, etc.
@@ -102,7 +104,7 @@ Looking forward to your pull request.
 
 ## Acknowledgements
 Thank [JamesPan](http://blog.jamespan.me) for his help to improve this theme
-. 
+.
 ## Maupassant on other platforms:
 + Typecho：https://github.com/pagecho/maupassant/
 + Octopress：https://github.com/pagecho/mewpassant/
