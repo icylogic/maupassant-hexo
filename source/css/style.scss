@@ -227,6 +227,7 @@ a:focus{
 			padding: 0 2em;
 		}
 		p {
+			margin: 0 0 1.234em;
 			code {
 				display: inline;
 				margin: 0 5px;
@@ -1350,7 +1351,7 @@ i {
 
 /* table*/
 table {
-    margin: auto;
+    margin: auto auto 1.234em;
     min-width: 200px;
     background: transparent;
     border-collapse: collapse;
