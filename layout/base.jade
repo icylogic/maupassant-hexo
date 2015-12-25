@@ -36,58 +36,15 @@ html(lang='#{config.language}')
         a#logo(href=(root==''?'/':root))= config.title
         p.description= config.subtitle
       #nav-menu
-        - for (i in theme.menu)
+        - for (var i in theme.menu)
           +a_with_current(theme.menu[i].directory, __(theme.menu[i].page), theme.menu[i].icon)
 
     #layout.pure-g
       .pure-u-1.pure-u-md-3-4: .content_container
         block content
-
       .pure-u-1-4: #sidebar
-        if theme.google_search == true
-          .widget
-             form(action='//www.google.com/search' method='get' accept-charset='utf-8' class='search-form' target='_blank')
-               input(type='text' name='q' maxlength='20' class='search-form-input' placeholder='Search')
-               input(type='hidden' name='sitesearch' value='#{config.url}')
-        if theme.baidu_search == true
-          .widget
-             form(action='//www.baidu.com/baidu' method='get' accept-charset='utf-8' class='search-form' target='_blank')
-               input(type='search' name='word' maxlength='20' class='search-form-input' placeholder='Search')
-               input(type='hidden' name='si' value='#{config.url}')
-               input(name='tn' type='hidden' value='bds')
-               input(name='cl' type='hidden' value='3')
-               input(name='ct' type='hidden' value='2097152')
-               input(name='s' type='hidden' value='on')
-        if theme.swiftype
-          .widget
-            input.st-default-search-input(placeholder='Search' type='text')
-        if theme.tinysou
-          .widget
-            form
-              input#ts-search-input(class='ts-search-input' placeholder='Search' type='text')
-        .widget
-          .widget-title= __('categories')
-          != list_categories({show_count: false})
-        .widget
-          .widget-title= __('tags')
-          .tagcloud
-            != tagcloud({min_font: 15, max_font: 15, amount: 100, orderby: 'count'})
-        .widget
-          .widget-title= __('recent')
-          != list_posts({amount: 10})
-        if theme.duoshuo
-          .widget
-            .comments-title= __('recent_comments')
-            .ds-recent-comments(data-num-items='5' data-show-avatars='0' data-show-time='1' data-show-admin='0' data-excerpt-length='32' data-show-title='1')
-        if theme.disqus
-          .widget
-            .widget-title= __('recent_comments')
-            script(type='text/javascript' src='//#{theme.disqus}.disqus.com/recent_comments_widget.js?num_items=5&hide_avatars=1&avatar_size=32&excerpt_length=20&hide_mods=1')
-        .widget
-          .widget-title= __('blogroll')
-          - for (var i in theme.links)
-            ul
-            a(href='#{theme.links[i].url}' title='#{theme.links[i].title}' target='_blank') #{theme.links[i].title}
+        each item in theme.widgets
+          != partial('_widget/' + item + '.jade')
 
     #footer= '© '
       a(href='/', rel='nofollow')= config.title + '.'
@@ -98,64 +55,4 @@ html(lang='#{config.language}')
       a(rel='nofollow', target='_blank', href='https://github.com/pagecho')  Cho.
 
     include _partial/totop
-    != js([root + '/js/jquery.min.js', root + '/js/totop.js'])
-
-    if theme.fancybox
-      != js([root + '/js/fancybox.pack.js', root + '/js/jquery.fancybox.js'])
-      != css(root + '/css/jquery.fancybox.css')
-
-    if theme.duoshuo
-      script.
-        var duoshuoQuery = {short_name:'#{theme.duoshuo}'};
-        (function() {
-            var ds = document.createElement('script');
-            ds.type = 'text/javascript';ds.async = true;
-            ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-            ds.charset = 'UTF-8';
-            (document.getElementsByTagName('head')[0]
-                || document.getElementsByTagName('body')[0]).appendChild(ds);
-        })();
-
-    if theme.tinysou
-      script.
-        var option = {
-          engineKey: '#{theme.tinysou}'
-        };
-        (function(w,d,t,u,n,s,e){
-          s = d.createElement(t);
-          s.src = u;
-          s.async = 1;
-          w[n] = function(r){
-            w[n].opts = r;
-          };
-          e = d.getElementsByTagName(t)[0];
-          e.parentNode.insertBefore(s, e);
-        })(window,document,'script','//tinysou-cdn.b0.upaiyun.com/ts.js','_ts');
-        _ts(option);
-
-    if theme.swiftype
-      script.
-        (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
-        (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
-        e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
-        })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
-
-        _st('install','#{theme.swiftype}','2.0.0');
-
-    if theme.google_analytics
-      script.
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-        ga('create','#{theme.google_analytics}','auto');ga('send','pageview');
-
-    if theme.baidu_analytics
-      script.
-        var _hmt = _hmt || [];
-        (function() {
-          var hm = document.createElement("script");
-          hm.src = "//hm.baidu.com/hm.js?#{theme.baidu_analytics}";
-          var s = document.getElementsByTagName("script")[0];
-          s.parentNode.insertBefore(hm, s);
-          })();
+    include _partial/after_footer

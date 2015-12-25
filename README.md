@@ -35,6 +35,7 @@ swiftype: ## Your swiftype_key, e.g. m7b11ZrsT8Me7gzApciT
 tinysou: ## Your tinysou_key, e.g. 4ac092ad8d749fdc6293
 google_analytics: ## Your Google Analytics tracking id, e.g. UA-42425684-2
 baidu_analytics: ## Your Baidu Analytics tracking id, e.g. 8006843039519956000
+
 menu:
   - page: home
     directory: /
@@ -48,6 +49,15 @@ menu:
   - page: rss
     directory: atom.xml
     icon: icon-rss
+    
+widgets: ## Six widgets in sidebar provided: search, category, tag, recent_posts, rencent_comments and links.
+  - search
+  - category
+  - tag
+  - recent_posts
+  - recent_comments
+  - links
+  
 links:
   - title: site-name1
     url: http://www.example1.com/
@@ -66,6 +76,7 @@ links:
 - google_analytics - [Google Analytics](https://www.google.com/analytics/) tracking id
 - baidu_analytics - [Baidu Analytics](http://tongji.baidu.com) tracking id
 - menu - Customize your menu of pages here, just follow the format of existied items. [IcoMoon](https://icomoon.io) icon fonts have been integrated, and you can choose other icons you like [here](https://icomoon.io/app/#/select) and use them according to the  [instruction](https://icomoon.io/#docs)
+- widgets - Choose and arrange the widgets in sidebar here
 - links - Edit your blogroll here
 
 ##Features
