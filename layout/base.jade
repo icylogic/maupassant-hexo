@@ -33,7 +33,7 @@ html(lang='#{config.language}')
     #header
       .site-name
         h1.hidden= current_title
-        a#logo(href=(root==''?'/':root))= config.title
+        a#logo(href=url_for('.'))= config.title
         p.description= config.subtitle
       #nav-menu
         - for (var i in theme.menu)
@@ -47,7 +47,7 @@ html(lang='#{config.language}')
           != partial('_widget/' + item + '.jade')
 
     #footer= '© '
-      a(href='/', rel='nofollow')= config.title + '.'
+      a(href=url_for('.'), rel='nofollow')= config.title + '.'
       |  Powered by
       a(rel='nofollow', target='_blank', href='https://hexo.io')  Hexo.
       a(rel='nofollow', target='_blank', href='https://github.com/tufu9441/maupassant-hexo')  Theme
