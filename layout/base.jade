@@ -5,12 +5,14 @@ if page.title
 else
   - var current_title = config.title
 
-if (config.root != '/')
-  - var root = config.root
-else
-  - var root = ''
+case config.feed.type
+  when "rss2"
+    - var feed_type='application/rss+xml'
+  when "atom"
+  default
+    - var feed_type='application/atom+xml'
 
-<!DOCTYPE html>
+doctype html
 html(lang='#{config.language}')
   head
     meta(http-equiv='content-type', content='text/html; charset=utf-8')
@@ -20,20 +22,21 @@ html(lang='#{config.language}')
     meta(content='telephone=no', name='format-detection')
     meta(name='description', content=config.description)
     block title
-    link(rel='stylesheet', type='text/css', href=root + '/css/normalize.css')
-    link(rel='stylesheet', type='text/css', href=root + '/css/pure-min.css')
-    link(rel='stylesheet', type='text/css', href=root + '/css/grids-responsive-min.css')
-    link(rel='stylesheet', type='text/css', href=root + '/css/style.css')
-    link(rel='Shortcut Icon', type='image/x-icon',href='/favicon.ico')
-    link(rel='apple-touch-icon', href='/apple-touch-icon.png')
-    link(rel='apple-touch-icon-precomposed', href='/apple-touch-icon.png')
-    link(rel='alternate', type='application/atom+xml', href='/atom.xml')
+    link(rel='stylesheet', type='text/css', href=url_for('css/normalize.css'))
+    link(rel='stylesheet', type='text/css', href=url_for('css/pure-min.css'))
+    link(rel='stylesheet', type='text/css', href=url_for('css/grids-responsive-min.css'))
+    link(rel='stylesheet', type='text/css', href=url_for('css/style.css'))
+    link(rel='Shortcut Icon', type='image/x-icon',href=url_for('favicon.ico'))
+    link(rel='apple-touch-icon', href=url_for('apple-touch-icon.png'))
+    link(rel='apple-touch-icon-precomposed', href=url_for('apple-touch-icon.png'))
+    if config.feed
+      link(rel='alternate', type=feed_type, href=url_for(config.feed.path))
 
   body: .body_container
     #header
       .site-name
         h1.hidden= current_title
-        a#logo(href=(root==''?'/':root))= config.title
+        a#logo(href=url_for('.'))= config.title
         p.description= config.subtitle
       #nav-menu
         - for (var i in theme.menu)
@@ -47,7 +50,7 @@ html(lang='#{config.language}')
           != partial('_widget/' + item + '.jade')
 
     #footer= '© '
-      a(href='/', rel='nofollow')= config.title + '.'
+      a(href=url_for('.'), rel='nofollow')= config.title + '.'
       |  Powered by
       a(rel='nofollow', target='_blank', href='https://hexo.io')  Hexo.
       a(rel='nofollow', target='_blank', href='https://github.com/tufu9441/maupassant-hexo')  Theme
