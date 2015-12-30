@@ -432,6 +432,7 @@ pre{
 }
 
 /* back-to-top rocket*/
+@media print, screen and (min-width: 48em) {
 #rocket {
 	position: fixed;
 	right: 50px;
@@ -487,7 +488,7 @@ pre{
 	-moz-transform: scale(1.4, 3.2);
 	transform: scale(1.4, 3.2);
 }
-
+}
 /* timeline*/
 div {
     box-sizing: border-box;

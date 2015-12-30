@@ -38,7 +38,7 @@ baidu_analytics: ## Your Baidu Analytics tracking id, e.g. 8006843039519956000
 
 menu:
   - page: home
-    directory: /
+    directory: .
     icon: icon-home
   - page: archive
     directory: archives/
