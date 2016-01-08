@@ -811,6 +811,9 @@ figure.highlight {
     // ApacheConf
     &.apacheconf .code {
         .common,
+        .nomarkup,
+        .attribute,
+        .variable,
         .cbracket,
         .keyword {
             color: #0086b3;
@@ -818,6 +821,7 @@ figure.highlight {
         .sqbracket {
             color: #df5000;
         }
+        .section,
         .tag {
             color: #63a35c;
         }
@@ -853,7 +857,8 @@ figure.highlight {
             color: #1d3e81;
         }
         .subst,
-        .regexp {
+        .regexp,
+        .attribute {
             color: #df5000;
         }
     }
@@ -862,6 +867,9 @@ figure.highlight {
     &.c .code {
         .preprocessor {
             color: #df5000;
+        }
+        .meta-keyword {
+            color: #a71d5d;
         }
         .title {
             color: #795da3;
@@ -884,14 +892,16 @@ figure.highlight {
         .built_in {
             color: #0086b3;
         }
-        .xmlDocTag {
+        .xmlDocTag,
+        .doctag {
             color: #63a35c;
         }
     }
     // CSS
     &.css .code {
         .at_rule,
-        .important {
+        .important,
+        .meta {
             color: #a71d5d;
         }
         .attribute,
@@ -906,16 +916,19 @@ figure.highlight {
         }
         .id,
         .class,
-        .pseudo {
+        .pseudo,
+        .selector-pseudo {
             color: #795da3;
         }
-        .tag {
+        .tag,
+        .selector-tag {
             color: #63a35c;
         }
     }
     // Diff
     &.diff .code {
-        .chunk {
+        .chunk,
+        .meta {
             color:       #795da3;
             font-weight: bold;
         }
@@ -930,8 +943,11 @@ figure.highlight {
     }
     // HTTP
     &.http .code {
-        .literal,
-        .attribute {
+        .attribute,
+        .attr {
+            color: #df5000;
+        }
+        .literal {
             color: #0086b3;
         }
         .request {
@@ -940,10 +956,12 @@ figure.highlight {
     }
     // INI
     &.ini .code {
-        .title {
+        .title,
+        .section {
             color: #795da3;
         }
-        .setting {
+        .setting,
+        .attr {
             color: #a71d5d;
         }
         .value,
@@ -959,6 +977,8 @@ figure.highlight {
         .javadoc {
             color: #969896;
         }
+        .meta,
+        .annotation,
         .javadoctag {
             color: #a71d5d;
         }
@@ -971,6 +991,7 @@ figure.highlight {
     }
     // JavaScript
     &.js .code {
+        .built_in,
         .title {
             color: #795da3;
         }
@@ -987,7 +1008,6 @@ figure.highlight {
         .regexp {
             color: #df5000;
         }
-        .built_in,
         .literal,
         .number {
             color: #0086b3;
@@ -998,7 +1018,8 @@ figure.highlight {
         .attribute {
             color: #df5000;
         }
-        .number {
+        .number,
+        .literal {
             color: #0086b3;
         }
     }
@@ -1007,13 +1028,11 @@ figure.highlight {
         .constant {
             color: #333;
         }
-        .variable {
-            color: #df5000;
-        }
         .title {
             color: #795da3;
         }
-        .keyword {
+        .keyword,
+        .meta-keyword {
             color: #0086b3;
         }
     }
@@ -1023,27 +1042,32 @@ figure.highlight {
         .link_label,
         .strong,
         .emphasis,
-        .blockquote {
+        .blockquote,
+        .quote,
+        .section {
             color: #df5000;
         }
         .link_reference,
+        .symbol,
         .code {
             color: #0086b3;
         }
-        .link_url {
+        .link_url,
+        .link {
             text-decoration: underline;
         }
     }
     // Nginx
     &.nginx .code {
-        .title {
+        .title,
+        .attribute {
             color: #a71d5d;
         }
-        .built_in {
+        .built_in,
+        .literal {
             color: #0086b3;
         }
-        .regexp,
-        .number {
+        .regexp {
             color: #df5000;
         }
         .variable {
@@ -1052,12 +1076,16 @@ figure.highlight {
     }
     // Objective-C
     &.objectivec .code {
-        .preprocessor {
+        .preprocessor,
+        .meta {
             color: #a71d5d;
 
             .title {
                 color: #df5000;
             }
+        }
+        .meta-string {
+            color: #df5000;
         }
         .title {
             color: #795da3;
@@ -1073,13 +1101,17 @@ figure.highlight {
         .sub {
             color: #795da3;
         }
+        .title {
+            color: #795da3;
+        }
         .regexp {
             color: #df5000;
         }
     }
     // PHP
     &.php .code {
-        .phpdoc {
+        .phpdoc,
+        .doctag {
             color: #a71d5d;
         }
         .regexp {
@@ -1096,7 +1128,8 @@ figure.highlight {
     // Python
     &.python .code {
         .decorator,
-        .title {
+        .title,
+        .meta {
             color: #795da3;
         }
         .number {
@@ -1134,10 +1167,12 @@ figure.highlight {
         .value {
             color: #df5000;
         }
-        .attribute {
+        .attribute,
+        .attr {
             color: #795da3;
         }
-        .title {
+        .title,
+        .name {
             color: #63a35c;
         }
     }
@@ -1147,6 +1182,12 @@ figure.highlight {
             color: #795da3;
         }
         .function {
+            color: #0086b3;
+        }
+        .name {
+            color: #a71d5d;
+        }
+        .attr {
             color: #0086b3;
         }
     }
@@ -1167,7 +1208,10 @@ figure.highlight {
         }
         .id,
         .pseudo,
-        .class {
+        .class,
+        .selector-id,
+        .selector-class,
+        .selector-tag {
             color: #795da3;
         }
     }
@@ -1178,7 +1222,6 @@ figure.highlight {
         .important {
             color: #a71d5d;
         }
-        .preprocessor,
         .number,
         .hexcolor,
         .function,
@@ -1193,8 +1236,15 @@ figure.highlight {
         }
         .id,
         .pseudo,
-        .class {
+        .class,
+        .preprocessor,
+        .selector-class,
+        .selector-id {
             color: #795da3;
+        }
+        .tag,
+        .selector-tag {
+            color: #63a35c;
         }
     }
     // Stylus
@@ -1202,7 +1252,8 @@ figure.highlight {
         .at_rule {
             color: #a71d5d;
         }
-        .tag {
+        .tag,
+        .selector-tag {
             color: #63a35c;
         }
         .number,
@@ -1214,7 +1265,10 @@ figure.highlight {
         .class,
         .id,
         .pseudo,
-        .title {
+        .title,
+        .selector-id,
+        .selector-pseudo,
+        .selector-class {
             color: #795da3;
         }
     }
@@ -1237,7 +1291,8 @@ figure.highlight {
             color: #795da3;
         }
         .built_in,
-        .number {
+        .number,
+        .type {
             color: #0086b3;
         }
     }
