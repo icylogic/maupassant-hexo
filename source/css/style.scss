@@ -216,6 +216,8 @@ a:focus{
         color: #444;
         padding-top: 20px;
         text-align: justify;
+        text-justify: distribute;
+        word-break: break-all;
         h2 {
             margin: 1.4em 0 1.1em;
             border-bottom: 1px solid #eee;
@@ -246,9 +248,9 @@ a:focus{
             .caption {
                 color: #444;
                 display: block;
-                 font-size: 0.9em;
-                   margin-top: 0.1em;
-                   position: relative;
+                font-size: 0.9em;
+                margin-top: 0.1em;
+                position: relative;
                 text-align: center;
             }
         }
@@ -269,6 +271,13 @@ a:focus{
             margin: 1em 0;
             ul {
                 margin: 0;
+            }
+            code {
+                display: inline;
+                margin: 0 5px;
+                padding: 1px 5px;
+                border: 1px solid #ccc;
+                background: #eee;
             }
             a {
                 color: #01579f;
