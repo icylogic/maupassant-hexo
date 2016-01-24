@@ -1,11 +1,21 @@
-reading_label: currently reading articles under <b>%s</b>
+reading_label: Reading articles in %s
 blog: Blog
 albums: Albums
 categories: Categories
+tags: Tags
 archive: Archive
 links: Links
 about: About
 recent: Recent
-previous: Previous
 next: Next
-no-title: No Title
+previous: Previous
+notitle: No Title
+blogroll: Blogroll
+history: History
+rss: RSS
+guestbook: Guestbook
+home: Home
+recent_comments: Recent Comments
+Readmore: Read More
+belongsto: Categorized in
+contents: Contents

@@ -1,0 +1,8 @@
+if page.next || page.prev
+  .post-nav
+    if page.prev
+      a.pre(href=url_for(page.prev_link ? page.prev_link : page.prev.path))
+        i(class='icon-previous')= page.prev.title
+    if page.next
+      a.next(href=url_for(page.next_link ? page.next_link : page.next.path))= page.next.title
+        i(class='icon-next')
