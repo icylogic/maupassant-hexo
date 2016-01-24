@@ -106,7 +106,7 @@ highlight:
 ```
 
 #### Languages
-Four languages are available for this theme currently: Simplified Chinese (zh-CN), Traditional Chinese (zh-TW), English (en) and Spanish (es-ES). Contributions of translating to other languages will be highly appreciated.
+Four languages are available for this theme currently: Simplified Chinese (zh-CN), Traditional Chinese (zh-TW), English (en), German (de-DE) and Spanish (es-ES). Contributions of translating to other languages will be highly appreciated.
 
 ## Solutions
 - Check whether your Terminal's current directory is in hexo's root directory which contains `source/`, `themes/`, etc.
