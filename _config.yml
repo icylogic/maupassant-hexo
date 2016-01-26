@@ -37,3 +37,11 @@ links:
     url: http://www.example2.com/
   - title: site-name3
     url: http://www.example3.com/
+
+# Static files
+vendors: http://aa.com/vendors
+css: http://aa.com/css
+js: http://aa.com/js
+image: http://aa.com/image
+
+version: 0.0.0

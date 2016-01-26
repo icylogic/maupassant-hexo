@@ -1,8 +1,8 @@
-!= js(url_for('js/codeblock-resizer.js'))
+!= js(url_for(theme.js) + '/codeblock-resizer.js'  + '?v=' + theme.version)
 
 if theme.fancybox
-  != js([url_for('js/fancybox.pack.js'), url_for('js/jquery.fancybox.js')])
-  != css(url_for('css/jquery.fancybox.css'))
+  != js([url_for(theme.js) + '/fancybox.pack.js'  + '?v=' + theme.version, url_for(theme.js) + '/jquery.fancybox.js'  + '?v=' + theme.version])
+  != css(url_for(theme.css) + '/jquery.fancybox.css'  + '?v=' + theme.version)
 
 if theme.duoshuo
   script.
