@@ -1,6 +1,7 @@
 if theme.fancybox
-  != js([url_for('js/fancybox.pack.js'), url_for('js/jquery.fancybox.js')])
-  != css(url_for('css/jquery.fancybox.css'))
+  script(type='text/javascript', src=url_for(theme.js) + '/fancybox.pack.js' + '?v=' + theme.version)
+  script(type='text/javascript', src=url_for(theme.js) + '/jquery.fancybox.js' + '?v=' + theme.version)
+  link(rel='stylesheet', type='text/css', href=url_for(theme.css) + '/jquery.fancybox.css' + '?v=' + theme.version)
 
 if theme.duoshuo
   script.
@@ -58,4 +59,5 @@ if theme.baidu_analytics
       s.parentNode.insertBefore(hm, s);
       })();
 
-!= js([url_for('js/codeblock-resizer.js'), url_for('js/smartresize.js')])
+script(type='text/javascript', src=url_for(theme.js) + '/codeblock-resizer.js' + '?v=' + theme.version)
+script(type='text/javascript', src=url_for(theme.js) + '/smartresize.js' + '?v=' + theme.version)
