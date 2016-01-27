@@ -39,9 +39,7 @@ links:
     url: http://www.example3.com/
 
 # Static files
-vendors: http://aa.com/vendors
-css: http://aa.com/css
-js: http://aa.com/js
-image: http://aa.com/image
+js: /js
+css: /css
 
 version: 0.0.0
