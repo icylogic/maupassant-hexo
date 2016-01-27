@@ -65,6 +65,13 @@ links:
     url: http://www.example2.com/
   - title: site-name3
     url: http://www.example3.com/
+    
+# Static files
+js: js
+css: css
+
+# Theme version
+version: 0.0.0
 ```
 - fancybox - Enable [Fancybox](http://fancyapps.com/fancybox/)
 - duoshuo - [Duoshuo](http://duoshuo.com) shortname
@@ -78,8 +85,10 @@ links:
 - menu - Customize your menu of pages here, just follow the format of existied items. Don't forget to create corresponding folders inlcuding `index.md` in `source` folder to ensure the pages will correctly display. [IcoMoon](https://icomoon.io) icon fonts have been integrated, and you can choose other icons you like [here](https://icomoon.io/app/#/select) and use them according to the  [instruction](https://icomoon.io/#docs)
 - widgets - Choose and arrange the widgets in sidebar here
 - links - Edit your blogroll here
+- Static files - Static files directory, for convenience of CDN usage
+- Theme version - For automatic refresh of static files on CDN
 
-##Features
+## Features
 #### Logo
 You can set a **favicon.ico** for your website, please put it into  `source` folder of hexo directory, recommended size: 32px*32px.
 
@@ -92,7 +101,7 @@ You can control the abstract of a post shown at index, by either filling a `desc
 TOC in a post can be enabled by adding a `toc: true` item in `front-matter`.
 
 #### Comments
-Comment feature of each post and page can be enabled (default) and disabled by adding a `comments: true` or `comments: false` in `front-matter`. This could be useful when you want comment feature for guestbook page, but don't want comment feature for about page.
+Comment feature of each post and page can be enabled (default) and disabled by adding a `comments: true` or a `comments: false` in `front-matter`. This could be useful when you want comment feature for a guestbook page, but don't want comment feature for a about page.
 
 #### Syntax Highlighting
 Highlighted code showcase is supported, please set the `highlight` option in `_config.yml` of hexo directory like this:
