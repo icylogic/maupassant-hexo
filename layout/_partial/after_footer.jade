@@ -1,5 +1,3 @@
-script(type='text/javascript', src=url_for(theme.js) + '/codeblock-resizer.js' + '?v=' + theme.version)
-
 if theme.fancybox
   script(type='text/javascript', src=url_for(theme.js) + '/fancybox.pack.js' + '?v=' + theme.version)
   script(type='text/javascript', src=url_for(theme.js) + '/jquery.fancybox.js' + '?v=' + theme.version)
@@ -61,4 +59,5 @@ if theme.baidu_analytics
       s.parentNode.insertBefore(hm, s);
       })();
 
+script(type='text/javascript', src=url_for(theme.js) + '/codeblock-resizer.js' + '?v=' + theme.version)
 != js([url_for('js/codeblock-resizer.js'), url_for('js/smartresize.js')])
