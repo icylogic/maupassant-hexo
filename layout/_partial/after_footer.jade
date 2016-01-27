@@ -60,4 +60,4 @@ if theme.baidu_analytics
       })();
 
 script(type='text/javascript', src=url_for(theme.js) + '/codeblock-resizer.js' + '?v=' + theme.version)
-!= js([url_for('js/codeblock-resizer.js'), url_for('js/smartresize.js')])
+script(type='text/javascript', src=url_for(theme.js) + '/smartresize.js' + '?v=' + theme.version)
