@@ -1319,11 +1319,11 @@ figure.highlight {
 /* icomoon icon fonts*/
 @font-face {
     font-family: 'icomoon';
-    src:url('../fonts/icomoon.eot?vvuoen');
-    src:url('../fonts/icomoon.eot?vvuoen#iefix') format('embedded-opentype'),
-        url('../fonts/icomoon.ttf?vvuoen') format('truetype'),
-        url('../fonts/icomoon.woff?vvuoen') format('woff'),
-        url('../fonts/icomoon.svg?vvuoen#icomoon') format('svg');
+    src:url('../fonts/icomoon.eot?et5byw');
+    src:url('../fonts/icomoon.eot?et5byw#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?et5byw') format('truetype'),
+        url('../fonts/icomoon.woff?et5byw') format('woff'),
+        url('../fonts/icomoon.svg?et5byw#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -1523,7 +1523,7 @@ table {
 .article-share-facebook {
   @extend .article-share-element;
   &:before {
-    content: "\e907";
+    content: "\e906";
   }
   &:hover {
     background: #3b5998;
@@ -1545,7 +1545,7 @@ table {
 .article-share-google {
   @extend .article-share-element;
   &:before {
-    content: "\e906";
+    content: "\e608";
   }
   &:hover {
     background: #dd4b39;
