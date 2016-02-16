@@ -11,7 +11,8 @@ block content
         include _partial/helpers
         a(href=url_for(post.path))
           +title(post)
-      .post-meta= post.date.format(config.date_format)
+      .post-meta
+        i(class="fa fa-calendar-o")= " " + post.date.format(config.date_format)
       if theme.duoshuo
         span.ds-thread-count(data-thread-key=post.path)
       if theme.disqus

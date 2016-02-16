@@ -200,6 +200,11 @@ a:focus{
         float: right;
         display: inline;
         text-indent: .15em;
+        &:before {
+          font-family: "FontAwesome";
+          content: "\f0e5";
+          padding-right: 0.3em;
+        }
     }
     .disqus-comment-count {
         padding: 0;
@@ -208,6 +213,11 @@ a:focus{
         float: right;
         display: inline;
         text-indent: .15em;
+        &:before {
+          font-family: "FontAwesome";
+          content: "\f0e5";
+          padding-right: 0.3em;
+        }
     }
     .post-content {
         clear: left;
