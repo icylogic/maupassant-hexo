@@ -1,3 +1,4 @@
 .widget
-  .widget-title= __('recent')
+  .widget-title
+    i(class="fa fa-file-o")= " " + __('recent')
   != list_posts({amount: 10})

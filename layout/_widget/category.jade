@@ -1,3 +1,4 @@
 .widget
-  .widget-title= __('categories')
+  .widget-title
+    i(class="fa fa-folder-o")= " " + __('categories')
   != list_categories({show_count: false})
