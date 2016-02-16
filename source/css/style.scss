@@ -1316,56 +1316,6 @@ figure.highlight {
     }
 }
 
-/* icomoon icon fonts*/
-@font-face {
-    font-family: 'icomoon';
-    src:url('../fonts/icomoon.eot?et5byw');
-    src:url('../fonts/icomoon.eot?et5byw#iefix') format('embedded-opentype'),
-        url('../fonts/icomoon.ttf?et5byw') format('truetype'),
-        url('../fonts/icomoon.woff?et5byw') format('woff'),
-        url('../fonts/icomoon.svg?et5byw#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-i {
-    font-family: 'icomoon', "TIBch", "Classic Grotesque W01", "Helvetica Neue", Arial, "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, sans-serif;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-home:before {
-    content: "\e900";
-}
-.icon-history:before {
-    content: "\e901";
-}
-.icon-guestbook:before {
-    content: "\e902";
-}
-.icon-about:before {
-    content: "\e903";
-}
-.icon-rss:before {
-    content: "\e905";
-}
-.icon-previous:before {
-    content: "\e908";
-}
-.icon-next:before {
-    content: "\e909";
-}
-.icon-archive:before {
-    content: "\e904";
-}
-
 /* post navigator*/
 .post-nav {
       overflow: hidden;
@@ -1452,8 +1402,8 @@ table {
   float: right;
   margin-left: 20px;
   &:before {
-    content: "\e90c";
-    font-family: 'icomoon';
+    content: "\f064";
+    font-family: 'FontAwesome';
     padding-right: 6px;
   }
 }
@@ -1500,10 +1450,10 @@ table {
     color: #999;
     text-shadow: 0 1px #fff;
     text-align: center;
-    padding-top: 9px;
+    padding-top: 10px;
     &:before {
       font-size: 20px;
-      font-family: 'icomoon';
+      font-family: 'FontAwesome';
     }
     &:hover {
       color: #fff;
@@ -1512,7 +1462,7 @@ table {
 .article-share-twitter {
   @extend .article-share-element;
   &:before {
-    content: "\e90a";
+    content: "\f099";
   }
   &:hover {
     background: #00aced;
@@ -1523,7 +1473,7 @@ table {
 .article-share-facebook {
   @extend .article-share-element;
   &:before {
-    content: "\e906";
+    content: "\f09a";
   }
   &:hover {
     background: #3b5998;
@@ -1534,7 +1484,7 @@ table {
 .article-share-pinterest {
   @extend .article-share-element;
   &:before {
-    content: "\e90b";
+    content: "\f0d2";
   }
   &:hover {
     background: #cb2027;
@@ -1545,7 +1495,7 @@ table {
 .article-share-google {
   @extend .article-share-element;
   &:before {
-    content: "\e608";
+    content: "\f0d5";
   }
   &:hover {
     background: #dd4b39;

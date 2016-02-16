@@ -40,16 +40,16 @@ shareto: true ## If you want to use the share button please set the value to tru
 menu:
   - page: home
     directory: .
-    icon: icon-home
+    icon: fa fa-home
   - page: archive
     directory: archives/
-    icon: icon-archive
+    icon: fa fa-archive
   - page: about
     directory: about/
-    icon: icon-about
+    icon: fa fa-user
   - page: rss
     directory: atom.xml
-    icon: icon-rss
+    icon: fa fa-rss
 
 widgets: ## Six widgets in sidebar provided: search, category, tag, recent_posts, rencent_comments and links.
   - search
@@ -84,7 +84,7 @@ version: 0.0.0
 - google_analytics - [Google Analytics](https://www.google.com/analytics/) tracking id
 - baidu_analytics - [Baidu Analytics](http://tongji.baidu.com) tracking id
 - shareto - Enable share button
-- menu - Customize your menu of pages here, just follow the format of existied items. Don't forget to create corresponding folders inlcuding `index.md` in `source` folder to ensure the pages will correctly display. [IcoMoon](https://icomoon.io) icon fonts have been integrated, and you can choose other icons you like [here](https://icomoon.io/app/#/select) and use them according to the  [instruction](https://icomoon.io/#docs)
+- menu - Customize your menu of pages here, just follow the format of existied items. Don't forget to create corresponding folders inlcuding `index.md` in `source` folder to ensure the pages will correctly display. [FontAwesome](http://fontawesome.io) icon fonts have been integrated, and you can choose other icons you like [here](http://fontawesome.io/icons/) and use them according to the instruction
 - widgets - Choose and arrange the widgets in sidebar here
 - links - Edit your blogroll here
 - Static files - Static files directory, for convenience of CDN usage
