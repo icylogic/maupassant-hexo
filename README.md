@@ -40,16 +40,16 @@ shareto: true ## If you want to use the share button please set the value to tru
 menu:
   - page: home
     directory: .
-    icon: fa fa-home
+    icon: fa-home
   - page: archive
     directory: archives/
-    icon: fa fa-archive
+    icon: fa-archive
   - page: about
     directory: about/
-    icon: fa fa-user
+    icon: fa-user
   - page: rss
     directory: atom.xml
-    icon: fa fa-rss
+    icon: fa-rss
 
 widgets: ## Six widgets in sidebar provided: search, category, tag, recent_posts, rencent_comments and links.
   - search
