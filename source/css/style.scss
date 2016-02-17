@@ -188,15 +188,22 @@ a:focus{
     .post-meta {
         padding: 0;
         margin: 12px 0 0;
-        color: #999;
+        color: #6E7173;
         float: left;
         display: inline;
         text-indent: .15em;
+        #busuanzi_value_page_pv {
+            &:before {
+              font-family: "FontAwesome";
+              content: "\f024";
+              padding-right: 0.3em;
+            }
+        }
     }
     .ds-thread-count {
         padding: 0;
         margin: 12px 0 0;
-        color: #999;
+        color: #6E7173;
         float: right;
         display: inline;
         text-indent: .15em;
@@ -209,7 +216,7 @@ a:focus{
     .disqus-comment-count {
         padding: 0;
         margin: 12px 0 0;
-        color: #999;
+        color: #6E7173;
         float: right;
         display: inline;
         text-indent: .15em;
@@ -304,7 +311,7 @@ a:focus{
         a {
             margin-right: .5em;
             &:before {
-                content: '#';
+                content: "#";
                 display: inline-block;
             }
         }
@@ -346,7 +353,7 @@ a:focus{
     }
 }
 
-/* for different pages starts*/
+/* for archive page starts*/
 .post-archive {
     font-size: 15px;
     line-height: 2;
@@ -359,30 +366,7 @@ a:focus{
         padding-right: .7em;
     }
 }
-
-#categories {
-    padding: 0;
-    margin: 0;
-
-    .category{
-        margin: 10px 0 20px 0;
-        text-align: center;
-        a {
-            text-align: left;
-            display: inline-block;
-            border: 1px solid #ddd;
-            padding: 20px 40px;
-            min-width: 100px;
-            h3 {
-                margin: 0;
-            }
-            &:hover {
-                border-color: #888;
-            }
-        }
-    }
-}
-/* for different pages ends*/
+/* for archive page ends*/
 
 /*<middle*/
 @media print, screen and (max-width: 48em) {
@@ -508,6 +492,7 @@ pre{
     }
 }
 }
+
 /* timeline*/
 div {
     box-sizing: border-box;
@@ -574,7 +559,7 @@ div {
 /* read more*/
 .readmore a {
     font-size: 13px;
-    color: #999;
+    color: #6E7173;
     margin-top: -10px;
     margin-bottom: -10px;
     padding-top: 2px;
