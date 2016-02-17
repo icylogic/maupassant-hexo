@@ -2,7 +2,7 @@ extends base
 - var current_title = page.title || tag.name || category.name || site.title
 
 block title
-  title= config.title + " | " + config.subtitle
+  title= config.title + ' | ' + config.subtitle
 block content
 
   for post in page.posts.toArray()
@@ -12,7 +12,7 @@ block content
         a(href=url_for(post.path))
           +title(post)
       .post-meta
-        i(class="fa fa-calendar-o")= " " + post.date.format(config.date_format)
+        i(class='fa fa-calendar-o')= ' ' + post.date.format(config.date_format)
       if theme.duoshuo
         span.ds-thread-count(data-thread-key=post.path)
       if theme.disqus
@@ -31,7 +31,7 @@ block content
         else
           .post-content
             != post.content.substring(0, br)
-      p(class="readmore")
+      p(class='readmore')
         a(href=url_for(post.path))= __('Readmore')
 
   include _partial/paginator

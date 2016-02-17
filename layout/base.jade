@@ -7,9 +7,9 @@ else
 
 if config.feed
   case config.feed.type
-    when "rss2"
+    when 'rss2'
       - var feed_type='application/rss+xml'
-    when "atom"
+    when 'atom'
     default
       - var feed_type='application/atom+xml'
 
