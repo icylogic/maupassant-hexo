@@ -322,24 +322,48 @@ a:focus{
     border-top: 1px solid #ddd;
     list-style: none;
     margin-top: 25px;
-    padding: 25px 0;
+    padding: 25px 0 0;
     font-size: 14px;
-    a {
+    text-align: center;
+    .page-number {
+        display: inline-block;
+        margin: 0 5px 5px 0;
+    }
+    a, span {
         display: inline-block;
         height: 25px;
         line-height: 25px;
-        padding: 5px 20px;
+        padding: 5px 9px;
         border: 1px solid #DDD;
-        float: left;
-        &.pre {
+        text-align: center;
+        &:hover {
+            background: #F8F8F8;
+            border-bottom-color: #D26911;
+        }
+        &.prev {
             float: left;
+            &:before {
+                padding-right: 0.3em;
+                content: "\f100";
+                font-family: "FontAwesome";
+            }
         }
         &.next {
             float: right;
+            &:after {
+                padding-left: 0.3em;
+                content: "\f101";
+                font-family: "FontAwesome";
+            }
         }
-        &:hover {
-            border-color: #999;
-        }
+    }
+    .current {
+        background: #F8F8F8;
+        border-bottom-color: #D26911;
+    }
+    .space {
+        border: none;
+        padding: 5px 5px;
     }
 }
 
