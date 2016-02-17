@@ -1413,7 +1413,7 @@ table {
   margin-left: 20px;
   &:before {
     content: "\f064";
-    font-family: 'FontAwesome';
+    font-family: "FontAwesome";
     padding-right: 6px;
   }
 }
@@ -1459,11 +1459,17 @@ table {
     position: relative;
     color: #999;
     text-shadow: 0 1px #fff;
-    text-align: center;
-    padding-top: 10px;
     &:before {
       font-size: 20px;
-      font-family: 'FontAwesome';
+      font-family: "FontAwesome";
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -10px;
+      margin-left: -10px;
+      text-align: center;
     }
     &:hover {
       color: #fff;
