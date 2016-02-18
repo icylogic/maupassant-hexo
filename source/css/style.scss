@@ -1521,7 +1521,6 @@ table {
   }
   &:hover {
     background: #00aced;
-    text-shadow: 0 1px #008abe;
   }
 }
 
@@ -1532,28 +1531,25 @@ table {
   }
   &:hover {
     background: #3b5998;
-    text-shadow: 0 1px #2f477a;
   }
 }
 
-.article-share-pinterest {
+.article-share-weibo {
   @extend .article-share-element;
   &:before {
-    content: "\f0d2";
+    content: "\f18a";
   }
   &:hover {
-    background: #cb2027;
-    text-shadow: 0 1px #a21a1f;
+    background: #d44137;
   }
 }
 
-.article-share-google {
+.article-share-wechat {
   @extend .article-share-element;
   &:before {
-    content: "\f0d5";
+    content: "\f1d7";
   }
   &:hover {
-    background: #dd4b39;
-    text-shadow: 0 1px #be3221;
+    background: #38ad5a;
   }
 }
