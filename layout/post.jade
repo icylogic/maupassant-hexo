@@ -18,11 +18,9 @@ block content
           span#busuanzi_value_page_pv
           span= ' ' + __('Hits')
     if theme.duoshuo
-      a(href=url_for(page.path) + '#comments')
-        span.ds-thread-count(data-thread-key=page.path)
+      a.ds-thread-count(data-thread-key=page.path, href=url_for(page.path) + '#comments')
     if theme.disqus
-      a(href=url_for(page.path) + '#disqus_thread')
-        span.disqus-comment-count(data-disqus-identifier=page.path)
+      a.disqus-comment-count(data-disqus-identifier=page.path, href=url_for(page.path) + '#disqus_thread')
     if page.toc
       div(class='clear')
         div(id='toc' class='toc-article')
