@@ -192,6 +192,18 @@ a:focus{
         float: left;
         display: inline;
         text-indent: .15em;
+        &:before {
+              font-family: "FontAwesome";
+              content: "\f073";
+              padding-right: 0.3em;
+        }
+        .category {
+            &:before {
+              font-family: "FontAwesome";
+              content: "\f07c";
+              padding-right: 0.3em;
+            }
+        }
         #busuanzi_value_page_pv {
             &:before {
               font-family: "FontAwesome";
@@ -311,8 +323,9 @@ a:focus{
         a {
             margin-right: .5em;
             &:before {
-                content: "#";
-                display: inline-block;
+                font-family: "FontAwesome";
+                content: "\f0c6";
+                padding-right: 0.3em;
             }
         }
     }
@@ -343,17 +356,17 @@ a:focus{
         &.prev {
             float: left;
             &:before {
-                padding-right: 0.3em;
-                content: "\f100";
                 font-family: "FontAwesome";
+                content: "\f100";
+                padding-right: 0.3em;
             }
         }
         &.next {
             float: right;
             &:after {
-                padding-left: 0.3em;
-                content: "\f101";
                 font-family: "FontAwesome";
+                content: "\f101";
+                padding-left: 0.3em;
             }
         }
     }
@@ -1353,9 +1366,19 @@ figure.highlight {
         float: left;
         &.pre {
             float: left;
+            &:before {
+              font-family: "FontAwesome";
+              content: "\f0d9";
+              padding-right: 0.3em;
+            }
         }
         &.next {
             float: right;
+            &:after {
+              font-family: "FontAwesome";
+              content: "\f0da";
+              padding-left: 0.3em;
+            }
         }
         &:hover {
             border-bottom: none;
@@ -1421,8 +1444,8 @@ table {
   float: right;
   margin-left: 20px;
   &:before {
-    content: "\f064";
     font-family: "FontAwesome";
+    content: "\f064";
     padding-right: 6px;
   }
 }
