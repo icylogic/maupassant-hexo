@@ -12,7 +12,7 @@ block content
         span.category
           for category in page.categories.toArray()
             a(href=url_for(category.path))= category.name
-      if theme.busuanzi
+      if theme.busuanzi == true
         script(src='https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js', async)
         span#busuanzi_container_page_pv= ' | '
           span#busuanzi_value_page_pv
@@ -28,7 +28,7 @@ block content
           != toc(page.content)
     .post-content
       != page.content
-    if theme.shareto
+    if theme.shareto == true
       a.article-share-link(data-url='#{page.permalink}', data-id='#{page._id}')= __('shareto')
     include _partial/tag
     include _partial/post_nav

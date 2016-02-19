@@ -1,4 +1,4 @@
-if theme.fancybox
+if theme.fancybox == true
   script(type='text/javascript', src=url_for(theme.js) + '/fancybox.pack.js' + '?v=' + theme.version)
   script(type='text/javascript', src=url_for(theme.js) + '/jquery.fancybox.js' + '?v=' + theme.version)
   link(rel='stylesheet', type='text/css', href=url_for(theme.css) + '/jquery.fancybox.css' + '?v=' + theme.version)
@@ -59,7 +59,7 @@ if theme.baidu_analytics
       s.parentNode.insertBefore(hm, s);
       })();
 
-if theme.shareto
+if theme.shareto == true
   script(type='text/javascript', src=url_for(theme.js) + '/share.js' + '?v=' + theme.version)
 
 script(type='text/javascript', src=url_for(theme.js) + '/codeblock-resizer.js' + '?v=' + theme.version)
