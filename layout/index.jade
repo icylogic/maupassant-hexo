@@ -2,10 +2,8 @@ extends base
 - var current_title = page.title || tag.name || category.name || site.title
 
 block title
-  title= current_title
+  title= config.title + ' | ' + config.subtitle
 block content
-  if is_category() || is_tag()
-      h1.label-title=  __('reading_label', current_title)
 
   for post in page.posts.toArray()
     .post
@@ -13,11 +11,28 @@ block content
         include _partial/helpers
         a(href=url_for(post.path))
           +title(post)
-      .post-meta= post.date.format('MMMM DD, YYYY')
-      .post-content
-        != post.excerpt
-      if post.tags
-        .tags
-          for tag in post.tags.toArray()
-              a(href=url_for(tag.path))= tag.name
+      .post-meta= post.date.format(config.date_format)
+      if theme.duoshuo
+        a.ds-thread-count(data-thread-key=post.path, href=url_for(post.path) + '#comments')
+      if theme.disqus
+        a.disqus-comment-count(data-disqus-identifier=post.path, href=url_for(post.path) + '#disqus_thread')
+      if post.description
+        .post-content
+          != post.description
+      else if post.excerpt
+        .post-content
+          != post.excerpt
+      else if post.content
+        - var br = post.content.indexOf('\n')
+        if br < 0
+          .post-content
+            != post.content
+        else
+          .post-content
+            != post.content.substring(0, br)
+      p(class='readmore')
+        a(href=url_for(post.path))= __('Readmore')
+
   include _partial/paginator
+  if theme.disqus
+    script(id='dsq-count-scr' src='//#{theme.disqus}.disqus.com/count.js' async)
