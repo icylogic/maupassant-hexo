@@ -41,6 +41,16 @@ if theme.swiftype
 
     _st('install','#{theme.swiftype}','2.0.0');
 
+if theme.self_search == true
+  script(type='text/javascript', src=url_for(theme.js) + '/search.js' + '?v=' + theme.version)
+  script.
+     var search_path = '#{config.search.path}';
+     if (search_path.length == 0) {
+        search_path = 'search.xml';
+     }
+     var path = '#{config.root}' + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+
 if theme.google_analytics
   script.
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

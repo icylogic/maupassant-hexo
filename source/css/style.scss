@@ -1554,3 +1554,22 @@ table {
     background: #38ad5a;
   }
 }
+
+/* search result*/
+ul.search-result-list {
+  padding-left: 10px;
+}
+a.search-result-title {
+  font-weight: bold;
+  font-size: 15px;
+  color: #555;
+}
+p.search-result {
+  color: #444;
+  text-align: justify;
+}
+em.search-keyword {
+  font-weight: bold;
+  font-style: normal;
+  color: #01579f;
+}
