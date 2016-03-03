@@ -16,8 +16,8 @@ Install theme and renderers:
 
 ```
 git clone https://github.com/tufu9441/maupassant-hexo.git themes/maupassant
-npm install hexo-renderer-sass --save
 npm install hexo-renderer-jade --save
+npm install hexo-renderer-sass --save
 ```
 
 Then change your `theme` setting in `_config.yml` to `maupassant`.
@@ -25,7 +25,7 @@ Then change your `theme` setting in `_config.yml` to `maupassant`.
 ## Configuration
 Default config:
 
-```
+```YAML
 fancybox: true ## If you want to use fancybox please set the value to true.
 duoshuo: ## Your duoshuo_shortname, e.g. username
 disqus: ## Your disqus_shortname, e.g. username
