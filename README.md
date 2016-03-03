@@ -14,10 +14,10 @@ A simple Hexo template with great performance on different devices, ported from 
 ## Installation
 Install theme and renderers:
 
-```
-git clone https://github.com/tufu9441/maupassant-hexo.git themes/maupassant
-npm install hexo-renderer-jade --save
-npm install hexo-renderer-sass --save
+```shell
+$ git clone https://github.com/tufu9441/maupassant-hexo.git themes/maupassant
+$ npm install hexo-renderer-jade --save
+$ npm install hexo-renderer-sass --save
 ```
 
 Then change your `theme` setting in `_config.yml` to `maupassant`.
@@ -112,11 +112,11 @@ Comment feature of each post and page can be enabled (default) and disabled by a
 #### Syntax Highlighting
 Highlighted code showcase is supported, please set the `highlight` option in `_config.yml` of hexo directory like this:
 
-```
+```YAML
 highlight:
   enable: true
   auto_detect: true
-  line_number: true
+  line_number: false
   tab_replace:
 ```
 
