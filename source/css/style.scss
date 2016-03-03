@@ -23,11 +23,6 @@ body {
     padding-right: 50px;
     padding-top: 20px;
 }
-#fb_comments_container{
-    margin-top: 35px;
-    padding-top: 20px;
-    border-top:  1px solid rgba(150, 150, 150, 0.2);
-}
 a, button.submit {
     color: #6E7173;
     text-decoration: none;
@@ -39,7 +34,7 @@ a, button.submit {
 a:hover, a:active {
     color: #444;
 }
-a:focus{
+a:focus {
     outline:auto;
 }
 .clear {
@@ -87,7 +82,7 @@ a:focus{
             &:hover {
                 border-bottom-color: #444;
             }
-            &.current{
+            &.current {
                 border: 1px solid #ddd;
                 border-bottom-color: #fff;
             }
@@ -136,32 +131,25 @@ a:focus{
                 line-height: 1.5;
             }
         }
-    }
-    .search-form{
-        position: relative;
-        overflow: hidden;
-        input {
-            background: #fff 8px 8px no-repeat
-                url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6%2BR8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG11AABzoAAA%2FN0AAINkAABw6AAA7GgAADA%2BAAAQkOTsmeoAAAESSURBVHjajNCxS9VRGMbxz71E4OwgoXPQxVEpXCI47%2BZqGP0LCoJO7UVD3QZzb3SwcHB7F3Uw3Zpd%2FAPCcJKG7Dj4u%2FK7Pwp94HDg5Xyf5z1Pr9YKImKANTzFXxzjU2ae6qhXaxURr%2FAFl9hHDy%2FwEK8z89sYVEp5gh84wMvMvGiSJ%2FEV85jNzLMR1McqfmN5BEBmnmMJFSvtpH7jdJiZv7q7Z%2BZPfMdcF6rN%2FT%2F1m2LGBkd4HhFT3dcRMY2FpskxaLNpayciHrWAGeziD7b%2BVfkithuTk8bkGa4wgWFmbrSTZOYeBvjc%2BucQj%2FEe6xHx4Taq1nrnKaW8K6XUUsrHWuvNevdRRLzFGwzvDbXAB9cDAHvhedDruuxSAAAAAElFTkSuQmCC);
-            display: inline-block;
-            height: 16px;
-            padding: 7px 11px 7px 28px;
-            border: 1px solid #bbb;
-            border: 1px solid rgba(0,0,0,0.25);
-            font-weight: 400;
-            color: #444;
-            font-size: 14px;
-            line-height: 16px;
-            box-sizing: content-box;
-            background-clip: padding-box;
-            -webkit-border-radius: 5px;
-            -moz-border-radius: 5px;
-            -ms-border-radius: 5px;
-            -o-border-radius: 5px;
-            border-radius: 5px;
-            -webkit-box-shadow: none;
-            -moz-box-shadow: none;
-            box-shadow: none;
+        .search-form {
+            position: relative;
+            overflow: hidden;
+            input {
+                background: #fff 8px 8px no-repeat
+                    url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6%2BR8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAG11AABzoAAA%2FN0AAINkAABw6AAA7GgAADA%2BAAAQkOTsmeoAAAESSURBVHjajNCxS9VRGMbxz71E4OwgoXPQxVEpXCI47%2BZqGP0LCoJO7UVD3QZzb3SwcHB7F3Uw3Zpd%2FAPCcJKG7Dj4u%2FK7Pwp94HDg5Xyf5z1Pr9YKImKANTzFXxzjU2ae6qhXaxURr%2FAFl9hHDy%2FwEK8z89sYVEp5gh84wMvMvGiSJ%2FEV85jNzLMR1McqfmN5BEBmnmMJFSvtpH7jdJiZv7q7Z%2BZPfMdcF6rN%2FT%2F1m2LGBkd4HhFT3dcRMY2FpskxaLNpayciHrWAGeziD7b%2BVfkithuTk8bkGa4wgWFmbrSTZOYeBvjc%2BucQj%2FEe6xHx4Taq1nrnKaW8K6XUUsrHWuvNevdRRLzFGwzvDbXAB9cDAHvhedDruuxSAAAAAElFTkSuQmCC);
+                padding: 7px 11px 7px 28px;
+                line-height: 16px;
+                border: 1px solid #bbb;
+                width: 65%;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+                border-radius: 5px;
+                -webkit-box-shadow: none;
+                -moz-box-shadow: none;
+                box-shadow: none;
+            }
         }
     }
 }
@@ -402,7 +390,7 @@ a:focus{
     font-size: 15px;
     line-height: 2;
     padding-bottom: .8em;
-    h2{
+    h2 {
         margin: 0;
         font: bold 25px / 1.1 "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif;
     }
@@ -412,7 +400,7 @@ a:focus{
 }
 /* for archive page ends*/
 
-/*<middle*/
+/* middle*/
 @media print, screen and (max-width: 48em) {
     .body_container {
         padding: 0 30px;
@@ -428,8 +416,7 @@ a:focus{
             margin-bottom: 60px;
             text-align: center;
         }
-
-        #nav-menu a{
+        #nav-menu a {
             padding:0 15px;
             line-height:27px;
             height:27px;
@@ -438,7 +425,7 @@ a:focus{
     }
 }
 
-/*<small*/
+/* small*/
 @media print, screen and (max-width: 35.5em) {
     .body_container {
         padding: 0 20px ;
@@ -468,13 +455,13 @@ blockquote:before,.stressed-quote:before {
     margin-left: -50px;
     position: absolute;
 }
-strong,b,em{
+strong,b,em {
     font-weight: bold;
 }
-pre{
+pre {
     margin:2em 0;
 }
-.hidden1{
+.hidden1 {
     display: none;
 }
 
@@ -1416,7 +1403,7 @@ figure.highlight {
     li {
       list-style-type: none;
     }
-   }
+  }
   .toc-child {
     margin-left: 1em;
     padding-left: 0;
