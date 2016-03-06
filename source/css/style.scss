@@ -380,6 +380,7 @@ a:focus {
     margin-top:1em;
     line-height: 1.5;
     color: #999;
+    text-align: center;
     span {
         font-size: .9em;
     }
@@ -413,14 +414,18 @@ a:focus {
     }
     #header {
         .site-name {
-            margin-bottom: 60px;
+            margin-bottom: 20px;
             text-align: center;
         }
-        #nav-menu a {
-            padding:0 15px;
-            line-height:27px;
-            height:27px;
-            font-size:13px;
+        #nav-menu {
+            position: relative;
+            text-align: center;
+            a {
+                padding: 0 15px;
+                line-height: 27px;
+                height: 27px;
+                font-size: 13px;
+            }
         }
     }
 }

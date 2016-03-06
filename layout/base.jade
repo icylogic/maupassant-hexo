@@ -50,14 +50,8 @@ html(lang='#{config.language}')
       .pure-u-1-4: #sidebar
         each item in theme.widgets
           != partial('_widget/' + item + '.jade')
-
-    #footer= '© '
-      a(href=url_for('.'), rel='nofollow')= config.title + '.'
-      |  Powered by
-      a(rel='nofollow', target='_blank', href='https://hexo.io')  Hexo.
-      a(rel='nofollow', target='_blank', href='https://github.com/tufu9441/maupassant-hexo')  Theme
-      |  by
-      a(rel='nofollow', target='_blank', href='https://github.com/pagecho')  Cho.
+      .pure-u-1.pure-u-md-3-4
+        != partial('_partial/footer.jade')
 
     include _partial/totop
     include _partial/after_footer
