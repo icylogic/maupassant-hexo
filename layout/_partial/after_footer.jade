@@ -1,6 +1,6 @@
 if theme.fancybox == true
-  script(type='text/javascript', src=url_for(theme.js) + '/fancybox.pack.js' + '?v=' + theme.version)
-  script(type='text/javascript', src=url_for(theme.js) + '/jquery.fancybox.js' + '?v=' + theme.version)
+  script(type='text/javascript', src=url_for(theme.js) + '/fancybox.pack.js' + '?v=' + theme.version, async)
+  script(type='text/javascript', src=url_for(theme.js) + '/jquery.fancybox.js' + '?v=' + theme.version, async)
   link(rel='stylesheet', type='text/css', href=url_for(theme.css) + '/jquery.fancybox.css' + '?v=' + theme.version)
 
 if theme.duoshuo
@@ -70,7 +70,7 @@ if theme.baidu_analytics
       })();
 
 if theme.shareto == true
-  script(type='text/javascript', src=url_for(theme.js) + '/share.js' + '?v=' + theme.version)
+  script(type='text/javascript', src=url_for(theme.js) + '/share.js' + '?v=' + theme.version, async)
 
 script(type='text/javascript', src=url_for(theme.js) + '/codeblock-resizer.js' + '?v=' + theme.version)
 script(type='text/javascript', src=url_for(theme.js) + '/smartresize.js' + '?v=' + theme.version)
