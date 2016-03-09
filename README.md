@@ -116,7 +116,7 @@ Highlighted code showcase is supported, please set the `highlight` option in `_c
 highlight:
   enable: true
   auto_detect: true
-  line_number: false
+  line_number: true
   tab_replace:
 ```
 

@@ -29,6 +29,7 @@ block content
     .post-content
       != page.content
     if theme.shareto == true
+      script(type='text/javascript', src=url_for(theme.js) + '/share.js' + '?v=' + theme.version, async)
       a.article-share-link(data-url='#{page.permalink}', data-id='#{page._id}')= __('shareto')
     include _partial/tag
     include _partial/post_nav

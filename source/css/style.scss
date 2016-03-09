@@ -765,7 +765,8 @@ div {
   }
 
 /* syntax highlight*/
-figure.highlight {
+figure.highlight,
+.codeblock {
     background:     #f7f8f8;
     margin:         10px 0;
     line-height:    1.2em;
@@ -790,6 +791,11 @@ figure.highlight {
         // To override cursor attribute of `.tag` components
         cursor:      text;
     }
+    // To align line number and line of code regardless if there is a scroll bar or not
+    .gutter,
+    .code {
+        vertical-align: top;
+    }
     // hide gutter when code is plain text
     &.plain {
         .gutter {
@@ -806,7 +812,7 @@ figure.highlight {
 
         a {
             float: right;
-            color: #349ef3;
+            color: #01579f;
         }
     }
     // Gutter which contains line numbers
@@ -827,6 +833,7 @@ figure.highlight {
         pre {
             max-width:  700px;
             overflow-x: auto;
+            overflow-y: hidden;
         }
     }
     // All lines in gutter and code container
@@ -1343,6 +1350,23 @@ figure.highlight {
         .built_in,
         .number,
         .type {
+            color: #0086b3;
+        }
+    }
+    // YAML
+    &.yml {
+        .line,
+        .attr {
+            color: #63a35c;
+        }
+        .line,
+        .string,
+        .type,
+        .literal,
+        .meta {
+            color: #183691;
+        }
+        .number {
             color: #0086b3;
         }
     }
