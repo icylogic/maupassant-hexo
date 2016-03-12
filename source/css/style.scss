@@ -255,11 +255,10 @@ a:focus {
         p {
             margin: 0 0 1.234em;
             code {
-                display: inline;
+                display: inline-block;
                 margin: 0 5px;
-                padding: 1px 5px;
-                border: 1px solid #ccc;
-                background: #eee;
+                padding: 0 5px;
+                background: #f7f8f8;
             }
             a {
                 color: #01579f;
@@ -297,11 +296,10 @@ a:focus {
                 margin: 0;
             }
             code {
-                display: inline;
+                display: inline-block;
                 margin: 0 5px;
-                padding: 1px 5px;
-                border: 1px solid #ccc;
-                background: #eee;
+                padding: 0px 5px;
+                background: #f7f8f8;
             }
             a {
                 color: #01579f;
