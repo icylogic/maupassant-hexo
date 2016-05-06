@@ -123,6 +123,35 @@ highlight:
 #### Languages
 Seven languages are available for this theme currently: Simplified Chinese (zh-CN), Traditional Chinese (zh-TW), English (en), French (fr-FR), German (de-DE), Korean (ko) and Spanish (es-ES). Contributions of translating to other languages will be highly appreciated.
 
+### Math Equation
+Add
+```
+mathjax: true
+```
+in hexo's `_config.yml`.
+
+In the post that you would like to use math equation, add `mathjax: true`. For example:
+
+```
+---
+title: Test Math
+date: 2016-04-05 14:16:00
+categories:
+- math
+mathjax: true
+---
+```
+The default math delimiters are `$$...$$` and `\\[...\\]` for displayed mathematics,
+and `$...$` and `\\(...\\)` for in-line mathematics.
+
+In addition, if your post contains dollar signs (`$`) appear too often in non-mathematical settings, please add
+
+```
+mathjax2: true
+```
+in hexo's `_config.yml` instead of `mathjax: true`. Correspondingly, add `mathjax2: true` to the post header in which
+you would like to use math equation.
+
 ## Solutions
 - Check whether your Terminal's current directory is in hexo's root directory which contains `source/`, `themes/`, etc.
 
