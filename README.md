@@ -144,13 +144,15 @@ mathjax: true
 The default math delimiters are `$$...$$` and `\\[...\\]` for displayed mathematics,
 and `$...$` and `\\(...\\)` for in-line mathematics.
 
-In addition, if your post contains dollar signs (`$`) appear too often in non-mathematical settings, please add
+In addition, if your post contains dollar signs (`$`) appear too often in non-mathematical settings. In other words, you want to use `$` as dollar sign, not inline math delimiter. Please add
 
 ```
 mathjax2: true
 ```
 in hexo's `_config.yml` instead of `mathjax: true`. Correspondingly, add `mathjax2: true` to the post header in which
 you would like to use math equation.
+
+see the [example](http://zhongpu.info/2016/05/06/Mathjax%20and%20Hexo/).
 
 ## Solutions
 - Check whether your Terminal's current directory is in hexo's root directory which contains `source/`, `themes/`, etc.
