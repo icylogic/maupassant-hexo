@@ -40,6 +40,9 @@ a:focus {
 .clear {
     clear: both;
 }
+div {
+    box-sizing: border-box;
+}
 
 #header {
     padding: 58px 0 0;
@@ -527,67 +530,283 @@ pre {
 }
 }
 
-/* timeline*/
-div {
+/* *******************************************************
+* Process timelime, (homepage)
+******************************************************* */
+
+#process {
+    padding: 80px 0;
+    background-color: #fff;
+}
+#process .col-md-2 i {
+    font-size: 50px;
+    position: relative;
+    top: 10px;
+}
+#process .timeline-centered {
+    position: relative;
+    margin-bottom: 30px;
+}
+#process .timeline-centered:before, #process .timeline-centered:after,
+#process .timeline-centered:before, #process .timeline-centered:after {
+    content: " ";
+    display: table;
+}
+#process .timeline-centered:after {
+    clear: both;
+}
+#process .timeline-centered:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 4px;
+    background: #f5f5f6;
+    /*left: 50%;*/
+    top: 50px;
+    bottom: 50px;
+    margin-left: 10px;
+}
+#process .timeline-centered .timeline-entry {
+    position: relative;
+    /*width: 50%;
+    float: right;*/
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    clear: both;
+}
+#process .timeline-centered .timeline-entry:before,
+#process .timeline-centered .timeline-entry:after {
+    content: " ";
+    display: table;
+}
+#process .timeline-centered .timeline-entry:after {
+    clear: both;
+}
+#process .timeline-centered .timeline-entry.begin {
+    margin-bottom: 0;
+}
+#process .timeline-centered .timeline-entry.left-aligned {
+    float: left;
+}
+#process .timeline-centered .timeline-entry.left-aligned .timeline-entry-inner {
+    margin-left: 0;
+    margin-right: -18px;
+}
+#process .timeline-centered .timeline-entry.left-aligned .timeline-entry-inner .timeline-time {
+    left: auto;
+    right: -100px;
+    text-align: left;
+}
+#process span.number {
+    font-family: 'Georgia', serif, Helvetica, "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 0;
+    color: #E7E7E5;
+    position: relative;
+    top: -4px;
+}
+#process .timeline-centered .timeline-entry.left-aligned .timeline-entry-inner .timeline-icon {
+    float: right;
+}
+#process .timeline-centered .timeline-entry.left-aligned .timeline-entry-inner .timeline-label {
+    margin-left: 0;
+    margin-right: 70px;
+}
+#process .timeline-centered .timeline-entry.left-aligned .timeline-entry-inner .timeline-label:after {
+    left: auto;
+    right: 0;
+    margin-left: 0;
+    margin-right: -9px;
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.timeline-label p {
+    font-family: Helvetica, "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif;
+    margin-bottom: 3px
+}
+#process .timeline-centered .timeline-entry .timeline-entry-inner {
+    position: relative;
+    margin-left: -20px;
+}
+#process .timeline-centered .timeline-entry .timeline-entry-inner:before,
+#process .timeline-centered .timeline-entry .timeline-entry-inner:after {
+    content: " ";
+    display: table;
+}
+#process .timeline-centered .timeline-entry .timeline-entry-inner:after {
+    clear: both;
+}
+#process .timeline-centered .timeline-entry .timeline-entry-inner .timeline-time {
+    position: absolute;
+    left: -100px;
+    text-align: right;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-.timeline {
-    width: 400px;
-}
-.timeline .timeline-item {
-    width: 100%;
-}
-.timeline .timeline-item .info, .timeline .timeline-item .year {
-    color: #eee;
+#process .timeline-centered .timeline-entry .timeline-entry-inner .timeline-time > span {
     display: block;
-    float:left;
 }
-.timeline .timeline-item .year {
-    font-size: 20px;
-    width: 22%;
+#process .timeline-centered .timeline-entry .timeline-entry-inner .timeline-time > span:first-child {
+    font-size: 15px;
+    font-weight: bold;
 }
-.timeline .timeline-item .info {
-    width: 100%;
-    width: 78%;
-    margin-left: -2px;
-    padding: 0 0 40px 35px;
-    border-left: 4px solid #aaa;
-    font-size: 14px;
-    line-height: 20px;
+#process .timeline-centered .timeline-entry .timeline-entry-inner .timeline-time > span:last-child {
+    font-size: 12px;
 }
-.timeline .timeline-item .marker {
-    background-color: #fff;
-    border: 4px solid #aaa;
-    height: 20px;
-    width: 20px;
-    border-radius: 100px;
+#process .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon {
+    background: #fff;
+    color: #737881;
     display: block;
-    float: right;
-    margin-right: -14px;
-    z-index: 2000;
+    width: 40px;
+    height: 40px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-align: center;
+    border: 4px solid #F5F5F6;
+    line-height: 40px;
+    font-size: 15px;
+    float: left;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    margin-left: -9px;
+}
+#process .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.bg-primary {
+    background-color: #303641;
+    color: #fff;
+}
+#process .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
     position: relative;
+    background: #eee;
+    padding: 30px;
+    margin-left: 60px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
 }
-.timeline .timeline-item.active .info {
-    color: #444;
-
-}
-.timeline .timeline-item.active .year {
-    color: #555;
-}
-.timeline .timeline-item .marker .dot {
-    background-color: white;
+#process .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label:after {
+    content: '';
     display: block;
-    border: 4px solid white;
-    height: 12px;
-    width: 12px;
-    border-radius: 100px;
-    float: right;
-    z-index: 2000;
-    position: relative;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 9px 9px 9px 0;
+    border-color: transparent #eee transparent transparent;
+    left: 0;
+    top: 50%;
+    margin-top: -9px;
+    margin-left: -9px;
 }
-.timeline .timeline-item.active .marker .dot {
-    background-color: #555;
-    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.2);
+#process .line {
+  position: absolute;
+  display: block;
+  width: 4px;
+  background: #eee;
+  top: -3%;
+  right: -30px;
+  bottom: -3%;
+}
+#process .present,
+#process .born {
+  font-size: 14px;
+  font-family: 'Georgia', serif, Helvetica, "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif;
+  font-style: italic;
+  color: #333;
+  padding: 10px;
+  background-color: #eee;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+#process .present:after,
+#process .born:after {
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  border-color: rgba(136, 183, 213, 0);
+  border-left-color: #eee;
+  border-width: 10px;
+  margin-top: -10px
+}
+#process .present {
+  position: absolute;
+  top: -3%;
+  right: 0;
+  margin-top: -20px;
+  line-height: 100%;
+}
+#process .born {
+  position: absolute;
+  bottom: -3%;
+  right: 0;
+  margin-bottom: -20px;
+  line-height: 100%;
+}
+#process .dot_tp {
+  position: absolute;
+  top: -3%;
+  right: -35px;
+  background-color: transparent;
+  height: 15px;
+  width: 15px;
+  margin-top: -13px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 3px solid #eee;
+}
+#process .dot_bt {
+  position: absolute;
+  bottom: -3%;
+  right: -35px;
+  background-color: transparent;
+  height: 15px;
+  width: 15px;
+  margin-bottom: -13px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 3px solid #eee;
+}
+@media (max-width:768px) {
+    #process .line {
+        right: 10px;
+    }
+    #process .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
+        margin-right: 30px;
+        margin-left: 45px;
+        padding: 20px;
+    }
+    #process .timeline-centered .timeline-entry {
+        margin-right: 20px;
+    }
+    #process .dot_tp,
+    #process .dot_bt {
+        right: 5px;
+    }
+    #process .present,
+    #process .born {
+        right: 35px;
+    }
 }
 
 /* read more*/
