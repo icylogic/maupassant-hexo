@@ -134,6 +134,16 @@ div {
                 line-height: 1.5;
             }
         }
+        .category-list-count {
+             padding-left: 5px;
+             color: #6E7173;
+        }
+        .category-list-count:before {
+            content: "(";
+        }
+        .category-list-count:after {
+            content: ")";
+        }
         .search-form {
             position: relative;
             overflow: hidden;
