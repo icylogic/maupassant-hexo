@@ -1014,7 +1014,7 @@ figure.highlight,
     .code,
     .tag {
         background-color: inherit;
-        font-family: Menlo;
+        font-family: Menlo, Consolas;
         border:      none;
         padding:     0;
         margin:      0;
@@ -1077,7 +1077,7 @@ figure.highlight,
 .gist {
     .line,
     .line-number {
-        font-family: Menlo;
+        font-family: Menlo, Consolas;
         font-size:   1em;
         margin:      0 0 5px 0;
     }
