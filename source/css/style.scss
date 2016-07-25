@@ -6,6 +6,19 @@
  * @link http://chopstack.com
  */
 
+/*
+pure css setting
+When setting the primary font stack, apply it to the Pure grid units along
+with `html`, `button`, `input`, `select`, and `textarea`. Pure Grids use
+specific font stacks to ensure the greatest OS/browser compatibility.
+*/
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+    /* Set your content font stack here: */
+    font-family: "PingFangSC-Regular", Helvetica, "Helvetica Neue", "Segoe UI",
+                 "Hiragino Sans GB", "Source Han Sans CN", "Microsoft YaHei", "STHeiti", "WenQuanYi Micro Hei", sans-serif;
+}
+
 body {
     background-color: #FFF;
     color: #444;
@@ -421,7 +434,7 @@ div {
         padding-right: 15px;
     }
     .hidden_mid_and_down {
-        display: none !important;	
+        display: none !important;
     }
     #sidebar {
         border-left-width: 0px;
