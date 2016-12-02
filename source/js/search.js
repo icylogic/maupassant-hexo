@@ -55,12 +55,9 @@ var searchFunc = function(path, search_id, content_id) {
                         if (first_occur >= 0) {
                             // cut out 100 characters
                             var start = first_occur - 20;
-                            var end = first_occur + 20;
+                            var end = 40;
                             if(start < 0){
                                 start = 0;
-                            }
-                            if(start == 0){
-                                end = 40;
                             }
                             if(end > content.length){
                                 end = content.length;
