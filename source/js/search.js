@@ -54,15 +54,19 @@ var searchFunc = function(path, search_id, content_id) {
                         var content = data.content.trim().replace(/<[^>]+>/g,"");
                         if (first_occur >= 0) {
                             // cut out 100 characters
-                            var start = first_occur - 20;
-                            var end = 40;
+                            var start = first_occur - 30;
+                            var outLength = 78;
                             if(start < 0){
                                 start = 0;
                             }
-                            if(end > content.length){
-                                end = content.length;
+                            if (start + outLength > content.length){
+                                if(content.length < outLength){
+                                    outLength = content.length - start;
+                                }else{
+                                    start = content.length - outLength;
+                                }
                             }
-                            var match_content = content.substr(start, end);
+                            var match_content = content.substr(start, outLength);
                             // highlight all keywords
                             keywords.forEach(function(keyword){
                                 var regS = new RegExp(keyword, "gi");
