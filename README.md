@@ -30,6 +30,7 @@ fancybox: true ## If you want to use fancybox please set the value to true.
 duoshuo: ## Your duoshuo_shortname, e.g. username
 disqus: ## Your disqus_shortname, e.g. username
 uyan: ## Your uyan_id, e.g. 1234567
+gentie: ## Your gentie_productKey, e.g. fc799538c7ad4cf5a5a0c2877a90cbd7
 google_search: true ## Use Google search, true/false.
 baidu_search: ## Use Baidu search, true/false.
 swiftype: ## Your swiftype_key, e.g. m7b11ZrsT8Me7gzApciT
@@ -93,6 +94,7 @@ version: 0.0.0
 - duoshuo - [Duoshuo](http://duoshuo.com) shortname
 - disqus - [Disqus](https://disqus.com) shortname
 - uyan - [Uyan](http://www.uyan.cc) id
+- gentie - [Gentie](https://gentie.163.com) productKey
 - google_search - Default search engine
 - baidu_search - Search engine for users in China
 - swiftype - [Swiftype Search](https://swiftype.com) key
