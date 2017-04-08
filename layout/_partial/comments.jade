@@ -21,3 +21,11 @@ if theme.uyan
 
 if theme.gentie
   .cloud-tie-wrapper#cloud-tie-wrapper
+  script.
+    var cloudTieConfig = {
+      url: document.location.href,
+      sourceId: "",
+      productKey: "#{theme.gentie}",
+      target: "cloud-tie-wrapper"
+    };
+  script(src='https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js')
