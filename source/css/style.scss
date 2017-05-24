@@ -13,10 +13,10 @@ with `html`, `button`, `input`, `select`, and `textarea`. Pure Grids use
 specific font stacks to ensure the greatest OS/browser compatibility.
 */
 html, button, input, select, textarea,
+.MJXc-TeX-unknown-R,
 .pure-g [class *= "pure-u"] {
     /* Set your content font stack here: */
-    font-family: "PingFangSC-Regular", Helvetica, "Helvetica Neue", "Segoe UI",
-                 "Hiragino Sans GB", "Source Han Sans CN", "Microsoft YaHei", "STHeiti", "WenQuanYi Micro Hei", sans-serif;
+    font-family: "PingFangSC-Regular", Helvetica, "Helvetica Neue", "Segoe UI", "Hiragino Sans GB", "Source Han Sans CN", "Microsoft YaHei", "STHeiti", "WenQuanYi Micro Hei", sans-serif !important;
 }
 
 body {
@@ -294,14 +294,14 @@ div {
                     text-decoration: underline;
                 }
             }
-            .caption {
-                color: #444;
-                display: block;
-                font-size: 0.9em;
-                margin-top: 0.1em;
-                position: relative;
-                text-align: center;
-            }
+        }
+        .caption {
+            color: #444;
+            display: block;
+            font-size: 0.9em;
+            margin-top: 0.1em;
+            position: relative;
+            text-align: center;
         }
         hr {
             margin: 2.4em auto;
