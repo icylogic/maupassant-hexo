@@ -23,6 +23,11 @@ block content
         a.ds-thread-count(class='cloud-tie-join-count', href=url_for(post.path) + '#comments')
           span.join-count(lang='join-count' style='margin: 0 3px 0 1px;' data-url='#{config.url}#{url_for(post.path)}') 0
           span= ' ' + __('Discuss')
+      if theme.changyan
+        a.ds-thread-count(href=url_for(post.path) + '#SOHUCS')
+          span.cy_cmt_count(id='sourceId::' + post.date.valueOf() style='margin: 0 3px 0 1px;') 0
+          span= ' ' + __('Discuss')
+        script#cy_cmt_num(src='https://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId=cyt4LaybM', async)
       if post.description
         .post-content
           != post.description
