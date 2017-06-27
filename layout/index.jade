@@ -26,7 +26,7 @@ block content
       if theme.changyan
         a.ds-thread-count(href=url_for(post.path) + '#SOHUCS')
           span.cy_cmt_count(id='sourceId::' + post.date.valueOf() style='margin: 0 3px 0 1px;') 0
-          span= ' ' + __('CYDiscuss')
+          span= ' ' + __('Comment')
       if post.description
         .post-content
           != post.description
