@@ -25,6 +25,11 @@ block content
       a.ds-thread-count(class='cloud-tie-join-count', href=url_for(page.path) + '#comments')
         span.join-count(style='font-size: 15px; color: #6E7173;') 0
         span= ' ' + __('Discuss')
+    if theme.changyan
+      a.ds-thread-count(href=url_for(page.path) + '#SOHUCS')
+        span#changyan_count_unit(style='font-size: 15px; color: #6E7173;') 0
+        span= ' ' + __('Comment')
+      script(src='https://assets.changyan.sohu.com/upload/plugins/plugins.count.js', async)
     if page.toc
       div(class='clear')
         div(id='toc' class='toc-article')
