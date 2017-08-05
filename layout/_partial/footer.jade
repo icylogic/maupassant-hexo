@@ -1,7 +1,11 @@
-#footer= 'Copyright © ' + date(Date.now(), 'YYYY') + ' '
+#footer= '© '
   a(href=url_for('.'), rel='nofollow')= config.title + '.'
   |  Powered by
   a(rel='nofollow', target='_blank', href='https://hexo.io')  Hexo.
   a(rel='nofollow', target='_blank', href='https://github.com/tufu9441/maupassant-hexo')  Theme
   |  by
   a(rel='nofollow', target='_blank', href='https://github.com/pagecho')  Cho.
+
+//动态背景
+if theme.canvas_nest
+  script(type="text/javascript",color="7,196,239",opacity='0.5',zIndex="-2",count="50",src="/js/canvas-nest.min.js")
