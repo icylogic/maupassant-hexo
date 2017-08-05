@@ -1,6 +1,12 @@
 fancybox: true ## If you want to use fancybox please set the value to true.
 duoshuo: ## Your duoshuo_shortname, e.g. username
 disqus: ## Your disqus_shortname, e.g. username
+gitment:
+  enable:    //如果你想开启true
+  owner: '用户名'
+  repo: '博客地址'
+  client_id: 'id'
+  client_secret: 'secret'
 uyan: ## Your uyan_id. e.g. 1234567
 gentie: ## Your gentie_productKey, e.g. fc799538c7ad4cf5a5a0c2877a90cbd7
 changyan: ## Your changyan appid
