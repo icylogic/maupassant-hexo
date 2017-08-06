@@ -2,16 +2,16 @@ fancybox: true ## If you want to use fancybox please set the value to true.
 duoshuo: ## Your duoshuo_shortname, e.g. username
 disqus: ## Your disqus_shortname, e.g. username
 gitment:
-  enable:    ##如果你想开启true
-  owner: '用户名'
-  repo: '博客地址'
-  client_id: 'id'
-  client_secret: 'secret'
+  enable: false ## If you want to use Gitment comments please set the value to true.
+  owner: ## Your GitHub ID, e.g. username
+  repo: ## The repository to store your comments, make sure you're the repo's owner, e.g. imsun.github.io
+  client_id: ## GitHub client ID, e.g. 75752dafe7907a897619
+  client_secret: ## GitHub client secret, e.g. ec2fb9054972c891289640354993b662f4cccc50
 uyan: ## Your uyan_id. e.g. 1234567
 gentie: ## Your gentie_productKey, e.g. fc799538c7ad4cf5a5a0c2877a90cbd7
-livere: ## Your livere data-uid, e.g. MTAyMC8yOTgxxxxxxxxx
-changyan: ## Your changyan appid
-changyan_conf: ## You changyan conf
+livere: ## Your livere data-uid, e.g. MTAyMC8zMDAxOC78NTgz
+changyan: ## Your changyan appid, e.g. cyrALsXc8
+changyan_conf: ## You changyan conf, e.g. prod_d8a508c2825ab57eeb43e7c69bba0e8b
 google_search: true ## Use Google search, true/false.
 baidu_search: ## Use Baidu search, true/false.
 swiftype: ## Your swiftype_key, e.g. m7b11ZrsT8Me7gzApciT
@@ -24,7 +24,7 @@ toc_number: true ## If you want to add list number to toc please set the value t
 shareto: true ## If you want to use the share button please set the value to true.
 busuanzi: true ## If you want to use Busuanzi page views please set the value to true.
 widgets_on_small_screens: false ## Set to true to enable widgets on small screens.
-canvas_nest:  ##动态背景 开启true
+canvas_nest:  false ## If your want to use dynamic background please set the value to true.
 
 menu:
   - page: home

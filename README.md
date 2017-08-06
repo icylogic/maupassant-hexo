@@ -29,8 +29,17 @@ Default config:
 fancybox: true ## If you want to use fancybox please set the value to true.
 duoshuo: ## Your duoshuo_shortname, e.g. username
 disqus: ## Your disqus_shortname, e.g. username
-uyan: ## Your uyan_id, e.g. 1234567
+gitment:
+  enable: false   ## If you want to use Gitment comments please set the value to true.
+  owner: ## Your GitHub ID, e.g. username
+  repo: ## The repository to store your comments, make sure you're the repo's owner, e.g. imsun.github.io
+  client_id: ## GitHub client ID, e.g. 75752dafe7907a897619
+  client_secret: ## GitHub client secret, e.g. ec2fb9054972c891289640354993b662f4cccc50
+uyan: ## Your uyan_id. e.g. 1234567
 gentie: ## Your gentie_productKey, e.g. fc799538c7ad4cf5a5a0c2877a90cbd7
+livere: ## Your livere data-uid, e.g. MTAyMC8zMDAxOC78NTgz
+changyan: ## Your changyan appid, e.g. cyrALsXc8
+changyan_conf: ## You changyan conf, e.g. prod_d8a508c2825ab57eeb43e7c69bba0e8b
 google_search: true ## Use Google search, true/false.
 baidu_search: ## Use Baidu search, true/false.
 swiftype: ## Your swiftype_key, e.g. m7b11ZrsT8Me7gzApciT
@@ -43,6 +52,7 @@ toc_number: true ## If you want to add list number to toc please set the value t
 shareto: true ## If you want to use the share button please set the value to true.
 busuanzi: true ## If you want to use Busuanzi page views please set the value to true.
 widgets_on_small_screens: false ## Set to true to enable widgets on small screens.
+canvas_nest:  false ## If your want to use dynamic background please set the value to true.
 
 menu:
   - page: home
@@ -94,20 +104,24 @@ version: 0.0.0
 - fancybox - Enable [Fancybox](http://fancyapps.com/fancybox/)
 - duoshuo - [Duoshuo](http://duoshuo.com) shortname
 - disqus - [Disqus](https://disqus.com) shortname
+- gitment - [Gitment](https://github.com/imsun/gitment) comment system
 - uyan - [Uyan](http://www.uyan.cc) id
 - gentie - [Gentie](https://gentie.163.com) productKey
+- livere - [LiveRe](https://livere.com) data-uid
+- changyan - [Changyan](http://changyan.kuaizhan.com) appid
 - google_search - Default search engine
 - baidu_search - Search engine for users in China
 - swiftype - [Swiftype Search](https://swiftype.com) key
 - tinysou - [Tiny Search](http://tinysou.com) key
-- self_search - A jQuery-based [local search engine](http://hahack.com/codes/local-search-engine-for-hexo), with the dependency on the plugin [hexo-generator-search](https://github.com/PaicHyperionDev/hexo-generator-search).
+- self_search - A jQuery-based [local search engine](http://hahack.com/codes/local-search-engine-for-hexo), with the dependency on the plugin [hexo-generator-search](https://github.com/PaicHyperionDev/hexo-generator-search)
 - google_analytics - [Google Analytics](https://www.google.com/analytics/) tracking id
 - baidu_analytics - [Baidu Analytics](http://tongji.baidu.com) tracking id
-- show_category_count - Show the count of categories in the sidebar widget.
-- toc_number - Show the list number of toc.
+- show_category_count - Show the count of categories in the sidebar widget
+- toc_number - Show the list number of toc
 - shareto - Enable share button
 - busuanzi - Enable [Busuanzi](http://busuanzi.ibruce.info) page views
-- widgets_on_small_screens - Show the widgets at the bottom of small screens.
+- widgets_on_small_screens - Show the widgets at the bottom of small screens
+- canvas_nest - Enable dynamic background
 - menu - Customize your menu of pages here, just follow the format of existied items. Don't forget to create corresponding folders inlcuding `index.md` in `source` folder to ensure the pages will correctly display. [FontAwesome](http://fontawesome.io) icon fonts have been integrated, and you can choose other icons which you like [here](http://fontawesome.io/icons/) and use them according to the instruction.
 - widgets - Choose and arrange the widgets in sidebar here.
 - links - Edit your blogroll here.
