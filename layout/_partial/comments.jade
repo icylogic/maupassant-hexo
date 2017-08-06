@@ -1,7 +1,7 @@
 if theme.gitment && theme.gitment !=true && theme.gitment.enable && theme.gitment.enable == true
     #container
-    link(rel='stylesheet', href='/css/default.css')
-    script(src='/js/gitment.browser.js')
+    link(rel='stylesheet', href=url_for(theme.css) + '/default.css' + '?v=' + theme.version)
+    script(src=url_for(theme.js) + '/gitment.browser.js' + '?v=' + theme.version)
     script.
       var gitment = new Gitment({
         owner: '#{theme.gitment.owner}',

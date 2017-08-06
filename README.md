@@ -30,7 +30,7 @@ fancybox: true ## If you want to use fancybox please set the value to true.
 duoshuo: ## Your duoshuo_shortname, e.g. username
 disqus: ## Your disqus_shortname, e.g. username
 gitment:
-  enable: false   ## If you want to use Gitment comments please set the value to true.
+  enable: false ## If you want to use Gitment comment system please set the value to true.
   owner: ## Your GitHub ID, e.g. username
   repo: ## The repository to store your comments, make sure you're the repo's owner, e.g. imsun.github.io
   client_id: ## GitHub client ID, e.g. 75752dafe7907a897619
@@ -52,7 +52,12 @@ toc_number: true ## If you want to add list number to toc please set the value t
 shareto: true ## If you want to use the share button please set the value to true, you must have hexo-helper-qrcode installed.
 busuanzi: true ## If you want to use Busuanzi page views please set the value to true.
 widgets_on_small_screens: false ## Set to true to enable widgets on small screens.
-canvas_nest: false ## If your want to use dynamic background please set the value to true.
+canvas_nest: false ## If you want to use dynamic background with the default effect please set the value to true.
+  enable: false ## If you want to customize the dynamic effect please set the value to true, fill the following parameter and leave the previous option blank.
+  color: ## RGB value of the color, e.g. "(100,99,98)"
+  opacity: ## Transparency of lines, e.g. "0.7"
+  zIndex: ## The z-index property of the background, e.g. "-1"
+  count: ## Quantity of lines, e.g. "150"
 
 menu:
   - page: home
