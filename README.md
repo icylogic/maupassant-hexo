@@ -49,10 +49,10 @@ google_analytics: ## Your Google Analytics tracking id, e.g. UA-42425684-2
 baidu_analytics: ## Your Baidu Analytics tracking id, e.g. 8006843039519956000
 show_category_count: false ## If you want to show the count of categories in the sidebar widget please set the value to true.
 toc_number: true ## If you want to add list number to toc please set the value to true.
-shareto: true ## If you want to use the share button please set the value to true.
+shareto: true ## If you want to use the share button please set the value to true, you must have hexo-helper-qrcode installed.
 busuanzi: true ## If you want to use Busuanzi page views please set the value to true.
 widgets_on_small_screens: false ## Set to true to enable widgets on small screens.
-canvas_nest:  false ## If your want to use dynamic background please set the value to true.
+canvas_nest: false ## If your want to use dynamic background please set the value to true.
 
 menu:
   - page: home
@@ -118,7 +118,7 @@ version: 0.0.0
 - baidu_analytics - [Baidu Analytics](http://tongji.baidu.com) tracking id
 - show_category_count - Show the count of categories in the sidebar widget
 - toc_number - Show the list number of toc
-- shareto - Enable share button
+- shareto - Enable share button, with the dependency on the plugin [hexo-helper-qrcode](https://github.com/yscoder/hexo-helper-qrcode)
 - busuanzi - Enable [Busuanzi](http://busuanzi.ibruce.info) page views
 - widgets_on_small_screens - Show the widgets at the bottom of small screens
 - canvas_nest - Enable dynamic background
