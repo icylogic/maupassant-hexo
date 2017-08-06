@@ -69,3 +69,11 @@ if page.mathjax2
 
 script(type='text/javascript', src=url_for(theme.js) + '/codeblock-resizer.js' + '?v=' + theme.version)
 script(type='text/javascript', src=url_for(theme.js) + '/smartresize.js' + '?v=' + theme.version)
+
+//动态背景
+if theme.canvas_nest
+    - var color=theme.canvas_nest.color || "0,0,0"
+    - var opacity=theme.canvas_nest.opacity || "0.5"
+    - var zIndex=theme.canvas_nest.zIndex || "-2"
+    - var count=theme.canvas_nest.count || "50"
+    script(type="text/javascript",color="#{color}",opacity='#{opacity}',zIndex="#{zIndex}",count="#{count}",src="/js/canvas-nest.min.js")

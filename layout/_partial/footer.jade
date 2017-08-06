@@ -5,11 +5,3 @@
   a(rel='nofollow', target='_blank', href='https://github.com/tufu9441/maupassant-hexo')  Theme
   |  by
   a(rel='nofollow', target='_blank', href='https://github.com/pagecho')  Cho.
-
-//动态背景
-if theme.canvas_nest
-    - var color=theme.canvas_nest.color || "0,0,0"
-    - var opacity=theme.canvas_nest.opacity || "0.5"
-    - var zIndex=theme.canvas_nest.zIndex || "-2"
-    - var count=theme.canvas_nest.count || "50"
-    script(type="text/javascript",color="#{color}",opacity='#{opacity}',zIndex="#{zIndex}",count="#{count}",src="/js/canvas-nest.min.js")
