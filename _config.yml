@@ -25,6 +25,11 @@ shareto: true ## If you want to use the share button please set the value to tru
 busuanzi: true ## If you want to use Busuanzi page views please set the value to true.
 widgets_on_small_screens: false ## Set to true to enable widgets on small screens.
 canvas_nest: false ## If your want to use dynamic background please set the value to true.
+  #enable: true #如果要自定义要开起，且canvas_nest:后面不填
+  #color: ""  ##颜色RGB
+  #opacity: ""   ##透明度
+  #zIndex: ""    ## 层次
+  #count: ""     ##数量
 
 menu:
   - page: home
