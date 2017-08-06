@@ -3,6 +3,7 @@ duoshuo: ## Your duoshuo_shortname, e.g. username
 disqus: ## Your disqus_shortname, e.g. username
 uyan: ## Your uyan_id. e.g. 1234567
 gentie: ## Your gentie_productKey, e.g. fc799538c7ad4cf5a5a0c2877a90cbd7
+livere: ## Your livere data-uid, e.g. MTAyMC8yOTgxxxxxxxxx
 changyan: ## Your changyan appid
 changyan_conf: ## You changyan conf
 google_search: true ## Use Google search, true/false.
