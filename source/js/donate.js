@@ -2,10 +2,10 @@
                 $.getUrlParam = function (name) {
                     var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
                     var r = window.location.search.substr(1).match(reg);
-                    if (r != null) return unescape(r[2]); return null;
+                    if (r[2] && r[2] != 'null' &&  r[2] != 'undefined' &&  r[2] != '') return unescape(r[2]); return null;
                 }
             })(jQuery);
-            
+
 jQuery(document).ready(function() {
 	$("#github").attr('href',$.getUrlParam('GitHub') ||  "https://github.com/"+window.location.href.split(".github.io")[0].split("/").pop())
 	var QRBox	=	$('#QRBox');
