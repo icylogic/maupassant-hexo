@@ -1803,21 +1803,21 @@ table {
   }
 }
 
-.article-share-wechat {
+.article-share-qrcode {
   @extend .article-share-element;
   &:before {
-    content: "\f1d7";
+    content: "\f029";
   }
-  &:hover {
+  &:hover, &:active {
     background: #38ad5a;
-    &~ .wechat-qrcode {
+    &~ .qrcode {
       display: block;
       text-align: center;
     }
   }
 }
 
-.wechat-qrcode {
+.qrcode {
   display: none;
 }
 
