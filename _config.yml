@@ -2,7 +2,7 @@ fancybox: true ## If you want to use fancybox please set the value to true.
 duoshuo: ## Your duoshuo_shortname, e.g. username
 disqus: ## Your disqus_shortname, e.g. username
 gitment:
-  enable:    //如果你想开启true
+  enable:    ##如果你想开启true
   owner: '用户名'
   repo: '博客地址'
   client_id: 'id'
@@ -23,7 +23,7 @@ toc_number: true ## If you want to add list number to toc please set the value t
 shareto: true ## If you want to use the share button please set the value to true.
 busuanzi: true ## If you want to use Busuanzi page views please set the value to true.
 widgets_on_small_screens: false ## Set to true to enable widgets on small screens.
-canvas_nest: true ##动态背景
+canvas_nest:  ##动态背景 开启true
 
 menu:
   - page: home
