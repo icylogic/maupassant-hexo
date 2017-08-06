@@ -27,7 +27,6 @@ Default config:
 
 ```YAML
 fancybox: true ## If you want to use fancybox please set the value to true.
-duoshuo: ## Your duoshuo_shortname, e.g. username
 disqus: ## Your disqus_shortname, e.g. username
 gitment:
   enable: false ## If you want to use Gitment comment system please set the value to true.
@@ -36,7 +35,6 @@ gitment:
   client_id: ## GitHub client ID, e.g. 75752dafe7907a897619
   client_secret: ## GitHub client secret, e.g. ec2fb9054972c891289640354993b662f4cccc50
 uyan: ## Your uyan_id. e.g. 1234567
-gentie: ## Your gentie_productKey, e.g. fc799538c7ad4cf5a5a0c2877a90cbd7
 livere: ## Your livere data-uid, e.g. MTAyMC8zMDAxOC78NTgz
 changyan: ## Your changyan appid, e.g. cyrALsXc8
 changyan_conf: ## You changyan conf, e.g. prod_d8a508c2825ab57eeb43e7c69bba0e8b
@@ -49,12 +47,12 @@ google_analytics: ## Your Google Analytics tracking id, e.g. UA-42425684-2
 baidu_analytics: ## Your Baidu Analytics tracking id, e.g. 8006843039519956000
 show_category_count: false ## If you want to show the count of categories in the sidebar widget please set the value to true.
 toc_number: true ## If you want to add list number to toc please set the value to true.
-shareto: true ## If you want to use the share button please set the value to true, you must have hexo-helper-qrcode installed.
-busuanzi: true ## If you want to use Busuanzi page views please set the value to true.
+shareto: false ## If you want to use the share button please set the value to true, you must have hexo-helper-qrcode installed.
+busuanzi: false ## If you want to use Busuanzi page views please set the value to true.
 widgets_on_small_screens: false ## Set to true to enable widgets on small screens.
-canvas_nest: false ## If you want to use dynamic background with the default effect please set the value to true.
+canvas_nest: ## If you want to use dynamic background with the default effect please set the value to true.
   enable: false ## If you want to customize the dynamic effect please set the value to true, fill the following parameter and leave the previous option blank.
-  color: ## RGB value of the color, e.g. "(100,99,98)"
+  color: ## RGB value of the color, e.g. "100,99,98"
   opacity: ## Transparency of lines, e.g. "0.7"
   zIndex: ## The z-index property of the background, e.g. "-1"
   count: ## Quantity of lines, e.g. "150"
@@ -107,11 +105,9 @@ css: css
 version: 0.0.0
 ```
 - fancybox - Enable [Fancybox](http://fancyapps.com/fancybox/)
-- duoshuo - [Duoshuo](http://duoshuo.com) shortname
 - disqus - [Disqus](https://disqus.com) shortname
 - gitment - [Gitment](https://github.com/imsun/gitment) comment system
 - uyan - [Uyan](http://www.uyan.cc) id
-- gentie - [Gentie](https://gentie.163.com) productKey
 - livere - [LiveRe](https://livere.com) data-uid
 - changyan - [Changyan](http://changyan.kuaizhan.com) appid
 - google_search - Default search engine

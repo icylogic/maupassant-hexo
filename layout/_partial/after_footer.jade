@@ -1,19 +1,7 @@
 if theme.fancybox == true
-  script(type='text/javascript', src='//cdn.bootcss.com/fancybox/3.0.47/jquery.fancybox.min.js', async)
+  script(type='text/javascript', src='//cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.js', async)
   script(type='text/javascript', src=url_for(theme.js) + '/fancybox.js' + '?v=' + theme.version, async)
-  link(rel='stylesheet', type='text/css', href='//cdn.bootcss.com/fancybox/3.0.47/jquery.fancybox.min.css')
-
-if theme.duoshuo
-  script.
-    var duoshuoQuery = {short_name:'#{theme.duoshuo}'};
-    (function() {
-        var ds = document.createElement('script');
-        ds.type = 'text/javascript';ds.async = true;
-        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-        ds.charset = 'UTF-8';
-        (document.getElementsByTagName('head')[0]
-            || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
+  link(rel='stylesheet', type='text/css', href='//cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.css')
 
 if theme.tinysou
   script.

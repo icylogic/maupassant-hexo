@@ -13,9 +13,6 @@ if theme.gitment && theme.gitment !=true && theme.gitment.enable && theme.gitmen
       })
       gitment.render('container')
 
-if theme.duoshuo
-  .ds-thread(data-thread-key=page.path, data-title=page.title, data-url=page.permalink, data-author-key='1')
-
 if theme.disqus
   #disqus_thread
     .btn_click_load
@@ -52,16 +49,6 @@ if theme.disqus
 if theme.uyan
   #uyan_frame
   script(type='text/javascript' src='http://v2.uyan.cc/code/uyan.js?uid=#{theme.uyan}')
-
-if theme.gentie
-  .cloud-tie-wrapper#cloud-tie-wrapper
-  script.
-    var cloudTieConfig = {
-      url: document.location.href,
-      productKey: "#{theme.gentie}",
-      target: "cloud-tie-wrapper"
-    };
-  script(src='https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js')
 
 if theme.changyan
   div#SOHUCS(sid=page.date.valueOf())
