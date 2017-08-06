@@ -1,11 +1,12 @@
 fancybox: true ## If you want to use fancybox please set the value to true.
 duoshuo: ## Your duoshuo_shortname, e.g. username
 disqus: ## Your disqus_shortname, e.g. username
-gitment: false
-  #owner: ## Your GitHub ID, e.g. username
-  #repo: ## The repository to store your comments, make sure you're the repo's owner, e.g. imsun.github.io
-  #client_id: ## GitHub client ID, e.g. 75752dafe7907a897619
-  #client_secret: ## GitHub client secret, e.g. ec2fb9054972c891289640354993b662f4cccc50
+gitment:
+  enable: false
+  owner: ## Your GitHub ID, e.g. username
+  repo: ## The repository to store your comments, make sure you're the repo's owner, e.g. imsun.github.io
+  client_id: ## GitHub client ID, e.g. 75752dafe7907a897619
+  client_secret: ## GitHub client secret, e.g. ec2fb9054972c891289640354993b662f4cccc50
 uyan: ## Your uyan_id. e.g. 1234567
 gentie: ## Your gentie_productKey, e.g. fc799538c7ad4cf5a5a0c2877a90cbd7
 livere: ## Your livere data-uid, e.g. MTAyMC8zMDAxOC78NTgz
@@ -23,11 +24,12 @@ toc_number: true ## If you want to add list number to toc please set the value t
 shareto: true ## If you want to use the share button please set the value to true, you must have hexo-helper-qrcode installed.
 busuanzi: true ## If you want to use Busuanzi page views please set the value to true.
 widgets_on_small_screens: false ## Set to true to enable widgets on small screens.
-canvas_nest: false ## If your want to use dynamic background please set the value to true.
-  #color: ""  ##颜色RGB
-  #opacity: ""   ##透明度
-  #zIndex: ""    ## 层次
-  #count: ""     ##数量
+canvas_nest:  ## If your want to use dynamic background please set the value to true.
+  enable: false
+  color: ""  ##颜色RGB
+  opacity: ""   ##透明度
+  zIndex: ""    ## 层次
+  count: ""     ##数量
 
 menu:
   - page: home
