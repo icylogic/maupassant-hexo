@@ -1,4 +1,4 @@
-if theme.gitment.enable
+if theme.gitment && theme.gitment !=true
     #container
     link(rel='stylesheet', href='/css/default.css')
     script(src='/js/gitment.browser.js')
@@ -79,4 +79,3 @@ if theme.livere
          j.async = true;
          e.parentNode.insertBefore(j, e);
       })(document, 'script');
-
