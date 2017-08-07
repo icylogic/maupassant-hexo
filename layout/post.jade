@@ -17,14 +17,8 @@ block content
         span#busuanzi_container_page_pv= ' | '
           span#busuanzi_value_page_pv
           span= ' ' + __('Hits')
-    if theme.duoshuo
-      a.ds-thread-count(data-thread-key=page.path, href=url_for(page.path) + '#comments')
     if theme.disqus
       a.disqus-comment-count(data-disqus-identifier=page.path, href=url_for(page.path) + '#disqus_thread')
-    if theme.gentie
-      a.ds-thread-count(class='cloud-tie-join-count', href=url_for(page.path) + '#comments')
-        span.join-count(style='font-size: 15px; color: #6E7173;') 0
-        span= ' ' + __('Discuss')
     if theme.changyan
       a.ds-thread-count(href=url_for(page.path) + '#SOHUCS')
         span#changyan_count_unit(style='font-size: 15px; color: #6E7173;') 0
@@ -41,8 +35,9 @@ block content
       iframe(src="/donate/?AliPayQR=#{theme.donate.alipayqr}&WeChatQR=#{theme.donate.wechatqr}&GitHub=#{theme.donate.github}",style="overflow-x:hidden;overflow-y:hidden; border:0xp none #fff; min-height:240px; width:100%;",frameborder="0",scrolling="no")
     if theme.shareto == true
       script(type='text/javascript', src=url_for(theme.js) + '/share.js' + '?v=' + theme.version, async)
+
+
     include _partial/tag
     include _partial/post_nav
-    
     if page.comments
       include _partial/comments
