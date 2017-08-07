@@ -56,6 +56,14 @@ canvas_nest: ## If you want to use dynamic background with the default effect pl
   opacity: ## Transparency of lines, e.g. "0.7"
   zIndex: ## The z-index property of the background, e.g. "-1"
   count: ## Quantity of lines, e.g. "150"
+donate:
+  enable: false ## If you want to show the donate button after each post, please set the value to true and fill the following items according to your need.
+  github: ## GitHub URL, e.g. https://github.com/Kaiyuan/donate-page
+  alipay_qr: ## Path of Alipay QRcode image, e.g. /img/AliPayQR.png
+  wechat_qr: ## Path of Wechat QRcode image, e.g. /img/WeChatQR.png
+  btc_qr: ## Path of Bitcoin QRcode image, e.g. /img/BTCQR.png
+  btc_key: ## Bitcoin key, e.g. 1KuK5eK2BLsqpsFVXXSBG5wbSAwZVadt6L
+  paypal_url: ## Paypal URL, e.g. https://paypal.me/tufu9441
 
 menu:
   - page: home
@@ -123,6 +131,7 @@ version: 0.0.0
 - busuanzi - Enable [Busuanzi](http://busuanzi.ibruce.info) page views
 - widgets_on_small_screens - Show the widgets at the bottom of small screens
 - canvas_nest - Enable dynamic background
+- donate - Enable donate button after each post
 - menu - Customize your menu of pages here, just follow the format of existied items. Don't forget to create corresponding folders inlcuding `index.md` in `source` folder to ensure the pages will correctly display. [FontAwesome](http://fontawesome.io) icon fonts have been integrated, and you can choose other icons which you like [here](http://fontawesome.io/icons/) and use them according to the instruction.
 - widgets - Choose and arrange the widgets in sidebar here.
 - links - Edit your blogroll here.
