@@ -31,8 +31,11 @@ canvas_nest: ## If you want to use dynamic background with the default effect pl
 donate: ##在每篇文章下显示donate
   enable: true
   github: "https://github.com/xxxxx" ##GitHub地址 可缺省（如果博客在GitHub上搭建）
-  alipayqr: /img/AliPayQR.png  ##支付宝二维码 可缺省 默认的文件地址 source/img/AliPayQR.png
-  wechatqr:  /img/WeChatQR.png ##微信二维码 可缺省 默认的文件地址 source/img/WeChatQR.png
+  alipay_qr: /img/AliPayQR.png  ##支付宝二维码 缺就是关闭这个支付方式
+  wechat_qr:  /img/WeChatQR.png ##微信二维码 缺就是关闭这个支付方式
+  btc_qr:  /img/BTCQR.png ##btc二维码 两个缺一个就是关闭这个支付方式
+  btc_key:  ##btc账号 两个缺一个就是关闭这个支付方式
+  paypal_url:  ##paypal网址
 
 menu:
   - page: home
