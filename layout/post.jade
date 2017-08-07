@@ -31,9 +31,12 @@ block content
           != toc(page.content, {list_number: theme.toc_number})
     .post-content
       != page.content
+    if theme.donate && ((theme.donate.enable && theme.donate.enable == true) || theme.donate==true)
+      iframe(src="/donate/?AliPayQR=#{theme.donate.alipay_qr}&WeChatQR=#{theme.donate.wechat_qr}&GitHub=#{theme.donate.github}&BTCQR=#{theme.donate.btc_qr}&BTCKEY=#{theme.donate.btc_key}&PayPal=#{theme.donate.paypal_url}",style="overflow-x:hidden;overflow-y:hidden; border:0xp none #fff; min-height:240px; width:100%;",frameborder="0",scrolling="no")
     if theme.shareto == true
       script(type='text/javascript', src=url_for(theme.js) + '/share.js' + '?v=' + theme.version, async)
       a.article-share-link(data-url='#{page.permalink}', data-id='#{page._id}', data-qrcode=qrcode(page.permalink))= __('shareto')
+
     include _partial/tag
     include _partial/post_nav
 

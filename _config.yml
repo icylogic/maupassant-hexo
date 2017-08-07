@@ -28,6 +28,14 @@ canvas_nest: ## If you want to use dynamic background with the default effect pl
   opacity: ## Transparency of lines, e.g. "0.7"
   zIndex: ## The z-index property of the background, e.g. "-1"
   count: ## Quantity of lines, e.g. "150"
+donate: ##在每篇文章下显示donate
+  enable: true
+  github: "https://github.com/xxxxx" ##GitHub地址 可缺省（如果博客在GitHub上搭建）
+  alipay_qr: /img/AliPayQR.png  ##支付宝二维码 缺就是关闭这个支付方式
+  wechat_qr:  /img/WeChatQR.png ##微信二维码 缺就是关闭这个支付方式
+  btc_qr:  /img/BTCQR.png ##btc二维码 两个缺一个就是关闭这个支付方式
+  btc_key:  ##btc账号 两个缺一个就是关闭这个支付方式
+  paypal_url:  ##paypal网址
 
 menu:
   - page: home
