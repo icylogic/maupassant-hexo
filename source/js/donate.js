@@ -20,6 +20,7 @@ jQuery(document).ready(function() {
 		var BTCKEY = $.getUrlParam('BTCKEY');
 		count++;
 		$("#BTC").show();
+		$("#BTC").addClass('yc')
 		$("#btc-key").attr("value",BTCKEY)
 	}
 	if($.getUrlParam('AliPayQR')) {
@@ -35,7 +36,7 @@ jQuery(document).ready(function() {
 	if($.getUrlParam('PayPal')) {
 		var PayPal = $.getUrlParam('PayPal');
 		count++;
-		$("#PayPal").attr("href",PayPal)
+		$("#PayPal a").attr("href",PayPal)
 		$("#PayPal").show();
 	}
 	if(count == 0){
