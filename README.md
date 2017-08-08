@@ -50,8 +50,8 @@ toc_number: true ## If you want to add list number to toc please set the value t
 shareto: false ## If you want to use the share button please set the value to true, you must have hexo-helper-qrcode installed.
 busuanzi: false ## If you want to use Busuanzi page views please set the value to true.
 widgets_on_small_screens: false ## Set to true to enable widgets on small screens.
-canvas_nest: ## If you want to use dynamic background with the default effect please set the value to true.
-  enable: false ## If you want to customize the dynamic effect please set the value to true, fill the following parameter and leave the previous option blank.
+canvas_nest:
+  enable: false ## If you want to use dynamic background please set the value to true, you can also fill the following parameters to customize the dynamic effect, or just leave them blank to keep the default effect.
   color: ## RGB value of the color, e.g. "100,99,98"
   opacity: ## Transparency of lines, e.g. "0.7"
   zIndex: ## The z-index property of the background, e.g. "-1"
@@ -130,7 +130,7 @@ version: 0.0.0
 - shareto - Enable share button, with the dependency on the plugin [hexo-helper-qrcode](https://github.com/yscoder/hexo-helper-qrcode)
 - busuanzi - Enable [Busuanzi](http://busuanzi.ibruce.info) page views
 - widgets_on_small_screens - Show the widgets at the bottom of small screens
-- canvas_nest - Enable dynamic background
+- [canvas_nest](https://github.com/hustcc/canvas-nest.js) - Enable dynamic background
 - donate - Enable donate button after each post
 - menu - Customize your menu of pages here, just follow the format of existied items. Don't forget to create corresponding folders inlcuding `index.md` in `source` folder to ensure the pages will correctly display. [FontAwesome](http://fontawesome.io) icon fonts have been integrated, and you can choose other icons which you like [here](http://fontawesome.io/icons/) and use them according to the instruction.
 - widgets - Choose and arrange the widgets in sidebar here.
