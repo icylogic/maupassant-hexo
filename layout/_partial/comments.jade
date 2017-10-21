@@ -71,13 +71,11 @@ if theme.valine.enable == true
     #vcomment
     script(src='//cdn1.lncld.net/static/js/3.0.4/av-min.js')
     script(src='//cdn.jsdelivr.net/gh/xcss/valine@v1.1.7/dist/Valine.min.js' + '?v=' + theme.version)
-    - var notify = theme.valine.notify
-    - var verify = theme.valine.verify
     script.
       var valine = new Valine({
         el:'#vcomment',
-        notify:notify, 
-        verify:verify, 
+        notify:'#{theme.valine.notify}', 
+        verify:'#{theme.valine.verify}', 
         app_id:'#{theme.valine.appid}',
         app_key:'#{theme.valine.appkey}',
         placeholder:'#{theme.valine.placeholder}',
