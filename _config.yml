@@ -17,16 +17,16 @@ valine:
   appkey:  ## your leancloud application appkey
   notify: false ## mail notifier , https://github.com/xCss/Valine/wiki
   verify: false ## Verification code
-  placeholder: Just go go ## comment input placeholder text 
+  placeholder: Just go go ## comment input placeholder text
   avatar: 'mm' ## header image https://github.com/xCss/Valine/wiki
-  pageSize: 10 ## 
+  pageSize: 10 ##
   guest_info: nick,mail,link
 
 google_search: true ## Use Google search, true/false.
-baidu_search: ## Use Baidu search, true/false.
+baidu_search: false ## Use Baidu search, true/false.
 swiftype: ## Your swiftype_key, e.g. m7b11ZrsT8Me7gzApciT
 tinysou: ## Your tinysou_key, e.g. 4ac092ad8d749fdc6293
-self_search: ## Use a jQuery-based local search engine, true/false.
+self_search: false ## Use a jQuery-based local search engine, true/false.
 google_analytics: ## Your Google Analytics tracking id, e.g. UA-42425684-2
 baidu_analytics: ## Your Baidu Analytics tracking id, e.g. 8006843039519956000
 show_category_count: false ## If you want to show the count of categories in the sidebar widget please set the value to true.
