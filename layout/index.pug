@@ -1,17 +1,16 @@
 extends base
-- var current_title = page.title || tag.name || category.name || site.title
 
-block title
+block title 
   if config.subtitle
     title= config.title + ' | ' + config.subtitle
   else
     title= config.title
-block content
 
+block content
   for post in page.posts.toArray()
     .post
       h1.post-title
-        include _partial/helpers
+        include _partial/helpers.pug
         a(href=url_for(post.path))
           +title(post)
       .post-meta= post.date.format(config.date_format)
@@ -45,12 +44,12 @@ block content
       p(class='readmore')
         a(href=url_for(post.path))= __('Readmore')
 
-  include _partial/paginator
+  include _partial/paginator.pug
   if theme.disqus
     script(id='dsq-count-scr', src='//#{theme.disqus}.disqus.com/count.js', async)
   if theme.changyan
     script#cy_cmt_num(src='https://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId=cyt4LaybM', async)
   if config.mathjax
-    include _partial/mathjax
+    include _partial/mathjax.pug
   if config.mathjax2
-    include _partial/mathjax2
+    include _partial/mathjax2.pug

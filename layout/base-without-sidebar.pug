@@ -1,4 +1,4 @@
-include _partial/helpers
+include _partial/helpers.pug
 
 if page.title
   - var current_title = page.title
@@ -16,7 +16,7 @@ if config.feed
 doctype html
 html(lang='#{config.language}')
 
-  include _partial/head
+  include _partial/head.pug
 
   body: .body_container
     #header
@@ -29,18 +29,10 @@ html(lang='#{config.language}')
           +a_with_current(theme.menu[i].directory, __(theme.menu[i].page), theme.menu[i].icon)
 
     #layout.pure-g
-      .pure-u-1.pure-u-md-3-4: .content_container
+      .pure-u-1.pure-u-md-4-4: .content_container
         block content
-      if theme.widgets_on_small_screens
-        .pure-u-1.pure-u-md-1-4: #sidebar
-          each item in theme.widgets
-            != partial('_widget/' + item + '.jade', null, {cache: !config.relative_link})
-      else
-        .pure-u-1-4.hidden_mid_and_down: #sidebar
-          each item in theme.widgets
-            != partial('_widget/' + item + '.jade', null, {cache: !config.relative_link})
-      .pure-u-1.pure-u-md-3-4
-        != partial('_partial/footer.jade')
+      .pure-u-1.pure-u-md-4-4
+        != partial('_partial/footer.pug')
 
-    include _partial/totop
-    include _partial/after_footer
+    include _partial/totop.pug
+    include _partial/after_footer.pug
