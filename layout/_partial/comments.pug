@@ -44,7 +44,7 @@ if theme.disqus
           $('.btn_click_load').css('display','block');
         }
       });
-    script(id='dsq-count-scr', src='//#{theme.disqus}.disqus.com/count.js', async)
+    script(id='dsq-count-scr', src='//'+ theme.disqus + '.disqus.com/count.js', async)
 
 if theme.uyan
   #uyan_frame
@@ -81,8 +81,8 @@ if theme.valine.enable == true
       guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
       window.valine = new Valine({
         el:'#vcomment',
-        notify:notify, 
-        verify:verify, 
+        notify:notify,
+        verify:verify,
         appId:'#{theme.valine.appid}',
         appKey:'#{theme.valine.appkey}',
         placeholder:'#{theme.valine.placeholder}',
