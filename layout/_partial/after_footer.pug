@@ -53,7 +53,7 @@ if theme.canvas_nest.enable == true
     - var opacity=theme.canvas_nest.opacity || "0.5"
     - var zIndex=theme.canvas_nest.zIndex || "-2"
     - var count=theme.canvas_nest.count || "50"
-    script(type='text/javascript', color='#{color}', opacity='#{opacity}', zIndex='#{zIndex}', count='#{count}',src='//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js')
+    script(type='text/javascript', color=color, opacity=opacity, zIndex=zIndex, count=count,src='//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js')
 
 if page.mathjax
   include mathjax.pug
