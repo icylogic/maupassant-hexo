@@ -1,18 +1,3 @@
-if theme.gitment.enable == true
-    #container
-    link(rel='stylesheet', href=url_for(theme.css) + '/default.css' + '?v=' + theme.version)
-    script(src=url_for(theme.js) + '/gitment.browser.js' + '?v=' + theme.version)
-    script.
-      var gitment = new Gitment({
-        owner: '#{theme.gitment.owner}',
-        repo: '#{theme.gitment.repo}',
-        oauth: {
-          client_id: '#{theme.gitment.client_id}',
-          client_secret: '#{theme.gitment.client_secret}',
-        },
-      })
-      gitment.render('container')
-
 if theme.disqus
   #disqus_thread
     .btn_click_load
@@ -66,6 +51,36 @@ if theme.livere
          j.async = true;
          e.parentNode.insertBefore(j, e);
       })(document, 'script');
+
+if theme.gitment.enable == true
+    #container
+    link(rel='stylesheet', href=url_for(theme.css) + '/default.css' + '?v=' + theme.version)
+    script(src=url_for(theme.js) + '/gitment.browser.js' + '?v=' + theme.version)
+    script.
+      var gitment = new Gitment({
+        owner: '#{theme.gitment.owner}',
+        repo: '#{theme.gitment.repo}',
+        oauth: {
+          client_id: '#{theme.gitment.client_id}',
+          client_secret: '#{theme.gitment.client_secret}',
+        },
+      })
+      gitment.render('container')
+
+if theme.gitalk.enable == true
+    #container
+    link(rel='stylesheet', type='text/css', href='//unpkg.com/gitalk/dist/gitalk.css?v=' + theme.version)
+    script(type='text/javascript' src='//unpkg.com/gitalk/dist/gitalk.min.js?v=' + theme.version)
+    script.
+      var gitalk = new Gitalk({
+        clientID: '#{theme.gitalk.client_id}',
+        clientSecret: '#{theme.gitalk.client_secret}',
+        repo: '#{theme.gitalk.repo}',
+        owner: '#{theme.gitalk.owner}',
+        admin: ['#{theme.gitalk.admin}'],
+        distractionFreeMode: false
+      })
+      gitalk.render('container')
 
 if theme.valine.enable == true
     #vcomment
