@@ -27,7 +27,7 @@ block content
     if theme.valine.enable
       a.disqus-comment-count( href=url_for(page.path) + '#vcomment')
         span.valine-comment-count(data-xid=url_for(page.path))
-        span = ' ' + __('Comment')
+        span= ' ' + __('Comment')
     if page.toc
       div(class='clear')
         div(id='toc' class='toc-article')
