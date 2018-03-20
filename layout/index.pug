@@ -48,7 +48,7 @@ block content
   if theme.disqus
     script(id='dsq-count-scr', src='//'+ theme.disqus + '.disqus.com/count.js', async)
   if theme.changyan
-    script#cy_cmt_num(src='https://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId=cyt4LaybM', async)
+    script#cy_cmt_num(src='https://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId=' + theme.changyan, async)
   if config.mathjax
     include _partial/mathjax.pug
   if config.mathjax2
