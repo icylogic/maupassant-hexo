@@ -38,16 +38,6 @@ if theme.self_search == true
      var path = '#{config.root}' + search_path;
      searchFunc(path, 'local-search-input', 'local-search-result');
 
-if theme.baidu_analytics
-  script.
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = '//hm.baidu.com/hm.js?' + '#{theme.baidu_analytics}';
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-      })();
-
 if theme.canvas_nest.enable == true
     - var color=theme.canvas_nest.color || "0,0,0"
     - var opacity=theme.canvas_nest.opacity || "0.5"
