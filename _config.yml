@@ -77,6 +77,10 @@ widgets: ## Six widgets in sidebar provided: search, category, tag, recent_posts
   - recent_comments
   - links
 
+post_copyright:
+  enable: true
+  author: "Hongbo Liu"
+
 links:
   - title: site-name1
     url: http://www.example1.com/
