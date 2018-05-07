@@ -1,35 +1,59 @@
 if theme.disqus
   #disqus_thread
     .btn_click_load
-      button.disqus_click_btn 阅读评论 「请确保 disqus.com 可以正常加载」
-    script.
-      var disqus_shortname = '#{theme.disqus}';
-      var disqus_identifier = '#{page.path}';
-      var disqus_title = '#{page.title}';
-      var disqus_url = '#{config.url}/#{page.path}';
-      $('.btn_click_load').click(function() {
-        (function() {
-          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-        $('.btn_click_load').css('display','none');
-      });
+      button.disqus_click_btn 阅读评论（请确保 Disqus 可以正常加载）
+    script(type='text/javascript').
+      var disqus_config = function () {
+          this.page.url = '#{config.url}/#{page.path}';
+          this.page.identifier = '#{page.path}';
+          this.page.title = '#{page.title}';
+        };
+    script(type='text/javascript' id='disqus-lazy-load-script').
       $.ajax({
-        url: 'https://disqus.com/next/config.json',
-        timeout: 3000,
-        type: 'GET',
-        success: (function() {
-          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-          $('.btn_click_load').css('display','none');
-        })(),
-        error: function() {
-          $('.btn_click_load').css('display','block');
-        }
+      url: 'https://disqus.com/next/config.json',
+      timeout: 2500,
+      type: 'GET',
+      success: function(){
+        var d = document;
+        var s = d.createElement('script');
+        s.src = '//#{theme.disqus}.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', + new Date());
+        (d.head || d.body).appendChild(s);
+        $('.disqus_click_btn').css('display', 'none');
+      },
+      error: function() {
+        $('.disqus_click_btn').css('display', 'block');
+      }
       });
-    script(id='dsq-count-scr', src='//'+ theme.disqus + '.disqus.com/count.js', async)
+    script(type='text/javascript' id='disqus-click-load').
+      $('.btn_click_load').click(() => {  //click to load comments
+          (() => { // DON'T EDIT BELOW THIS LINE
+              var d = document;
+              var s = d.createElement('script');
+              s.src = '//#{theme.disqus}.disqus.com/embed.js';
+              s.setAttribute('data-timestamp', + new Date());
+              (d.head || d.body).appendChild(s);
+          })();
+          $('.disqus_click_btn').css('display','none');
+      });
+    script(type='text/javascript' id='disqus-count-script').
+      $(function() {
+           var xhr = new XMLHttpRequest();
+           xhr.open('GET', '//disqus.com/next/config.json', true);
+           xhr.timeout = 2500;
+           xhr.onreadystatechange = function () {
+             if (xhr.readyState === 4 && xhr.status === 200) {
+               $('.post-meta .post-comments-count').show();
+               var s = document.createElement('script');
+               s.id = 'dsq-count-scr';
+               s.src = 'https://#{theme.disqus}.disqus.com/count.js';
+               s.async = true;
+               (document.head || document.body).appendChild(s);
+             }
+           };
+           xhr.ontimeout = function () { xhr.abort(); };
+           xhr.send(null);
+         });
 
 if theme.uyan
   #uyan_frame
@@ -70,6 +94,7 @@ if theme.gitment.enable == true
 if theme.gitalk.enable == true
     #container
     link(rel='stylesheet', type='text/css', href='//unpkg.com/gitalk/dist/gitalk.css?v=' + theme.version)
+    script(type='text/javascript' src='//cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js?v=' + theme.version)
     script(type='text/javascript' src='//unpkg.com/gitalk/dist/gitalk.min.js?v=' + theme.version)
     script.
       var gitalk = new Gitalk({
@@ -78,6 +103,7 @@ if theme.gitalk.enable == true
         repo: '#{theme.gitalk.repo}',
         owner: '#{theme.gitalk.owner}',
         admin: ['#{theme.gitalk.admin}'],
+        id: md5(location.pathname),
         distractionFreeMode: false
       })
       gitalk.render('container')
