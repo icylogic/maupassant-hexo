@@ -78,7 +78,7 @@ widgets: ## Six widgets in sidebar provided: search, category, tag, recent_posts
   - links
 
 post_copyright:
-  enable: true
+  enable: false
   author: your name
   # copyright_text: your copyright text
 
