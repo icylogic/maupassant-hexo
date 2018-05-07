@@ -79,7 +79,8 @@ widgets: ## Six widgets in sidebar provided: search, category, tag, recent_posts
 
 post_copyright:
   enable: true
-  author: "Hongbo Liu"
+  author: your name
+  # copyright_text: your copyright text
 
 links:
   - title: site-name1
