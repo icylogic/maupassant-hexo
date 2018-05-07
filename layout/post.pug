@@ -42,17 +42,17 @@ block content
       div
         ul.post-copyright
           li.post-copyright-author
-            strong 本文作者：
+            strong= __('copyright_author_prefix')
             = theme.post_copyright.author
           li.post-copyright-link
-            strong 本文链接：
+            strong= __('copyright_link_prefix')
             a(href='/' + page.path)= page.permalink
           li.post-copyright-license
-            strong 版权声明：
+            strong= __('copyright_declare_prefix')
             if theme.post_copyright.copyright_text
               != theme.post_copyright.copyright_text
             else
-              | 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0 CN</a> 许可协议。转载请注明出处！
+              != __('copyright_default_text')
       br
 
     if theme.shareto == true

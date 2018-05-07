@@ -23,3 +23,7 @@ shareto: Share
 Discuss: Discuss
 Comment: Comment
 Hits: Hits
+copyright_author_prefix: "Author: "
+copyright_link_prefix: "Blog Link: "
+copyright_declare_prefix: "Copyright Declaration: "
+copyright_default_text: "The author owns the copyright. Please indicate the source reproduced!"
