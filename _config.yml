@@ -77,6 +77,11 @@ widgets: ## Six widgets in sidebar provided: search, category, tag, recent_posts
   - recent_comments
   - links
 
+post_copyright:
+  enable: false
+  author: your name
+  # copyright_text: your copyright text
+
 links:
   - title: site-name1
     url: http://www.example1.com/
