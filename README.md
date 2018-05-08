@@ -26,7 +26,6 @@ Then change your `theme` setting in `_config.yml` to `maupassant`.
 Default config:
 
 ```YAML
-fancybox: true ## If you want to use fancybox please set the value to true.
 disqus: ## Your disqus_shortname, e.g. username
 uyan: ## Your uyan_id. e.g. 1234567
 livere: ## Your livere data-uid, e.g. MTAyMC8zMDAxOC78NTgz
@@ -63,6 +62,7 @@ tinysou: ## Your tinysou_key, e.g. 4ac092ad8d749fdc6293
 self_search: false ## Use a jQuery-based local search engine, true/false.
 google_analytics: ## Your Google Analytics tracking id, e.g. UA-42425684-2
 baidu_analytics: ## Your Baidu Analytics tracking id, e.g. 8006843039519956000
+fancybox: true ## If you want to use fancybox please set the value to true.
 show_category_count: false ## If you want to show the count of categories in the sidebar widget please set the value to true.
 toc_number: true ## If you want to add list number to toc please set the value to true.
 shareto: false ## If you want to use the share button please set the value to true, you must have hexo-helper-qrcode installed.
@@ -75,14 +75,18 @@ canvas_nest:
   zIndex: ## The z-index property of the background, e.g. "-1"
   count: ## Quantity of lines, e.g. "150"
 donate:
-  enable: false ## If you want to show the donate button after each post, please set the value to true and fill the following items according to your need. You can also enable donate button in a page by adding a "donate: true" item to the front-matter.
+  enable: false ## If you want to display the donate button after each post, please set the value to true and fill the following items on your need. You can also enable donate button in a page by adding a "donate: true" item to the front-matter.
   github: ## GitHub URL, e.g. https://github.com/Kaiyuan/donate-page
   alipay_qr: ## Path of Alipay QRcode image, e.g. /img/AliPayQR.png
   wechat_qr: ## Path of Wechat QRcode image, e.g. /img/WeChatQR.png
   btc_qr: ## Path of Bitcoin QRcode image, e.g. /img/BTCQR.png
   btc_key: ## Bitcoin key, e.g. 1KuK5eK2BLsqpsFVXXSBG5wbSAwZVadt6L
-  paypal_url: ## Paypal URL, e.g. https://paypal.me/tufu9441
-
+  paypal_url: ## Paypal URL, e.g. https://www.paypal.me/tufu9441
+post_copyright:
+  enable: false ## If you want to display the copyright info after each post, please set the value to true and fill the following items on your need.
+  author: ## Your author name, e.g. tufu9441
+  copyright_text: ## Your copyright text, e.g. The author owns the copyright, please indicate the source reproduced.
+  
 menu:
   - page: home
     directory: .
@@ -130,7 +134,6 @@ css: css
 # Theme version
 version: 0.0.0
 ```
-- fancybox - Enable [Fancybox](http://fancyapps.com/fancybox/)
 - disqus - [Disqus](https://disqus.com) shortname
 - uyan - [Uyan](http://www.uyan.cc) id
 - livere - [LiveRe](https://livere.com) data-uid
@@ -145,6 +148,7 @@ version: 0.0.0
 - self_search - A jQuery-based [local search engine](http://hahack.com/codes/local-search-engine-for-hexo), with the dependency on the plugin [hexo-generator-search](https://github.com/PaicHyperionDev/hexo-generator-search)
 - google_analytics - [Google Analytics](https://www.google.com/analytics/) tracking id
 - baidu_analytics - [Baidu Analytics](http://tongji.baidu.com) tracking id
+- fancybox - Enable [Fancybox](http://fancyapps.com/fancybox/)
 - show_category_count - Show the count of categories in the sidebar widget
 - toc_number - Show the list number of toc
 - shareto - Enable share button, with the dependency on the plugin [hexo-helper-qrcode](https://github.com/yscoder/hexo-helper-qrcode)
@@ -152,6 +156,7 @@ version: 0.0.0
 - widgets_on_small_screens - Show the widgets at the bottom of small screens
 - [canvas_nest](https://github.com/hustcc/canvas-nest.js) - Enable dynamic background
 - donate - Enable donate button after each post
+- post_copyright - Enable copyright info after each post
 - menu - Customize your menu of pages here, just follow the format of existied items. Don't forget to create corresponding folders inlcuding `index.md` in `source` folder to ensure the pages will correctly display. [FontAwesome](http://fontawesome.io) icon fonts have been integrated, and you can choose other icons which you like [here](http://fontawesome.io/icons/) and use them according to the instruction.
 - widgets - Choose and arrange the widgets in sidebar here.
 - links - Edit your blogroll here.
