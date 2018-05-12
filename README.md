@@ -67,7 +67,7 @@ show_category_count: false ## If you want to show the count of categories in the
 toc_number: true ## If you want to add list number to toc please set the value to true.
 shareto: false ## If you want to use the share button please set the value to true, you must have hexo-helper-qrcode installed.
 busuanzi: false ## If you want to use Busuanzi page views please set the value to true.
-wordcount: false ## If you want to use wordcount views please set the value to true, and make sure that hexo-wordcount is installed
+wordcount: false ## If you want to use wordcount views please set the value to true, and make sure hexo-wordcount is installed
 widgets_on_small_screens: false ## Set to true to enable widgets on small screens.
 canvas_nest:
   enable: false ## If you want to use dynamic background please set the value to true, you can also fill the following parameters to customize the dynamic effect, or just leave them blank to keep the default effect.
