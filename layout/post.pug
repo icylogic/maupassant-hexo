@@ -17,6 +17,8 @@ block content
         span#busuanzi_container_page_pv= ' | '
           span#busuanzi_value_page_pv
           span= ' ' + __('Hits')
+      if theme.wordcount == true
+        include _partial/wordcount.pug
     if theme.disqus
       a.disqus-comment-count(data-disqus-identifier=page.path, href=url_for(page.path) + '#disqus_thread')
     if theme.changyan

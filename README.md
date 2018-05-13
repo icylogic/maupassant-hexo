@@ -67,6 +67,7 @@ show_category_count: false ## If you want to show the count of categories in the
 toc_number: true ## If you want to add list number to toc please set the value to true.
 shareto: false ## If you want to use the share button please set the value to true, you must have hexo-helper-qrcode installed.
 busuanzi: false ## If you want to use Busuanzi page views please set the value to true.
+wordcount: false ## If you want to use wordcount views please set the value to true, and make sure hexo-wordcount is installed
 widgets_on_small_screens: false ## Set to true to enable widgets on small screens.
 canvas_nest:
   enable: false ## If you want to use dynamic background please set the value to true, you can also fill the following parameters to customize the dynamic effect, or just leave them blank to keep the default effect.
@@ -86,7 +87,7 @@ post_copyright:
   enable: false ## If you want to display the copyright info after each post, please set the value to true and fill the following items on your need.
   author: ## Your author name, e.g. tufu9441
   copyright_text: ## Your copyright text, e.g. The author owns the copyright, please indicate the source reproduced.
-  
+
 menu:
   - page: home
     directory: .
@@ -153,6 +154,7 @@ version: 0.0.0
 - toc_number - Show the list number of toc
 - shareto - Enable share button, with the dependency on the plugin [hexo-helper-qrcode](https://github.com/yscoder/hexo-helper-qrcode)
 - busuanzi - Enable [Busuanzi](http://busuanzi.ibruce.info) page views
+- wordcount - Enable [hexo-wordcount](https://www.npmjs.com/package/hexo-wordcount) page views
 - widgets_on_small_screens - Show the widgets at the bottom of small screens
 - [canvas_nest](https://github.com/hustcc/canvas-nest.js) - Enable dynamic background
 - donate - Enable donate button after each post

@@ -1,0 +1,11 @@
+span.post-time
+  span.post-meta-item-text= ' | '
+  span.post-meta-item-icon
+    i(class="fa fa-keyboard-o")
+    span.post-count= ' '+wordcount(page.content)
+    span.post-meta-item-text= " "+__('word_cnt')
+span.post-time= ' | '
+  span.post-meta-item-icon
+      i(class="fa fa-hourglass-half")
+      span.post-count= ' '+min2read(page.content)
+      span.post-meta-item-text= ' '+__('read_time')
