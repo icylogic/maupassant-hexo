@@ -82,6 +82,7 @@ if theme.gitment.enable == true
     script(src=url_for(theme.js) + '/gitment.browser.js' + '?v=' + theme.version)
     script.
       var gitment = new Gitment({
+        id: window.location.pathname.substring(1,window.location.pathname.length),
         owner: '#{theme.gitment.owner}',
         repo: '#{theme.gitment.repo}',
         oauth: {
