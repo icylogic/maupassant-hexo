@@ -1,7 +1,7 @@
 if theme.fancybox == true
-  script(type='text/javascript', src='//cdn.bootcss.com/fancybox/3.3.5/jquery.fancybox.min.js', async)
+  script(type='text/javascript', src='//lib.baomitu.com/fancybox/3.5.2/jquery.fancybox.min.js', async)
   script(type='text/javascript', src=url_for(theme.js) + '/fancybox.js' + '?v=' + theme.version, async)
-  link(rel='stylesheet', type='text/css', href='//cdn.bootcss.com/fancybox/3.3.5/jquery.fancybox.min.css')
+  link(rel='stylesheet', type='text/css', href='//lib.baomitu.com/fancybox/3.5.2/jquery.fancybox.min.css')
 
 if theme.tinysou
   script.
@@ -43,7 +43,7 @@ if theme.canvas_nest.enable == true
     - var opacity=theme.canvas_nest.opacity || "0.5"
     - var zIndex=theme.canvas_nest.zIndex || "-2"
     - var count=theme.canvas_nest.count || "50"
-    script(type='text/javascript', color=color, opacity=opacity, zIndex=zIndex, count=count,src='//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js')
+    script(type='text/javascript', color=color, opacity=opacity, zIndex=zIndex, count=count,src='//lib.baomitu.com/canvas-nest.js/2.0.3/canvas-nest.umd.js')
 
 if page.mathjax
   include mathjax.pug

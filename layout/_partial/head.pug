@@ -7,11 +7,11 @@ head
     meta(name='description', content=config.description)
     block title
     link(rel='stylesheet', type='text/css', href=url_for(theme.css) + '/style.css' + '?v=' + theme.version)
-    link(rel='stylesheet', type='text/css', href='//cdn.bootcss.com/normalize/8.0.0/normalize.min.css')
-    link(rel='stylesheet', type='text/css', href='//cdn.bootcss.com/pure/1.0.0/pure-min.css')
-    link(rel='stylesheet', type='text/css', href='//cdn.bootcss.com/pure/1.0.0/grids-responsive-min.css')
-    link(rel='stylesheet', href='//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css')
-    script(type='text/javascript', src='//cdn.bootcss.com/jquery/3.3.1/jquery.min.js')
+    link(rel='stylesheet', type='text/css', href='//lib.baomitu.com/normalize/8.0.1/normalize.min.css')
+    link(rel='stylesheet', type='text/css', href='//lib.baomitu.com/pure/1.0.0/pure-min.css')
+    link(rel='stylesheet', type='text/css', href='//lib.baomitu.com/pure/1.0.0/grids-responsive-min.css')
+    link(rel='stylesheet', href='//lib.baomitu.com/font-awesome/5.0.7/web-fonts-with-css/css/fontawesome.min.css')
+    script(type='text/javascript', src='//lib.baomitu.com/jquery/3.3.1/jquery.min.js')
     link(rel='icon', mask='',sizes='any', href=url_for('favicon.ico'))
     link(rel='Shortcut Icon', type='image/x-icon', href=url_for('favicon.ico'))
     link(rel='apple-touch-icon', href=url_for('apple-touch-icon.png'))
@@ -35,4 +35,4 @@ head
           var s = document.getElementsByTagName("script")[0];
           s.parentNode.insertBefore(hm, s);
           })();
-          
+
