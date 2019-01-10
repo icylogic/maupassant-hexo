@@ -40,7 +40,7 @@ block content
     if theme.donate.enable == true
       iframe(src='/donate/?AliPayQR=' + theme.donate.alipay_qr + '&WeChatQR=' + theme.donate.wechat_qr + '&GitHub=' + theme.donate.github + '&BTCQR=' + theme.donate.btc_qr + '&BTCKEY='+ theme.donate.btc_key + '&PayPal=' + theme.donate.paypal_url, style='overflow-x:hidden; overflow-y:hidden; border:0xp none #fff; min-height:240px; width:100%;', frameborder='0', scrolling='no')
 
-    if theme.post_copyright.enable == true
+    if theme.post_copyright.enable == true && page.copyright != false
       div
         ul.post-copyright
           li.post-copyright-author
