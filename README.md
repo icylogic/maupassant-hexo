@@ -249,3 +249,4 @@ Thanks for all the [contributors](https://github.com/tufu9441/maupassant-hexo/gr
 + Farbox：https://github.com/pagecho/Maupassant-farbox/
 + Wordpress：https://github.com/iMuFeng/maupassant/
 + Ghost: https://github.com/LjxPrime/maupassant/
++ Hugo: https://github.com/rujews/maupassant-hugo/
