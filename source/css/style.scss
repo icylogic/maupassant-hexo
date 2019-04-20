@@ -280,6 +280,8 @@ div {
         }
         p {
             margin: 0 0 1.234em;
+            word-break: break-word;
+            overflow-wrap: break-word;
             code {
                 display: inline-block;
                 margin: 0 5px;
