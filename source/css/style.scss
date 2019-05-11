@@ -1027,6 +1027,18 @@ figure.highlight,
             color: #0086b3;
         }
     }
+    // Clojure
+    &.clj .code {
+        .builtin-name {
+            color: #df5000;
+        }
+        .name {
+            color: #795da3;
+        }
+        .number {
+            color: #0086b3;
+        }
+    }
     // C#
     &.cs .code {
         .preprocessor,
@@ -1362,6 +1374,15 @@ figure.highlight,
         .selector-class,
         .selector-tag {
             color: #795da3;
+        }
+    }
+    // Lisp
+    &.lisp .code {
+        .name {
+            color: #df5000;
+        }
+        .number {
+            color: #0086b3;
         }
     }
     // SCSS
