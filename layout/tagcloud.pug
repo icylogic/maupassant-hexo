@@ -1,0 +1,22 @@
+extends base
+block title
+  title= page.title + ' | ' + config.title
+block content
+  .post
+    .post-content
+      .tagcloud
+        for tag in site.tags.toArray()
+          a( href='/tags/#' + tag.name title=tag.name rel= tag.length ) #{tag.name}
+
+      for tag in site.tags.toArray()
+        .one-tag-list
+          span(class='fa fa-tag tag-name' id=tag.name) 
+            span(class="tag-text") #{tag.name}
+          for post in tag.posts.toArray()
+            .post-preview
+              a( href=config.root + post.path title=post.title ) #{post.title}
+
+  if page.donate
+      iframe(src='/donate/?AliPayQR=' + theme.donate.alipay_qr + '&WeChatQR=' + theme.donate.wechat_qr + '&GitHub=' + theme.donate.github + '&BTCQR=' + theme.donate.btc_qr + '&BTCKEY='+ theme.donate.btc_key + '&PayPal=' + theme.donate.paypal_url, style='overflow-x:hidden; overflow-y:hidden; border:0xp none #fff; min-height:240px; width:100%;', frameborder='0', scrolling='no')
+  if page.comments
+    include _partial/comments.pug

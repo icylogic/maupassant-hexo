@@ -176,7 +176,7 @@ You can add a website logo for apple devices, please put an image named **apple-
 You can control the abstract of a post shown at index, by either filling a `description:` item in `front-matter` of the `post.md`, or just inserting a `<!--more-->` before your hidden content.
 
 #### Page
-Create folders inlcuding `index.md` in `source` folder to add pages, and add a `layout: page` in `front-matter` of `index.md`. If you need a single column page without sidebar, just set `layout: single-column` instead of `layout: page`.
+Create folders inlcuding `index.md` in `source` folder to add pages, and add a `layout: page` in `front-matter` of `index.md`. A tagcloud page can be enabled by setting `layout: tagcloud` of a page. If you need a single column page without sidebar, just set `layout: single-column` instead of `layout: page`.
 
 #### Table of Contents
 TOC in a post can be enabled by adding a `toc: true` item in `front-matter`.
