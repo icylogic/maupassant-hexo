@@ -941,6 +941,7 @@ figure.highlight,
         background:   #f7f8f8;
         border-right: 1px solid #e6e6e6;
         padding:      0.3em 15px;
+        user-select:  none;
     }
     // Code container
     .code {
@@ -967,6 +968,7 @@ figure.highlight,
         font-family: Menlo, Consolas, monospace;
         font-size:   1em;
         margin:      0 0 5px 0;
+        user-select: none;
     }
 }
 
