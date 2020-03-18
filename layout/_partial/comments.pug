@@ -76,22 +76,6 @@ if theme.livere
          e.parentNode.insertBefore(j, e);
       })(document, 'script');
 
-if theme.gitment.enable == true
-    #container
-    link(rel='stylesheet', href=url_for(theme.css) + '/default.css' + '?v=' + theme.version)
-    script(src=url_for(theme.js) + '/gitment.browser.js' + '?v=' + theme.version)
-    script.
-      var gitment = new Gitment({
-        id: window.location.pathname.substring(1,window.location.pathname.length),
-        owner: '#{theme.gitment.owner}',
-        repo: '#{theme.gitment.repo}',
-        oauth: {
-          client_id: '#{theme.gitment.client_id}',
-          client_secret: '#{theme.gitment.client_secret}',
-        },
-      })
-      gitment.render('container')
-
 if theme.gitalk.enable == true
     #container
     link(rel='stylesheet', type='text/css', href='//unpkg.com/gitalk/dist/gitalk.css?v=' + theme.version)
