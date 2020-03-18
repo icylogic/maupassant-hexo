@@ -3,12 +3,6 @@ uyan: ## Your uyan_id. e.g. 1234567
 livere: ## Your livere data-uid, e.g. MTAyMC8zMDAxOC78NTgz
 changyan: ## Your changyan appid, e.g. cyrALsXc8
 changyan_conf: ## Your changyan conf, e.g. prod_d8a508c2825ab57eeb43e7c69bba0e8b
-gitment:
-  enable: false ## If you want to use Gitment comment system please set the value to true.
-  owner: ## Your GitHub ID, e.g. username
-  repo: ## The repository to store your comments, make sure you're the repo's owner, e.g. imsun.github.io
-  client_id: ## GitHub client ID, e.g. 75752dafe7907a897619
-  client_secret: ## GitHub client secret, e.g. ec2fb9054972c891289640354993b662f4cccc50
 gitalk:
   enable: false ## If you want to use Gitment comment system please set the value to true.
   owner:  ## Your GitHub ID, e.g. username
