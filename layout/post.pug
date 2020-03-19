@@ -6,7 +6,7 @@ block title
 block content
   .post
     h1.post-title= page.title
-    .post-meta= page.date.format('ll')
+    .post-meta= page.date.format(config.date_format)
       if page.categories.length > 0
         span= ' | '
         span.category
@@ -52,10 +52,10 @@ block content
             = theme.post_copyright.author
           p
             span= __('copyright_date_prefix')
-            = page.date.format('YYYY-MM-DD HH:mm:SS')
+            = page.date.format(config.date_format)
           p
             span= __('copyright_update_prefix')
-            = page.updated.format('YYYY-MM-DD HH:mm:SS')
+            = page.updated.format(config.date_format)
           p
             span= __('copyright_link_prefix')
             a(href='/' + page.path)= page.permalink
