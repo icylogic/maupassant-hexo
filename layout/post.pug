@@ -41,7 +41,7 @@ block content
       iframe(src='/donate/?AliPayQR=' + theme.donate.alipay_qr + '&WeChatQR=' + theme.donate.wechat_qr + '&GitHub=' + theme.donate.github + '&BTCQR=' + theme.donate.btc_qr + '&BTCKEY='+ theme.donate.btc_key + '&PayPal=' + theme.donate.paypal_url, style='overflow-x:hidden; overflow-y:hidden; border:0xp none #fff; min-height:240px; width:100%;', frameborder='0', scrolling='no')
 
     if theme.post_copyright.enable == true && page.copyright != false
-      script(type='text/javascript',src='/copyright/js/copyright.js')
+      script(type='text/javascript',src='/copyright/js/copyright.js',successtext=__('copy_success_text'))
       link(rel='stylesheet', type='text/css', href='/copyright/css/copyright.css')
       div.post-copyright
           p
@@ -60,7 +60,7 @@ block content
             span= __('copyright_link_prefix')
             a(href='/' + page.path)= page.permalink
             span.copy-path
-                i(class='fa fa-clipboard' data-clipboard-text=page.permalink)
+                i(class='fa fa-clipboard',data-clipboard-text=page.permalink)
           p
             span= __('copyright_declare_prefix')
             if theme.post_copyright.copyright_text
