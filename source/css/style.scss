@@ -371,9 +371,7 @@ div {
         padding-bottom: 1em;
         a {
             margin-right: .5em;
-            &:before {
-                font-family: "FontAwesome";
-                content: "\f0c6";
+            i{
                 padding-right: 0.3em;
             }
         }
