@@ -1,14 +1,12 @@
 
 .post-copyright  {
-  width: 100%;
-  max-width: 45em;
-  margin: 2.8em auto 0;
+margin: 2em 0 0;
   padding: 0.5em 1.0em;
-  border: 1px solid #d3d3d3;
+  border-left: 3px solid #FF1700;
+  background-color: #F9F9F9;
   font-size: 0.93rem;
   line-height: 1.6em;
   word-break: break-all;
-  background: rgba(255,255,255,0.4);
 }
 .post-copyright  p{margin:0;}
 .post-copyright  span {
