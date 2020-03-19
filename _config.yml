@@ -54,6 +54,9 @@ post_copyright:
   author: ## Your author name, e.g. tufu9441
   copyright_text: ## Your copyright text, e.g. The author owns the copyright, please indicate the source reproduced.
 love: false ## If you want the love to appear when you click anywhere, set the value to true.
+plantuml: ## Must install hexo-filter-plantuml  https://github.com/miao1007/hexo-filter-plantuml
+    render: "PlantUMLServer" #  Local or PlantUMLServer.
+    outputFormat: "svg" # common options: svg/png
 
 menu:
   - page: home
