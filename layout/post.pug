@@ -37,20 +37,32 @@ block content
           != toc(page.content, {list_number: theme.toc_number})
     .post-content
       != page.content
-    if theme.donate.enable == true
+    if theme.donate.enable == true && page.donate != false
       iframe(src='/donate/?AliPayQR=' + theme.donate.alipay_qr + '&WeChatQR=' + theme.donate.wechat_qr + '&GitHub=' + theme.donate.github + '&BTCQR=' + theme.donate.btc_qr + '&BTCKEY='+ theme.donate.btc_key + '&PayPal=' + theme.donate.paypal_url, style='overflow-x:hidden; overflow-y:hidden; border:0xp none #fff; min-height:240px; width:100%;', frameborder='0', scrolling='no')
 
     if theme.post_copyright.enable == true && page.copyright != false
-      div
-        ul.post-copyright
-          li.post-copyright-author
-            strong= __('copyright_author_prefix')
+      script(type='text/javascript',src='/copyright/js/copyright.js')
+      link(rel='stylesheet', type='text/css', href='/copyright/css/copyright.css')
+      div.post-copyright
+          p
+            span= __('copyright_title_prefix')
+            = page.title
+          p
+            span= __('copyright_author_prefix')
             = theme.post_copyright.author
-          li.post-copyright-link
-            strong= __('copyright_link_prefix')
+          p
+            span= __('copyright_date_prefix')
+            = page.date.format('YYYY-MM-DD HH:mm:SS')
+          p
+            span= __('copyright_update_prefix')
+            = page.updated.format('YYYY-MM-DD HH:mm:SS')
+          p
+            span= __('copyright_link_prefix')
             a(href='/' + page.path)= page.permalink
-          li.post-copyright-license
-            strong= __('copyright_declare_prefix')
+            span.copy-path
+                i(class='fa fa-clipboard' data-clipboard-text=page.permalink)
+          p
+            span= __('copyright_declare_prefix')
             if theme.post_copyright.copyright_text
               != theme.post_copyright.copyright_text
             else

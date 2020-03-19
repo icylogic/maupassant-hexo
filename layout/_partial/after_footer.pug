@@ -48,6 +48,10 @@ if theme.canvas_nest.enable == true
 if theme.love == true
     script(type='text/javascript',src='/love/js/love.js')
 
+if theme.copycode== true
+    script(type='text/javascript',src='/copycode/js/copycode.js')
+    link(rel='stylesheet', type='text/css', href='/copycode/css/copycode.css')
+
 if page.mathjax
   include mathjax.pug
 

@@ -57,6 +57,7 @@ love: false ## If you want the love to appear when you click anywhere, set the v
 plantuml: ## Must install hexo-filter-plantuml  https://github.com/miao1007/hexo-filter-plantuml
     render: "PlantUMLServer" #  Local or PlantUMLServer.
     outputFormat: "svg" # common options: svg/png
+copycode: true
 
 menu:
   - page: home

@@ -23,8 +23,11 @@ shareto: 分享
 Discuss: 条参与
 Comment: 条评论
 Hits: 阅读
-copyright_author_prefix: 本文作者：
-copyright_link_prefix: 本文链接：
+copyright_title_prefix: 本文标题：
+copyright_link_prefix: 原始链接：
+copyright_date_prefix: 发布时间：
+copyright_update_prefix: 最后更新：
+copyright_author_prefix: 文章作者：
 copyright_declare_prefix: 版权声明：
 copyright_default_text: 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0 CN</a> 许可协议。转载请注明出处！
 word_cnt: 字
