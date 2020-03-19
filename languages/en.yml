@@ -23,6 +23,9 @@ shareto: Share
 Discuss: Discuss
 Comment: Comment
 Hits: Hits
+copyright_title_prefix: "Title: "
+copyright_date_prefix: "Date: "
+copyright_update_prefix: "Last Update: "
 copyright_author_prefix: "Author: "
 copyright_link_prefix: "Blog Link: "
 copyright_declare_prefix: "Copyright Declaration: "

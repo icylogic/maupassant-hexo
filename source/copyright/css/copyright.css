@@ -1,0 +1,43 @@
+
+.post-copyright  {
+margin: 2em 0 0;
+  padding: 0.5em 1.0em;
+  border-left: 3px solid #FF1700;
+  background-color: #F9F9F9;
+  font-size: 0.93rem;
+  line-height: 1.6em;
+  word-break: break-all;
+}
+.post-copyright  p{margin:0;}
+.post-copyright  span {
+  display: inline-block;
+  width: 5.2em;
+  color: #b5b5b5;
+  font-weight: bold;
+}
+.post-copyright  .raw {
+  margin-left: 1em;
+  width: 5em;
+}
+.post-copyright  a {
+  color: #808080;
+  border-bottom:0;
+}
+.post-copyright  a:hover {
+  color: #a3d2a3;
+  text-decoration: underline;
+}
+.post-copyright :hover .fa-clipboard {
+  color: #000;
+}
+.post-copyright  .post-url:hover {
+  font-weight: normal;
+}
+.post-copyright  .copy-path {
+  margin-left: 1em;
+  width: 1em;
+}
+.post-copyright  .copy-path:hover {
+  color: #808080;
+  cursor: pointer;
+}
