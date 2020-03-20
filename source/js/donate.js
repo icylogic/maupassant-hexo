@@ -1,4 +1,6 @@
-(function (window, document) {
+$(document).ready(function () {
+    var QRBox = $('#QRBox');
+    var MainBox = $('#MainBox');
     function showQR(QR) {
         if (QR) {
             MainBox.css('background-image', 'url(' + QR + ')');
@@ -8,7 +10,8 @@
             MainBox.addClass('showQR');
         });
     }
-    $("#donateBox li,#donateBox li a").css("width", ($("#donateBox").width() / $("#donateBox li").length) + "px");
+
+    $("#donateBox li,#donateBox li a").css("width", Math.ceil(74 + (74 * (4 - $("#donateBox li").length) / $("#donateBox li").length)) + "px");
 
     $('#donateBox>li').click(function (event) {
         var thisID = $(this).attr('id');
@@ -20,7 +23,7 @@
             showQR(thisQR);
         }
     });
-    $('#MainBox').click(function (event) {
+    MainBox.click(function (event) {
         MainBox.removeClass('showQR').addClass('hideQR');
         setTimeout(function (a) {
             QRBox.fadeOut(300, function (argument) {
@@ -29,5 +32,5 @@
             $('#DonateText,#donateBox,#github').removeClass('blur');
         }, 600);
     });
-})(window, document)
+});
 
