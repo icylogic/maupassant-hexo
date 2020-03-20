@@ -5,14 +5,14 @@ div#donate
     ul(id="donateBox",class="list pos-f tr3")
         if theme.donate.paypal_url!=null
             li#PayPal
-                a(href=theme.donate.paypal_url,target="_blank")='PayPal'
+                a(href=theme.donate.paypal_url,target="_blank")
         if theme.donate.btc_qr!=null && theme.donate.btc_key!=null
             li( id="BTC",class="yc", data-footnote="Copy address and show QRCode",value=theme.donate.btc_key,qr=theme.donate.btc_qr)
                 button( id="BTCBn"  data-clipboard-target="#btc-key" alt="Copy to clipboard")='Bitcoin'
         if theme.donate.alipay_qr != null
-            li(id="AliPay",qr=theme.donate.alipay_qr)='AliPay'
+            li(id="AliPay",qr=theme.donate.alipay_qr)
         if theme.donate.wechat_qr != null
-            li(id="WeChat",qr=theme.donate.wechat_qr)='WeChat'
+            li(id="WeChat",qr=theme.donate.wechat_qr)
         if !(theme.donate.wechat_qr != null||theme.donate.alipay_qr != null || (theme.donate.btc_qr!=null && theme.donate.btc_key!=null)||theme.donate.paypal_url!=null)
             li#ps=__('no_donate')
     div(id="QRBox", class="pos-f left-100")

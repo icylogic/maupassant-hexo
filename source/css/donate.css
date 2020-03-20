@@ -52,6 +52,7 @@
 	transform: rotatez(-15deg );
 }
 #donate #donateBox {
+    display: table;
 	left: calc(50% - 150px);
 	top: calc(50% - 15px);
 	background-color: #fff;
@@ -63,34 +64,39 @@
 	z-index: 1;
 }
 #donate #donateBox li {
-	/* width: 74px; */
+	width: 74px;
 	/*float: left;*/
-	float: right;
+    /* float: right; */
+    display: table-cell;
 	text-align: center;
-	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
 	background: no-repeat center center;
 	background-color: rgba(204, 217, 220,0.1);
 	background-size: 45px;
 	transition: all .3s;
 	cursor: pointer;
 	overflow: hidden;
-	line-height: 600px;
 	height: 28px;
 	-webkit-filter: grayscale(1);
 	filter: grayscale(1);
 	opacity: 0.5;
 }
+
 #donate #donateBox li:hover {
 	background-color: rgba(204, 217, 220,0.3);
 	-webkit-filter: grayscale(0);
 	filter: grayscale(0);
 	opacity: 1;
 }
-#donate #donateBox>li:first-child {
-	border-width: 0;
+
+
+#donate #donateBox>li:last-child{
+		border-width: 0;
 }
 #donate #donateBox a {
-	display: block;
+    display: block;
+    height: 100%;
+    width: 100%;
 }
 #donate #donateBox #PayPal {
 	background-image: url(../img/paypal.svg);

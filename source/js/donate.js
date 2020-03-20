@@ -11,8 +11,6 @@ $(document).ready(function () {
         });
     }
 
-    $("#donateBox li,#donateBox li a").css("width", Math.ceil(74 + (74 * (4 - $("#donateBox li").length) / $("#donateBox li").length)) + "px");
-
     $('#donateBox>li').click(function (event) {
         var thisID = $(this).attr('id');
         var thisQR = $(this).attr('qr');
