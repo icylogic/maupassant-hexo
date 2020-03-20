@@ -73,7 +73,6 @@
 	background: no-repeat center center;
 	background-color: rgba(204, 217, 220,0.1);
 	background-size: 45px;
-	transition: all .3s;
 	cursor: pointer;
 	overflow: hidden;
 	height: 28px;
