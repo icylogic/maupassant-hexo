@@ -49,6 +49,9 @@ if theme.love == true
     script(type='text/javascript',src='/love/js/love.js')
 
 if theme.copycode== true
+    script(type='text/javascript',src='//lib.baomitu.com/clipboard.js/2.0.4/clipboard.min.js')
+    script(type='text/javascript', src='//lib.baomitu.com/toastr.js/2.1.4/toastr.min.js')
+    link(rel='stylesheet', href='//lib.baomitu.com/toastr.js/2.1.4/toastr.min.css')
     script(type='text/javascript',src='/copycode/js/copycode.js',successtext=__('copy_success_text'))
     link(rel='stylesheet', type='text/css', href='/copycode/css/copycode.css')
 
