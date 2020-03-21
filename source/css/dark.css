@@ -1,0 +1,36 @@
+@media (prefers-color-scheme:dark) {
+    body{
+        background-color: #121212;
+    }
+
+      .post .post-content  {
+        color: #e1e1e1;
+
+      }
+   
+    .codeblock .code,.codeblock .gutter,.codeblock .tag,.codeblock pre,figure.highlight .code,figure.highlight .gutter,figure.highlight .tag,figure.highlight pre {
+            background-color: #1d1d1d;
+    }
+    .codeblock,figure.highlight {
+            background-color: #1d1d1d;
+    }
+    .codeblock .gutter, figure.highlight .gutter{
+        border-right: 1px solid #282828;
+    }
+    .codeblock, figure.highlight {
+        color: #e1e1e1;
+    }
+
+    code{
+        background-color: #1d1d1d;
+        color: #e1e1e1 !important;
+    }
+
+    h1,h2,h3,h4,h5,h6{
+        color: #e1e1e1;
+    }
+    p{
+        color: #e1e1e1;
+    }
+
+}

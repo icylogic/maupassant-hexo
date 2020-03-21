@@ -34,3 +34,4 @@ word_cnt: 字
 read_time: 分钟
 copy_success_text: "复制成功!"
 no_donate: "没有开启任何Donate选项!"
+Copy_address_and_show_QRCode: "复制地址和显示二维码!"

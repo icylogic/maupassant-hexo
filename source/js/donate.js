@@ -12,11 +12,7 @@ $(document).ready(function () {
     }
 
     $('#donateBox>li').click(function (event) {
-        var thisID = $(this).attr('id');
         var thisQR = $(this).attr('qr');
-        if (thisID === 'BTC') {
-            new Clipboard('#BTCBn');
-        }
         if (thisQR) {
             showQR(thisQR);
         }
@@ -32,3 +28,22 @@ $(document).ready(function () {
     });
 });
 
+!function (e, t, a) {
+    var script = document.currentScript || (function () {
+        var scripts = document.getElementsByTagName("script");
+        return scripts[scripts.length - 1]
+    })()
+    var successText = $(script).attr("successtext")
+    var clipboard = new ClipboardJS('#BTC');
+    clipboard.on('success',
+        function (e) {
+            console.log(successText)
+            if (successText) {
+                toastr.options = {
+                    "positionClass": "toast-top-center",
+                    "timeOut": "1000",
+                }
+                toastr.success(successText)
+            }
+        });
+}(window, document);
