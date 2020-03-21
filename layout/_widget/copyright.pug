@@ -1,0 +1,30 @@
+div.post-copyright
+    script(type='text/javascript',src='//lib.baomitu.com/clipboard.js/2.0.4/clipboard.min.js')
+    script(type='text/javascript', src='//lib.baomitu.com/toastr.js/2.1.4/toastr.min.js')
+    link(rel='stylesheet', href='//lib.baomitu.com/toastr.js/2.1.4/toastr.min.css')
+    script(type='text/javascript',src='/js/copyright.js',successtext=__('copy_success_text'))
+    link(rel='stylesheet', type='text/css', href='/css/copyright.css')
+    p
+        span= __('copyright_title_prefix')
+        = page.title
+    p
+        span= __('copyright_author_prefix')
+        = theme.post_copyright.author
+    p
+        span= __('copyright_date_prefix')
+        = page.date.format(config.date_format)
+    p
+        span= __('copyright_update_prefix')
+        = page.updated.format(config.date_format)
+    p
+        span= __('copyright_link_prefix')
+        a(href='/' + page.path)= page.permalink
+        span.copy-path
+            i(class='fa fa-clipboard',data-clipboard-text=page.permalink)
+    p
+        span= __('copyright_declare_prefix')
+        if theme.post_copyright.copyright_text
+            != theme.post_copyright.copyright_text
+        else
+            != __('copyright_default_text')
+br

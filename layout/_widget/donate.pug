@@ -1,0 +1,23 @@
+
+div#donate
+    input( id="btc-key",type="text", value="", readonly="readonly")
+    script(type='text/javascript', src='//lib.baomitu.com/clipboard.js/2.0.4/clipboard.min.js')
+    link(rel='stylesheet', type='text/css',  href="/css/donate.css")
+    script(type='text/javascript', src='/js/donate.js')
+    a(id="github",href=theme.donate.github||"https://github.com/Kaiyuan/donate-page",arget="_blank",class="pos-f tr3",title="Github")
+    div(id="DonateText")='Donate'
+    ul(id="donateBox",class="list pos-f")
+        if theme.donate.paypal_url!=null
+            li#PayPal
+                a(href=theme.donate.paypal_url,target="_blank")
+        if theme.donate.btc_qr!=null && theme.donate.btc_key!=null
+            li( id="BTC",class="yc", data-footnote="Copy address and show QRCode",value=theme.donate.btc_key,qr=theme.donate.btc_qr)
+                button( id="BTCBn"  data-clipboard-target="#btc-key" alt="Copy to clipboard")='Bitcoin'
+        if theme.donate.alipay_qr != null
+            li(id="AliPay",qr=theme.donate.alipay_qr)
+        if theme.donate.wechat_qr != null
+            li(id="WeChat",qr=theme.donate.wechat_qr)
+        if !(theme.donate.wechat_qr != null||theme.donate.alipay_qr != null || (theme.donate.btc_qr!=null && theme.donate.btc_key!=null)||theme.donate.paypal_url!=null)
+            li#ps=__('no_donate')
+    div(id="QRBox", class="pos-f left-100")
+        div#MainBox
