@@ -36,3 +36,8 @@ head
           s.parentNode.insertBefore(hm, s);
           })();
 
+    if !(theme.copycode == false && (theme.donate.enable == false && page.donate != true) && theme.post_copyright.enable == false)
+      script(type='text/javascript',src='//lib.baomitu.com/clipboard.js/2.0.4/clipboard.min.js')
+      script(type='text/javascript', src='//lib.baomitu.com/toastr.js/2.1.4/toastr.min.js')
+      link(rel='stylesheet', href='//lib.baomitu.com/toastr.js/2.1.4/toastr.min.css')
+

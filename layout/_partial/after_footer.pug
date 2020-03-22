@@ -49,10 +49,7 @@ if theme.canvas_nest.enable == true
 if theme.love == true
     script(type='text/javascript',src='/js/love.js')
 
-if theme.copycode== true
-    script(type='text/javascript',src='//lib.baomitu.com/clipboard.js/2.0.4/clipboard.min.js')
-    script(type='text/javascript', src='//lib.baomitu.com/toastr.js/2.1.4/toastr.min.js')
-    link(rel='stylesheet', href='//lib.baomitu.com/toastr.js/2.1.4/toastr.min.css')
+if theme.copycode == true
     script(type='text/javascript',src='/js/copycode.js',successtext=__('copy_success_text'))
     link(rel='stylesheet', type='text/css', href='/css/copycode.css')
 
