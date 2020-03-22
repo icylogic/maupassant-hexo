@@ -143,14 +143,6 @@
     transform-origin: center center;
     overflow: hidden;
 }
-#donate #btc-key {
-	opacity: 0;
-	width: 2px;
-	height: 8px;
-	overflow: hidden;
-	left: -2px;
-	top: -8px;
-}
 #donate #github {
 	width: 24px;
 	height: 24px;

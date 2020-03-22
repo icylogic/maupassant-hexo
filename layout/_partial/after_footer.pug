@@ -29,6 +29,7 @@ if theme.swiftype
     _st('install','#{theme.swiftype}','2.0.0');
 
 if theme.self_search == true
+  link(rel='stylesheet', type='text/css', href=url_for(theme.css)+'/search.css' + '?v=' + theme.version)
   script(type='text/javascript', src=url_for(theme.js) + '/search.js' + '?v=' + theme.version)
   script.
      var search_path = '#{config.search.path}';
@@ -48,7 +49,7 @@ if theme.canvas_nest.enable == true
 if theme.love == true
     script(type='text/javascript',src='/js/love.js')
 
-if theme.copycode == true
+if theme.copycode== true
     script(type='text/javascript',src='//lib.baomitu.com/clipboard.js/2.0.4/clipboard.min.js')
     script(type='text/javascript', src='//lib.baomitu.com/toastr.js/2.1.4/toastr.min.js')
     link(rel='stylesheet', href='//lib.baomitu.com/toastr.js/2.1.4/toastr.min.css')
@@ -63,3 +64,6 @@ if page.mathjax2
 
 script(type='text/javascript', src=url_for(theme.js) + '/codeblock-resizer.js' + '?v=' + theme.version)
 script(type='text/javascript', src=url_for(theme.js) + '/smartresize.js' + '?v=' + theme.version)
+if theme.dark== true
+    link(rel='stylesheet', type='text/css', href=url_for(theme.css)+'/dark.css' + '?v=' + theme.version)
+
