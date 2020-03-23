@@ -295,6 +295,14 @@
         .tags a:hover {
             color: var(--modium-text-color) !important;
         }
+        .article-share-link,
+        .article-share-link.submit {
+            color: var(--disabled-text-color) !important;
+        }
+        .article-share-link:active,
+        .article-share-link:hover {
+            color: var(--modium-text-color) !important;
+        }
         .post-nav {
             border-top: 1px solid var(--line-background-color) !important;
         }
@@ -322,5 +330,8 @@
         }
         .markdown-body {
             color: var(--modium-text-color) !important;
+        }
+        .gt-container .gt-ico-github .gt-svg {
+            filter: invert(1);
         }
     }
