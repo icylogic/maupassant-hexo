@@ -80,6 +80,20 @@
         background: var(--block-background-color) !important;
         border-right: 1px solid var(--line-background-color) !important;
     }
+    .btn-copy {
+        color: var(--disabled-text-color) !important;
+    }
+    .btn-copy:hover {
+        color: var(--modium-text-color) !important;
+    }
+    .codeblock .code pre::-webkit-scrollbar,
+    figure.highlight .code pre::-webkit-scrollbar {
+        background: var(--block-background-color) !important;
+    }
+    .codeblock .code pre::-webkit-scrollbar-thumb,
+    figure.highlight .code pre::-webkit-scrollbar-thumb {
+        background: var(--disabled-text-color) !important;
+    }
     .post .post-content p code {
         background: var(--block-background-color) !important;
     }
@@ -99,6 +113,14 @@
     }
     .readmore a:hover {
         background: var(--block-background-color) !important;
+    }
+    .stressed-quote::before,
+    blockquote::before {
+        color: var(--high-text-color);
+    }
+    .stressed,
+    blockquote {
+        color: var(--modium-text-color);
     }
     /*
     * 历史
