@@ -54,6 +54,14 @@
     .post .post-meta {
         color: var(--modium-text-color) !important;
     }
+    .category a,
+    .category button.submit {
+        color: var(--disabled-text-color) !important;
+    }
+    .category a:active,
+    .category a:hover {
+        color: var(--modium-text-color) !important;
+    }
     /*
     * 文章内容
     */
@@ -245,30 +253,39 @@
     .page-navigator span:hover {
         background: var(--block-background-color) !important;
     }
-    /* #donate #DonateText {
+    #donate #DonateText {
         color: var(--block-background-color) !important;
         filter: grayscale(1);
-    } */
-    /* #donate #github {
-        filter: grayscale(1);
+    }
+    #donate #github {
+        filter: Invert();
+        opacity: 1 !important;
     }
     #donate #donateBox {
-        background: var(--main-background-color) !important;
         border: 1px solid var(--line-background-color) !important;
+        opacity: 1;
     }
     #donate #donateBox li {
+        background-color: var(--high-text-color) !important;
         border-right: 1px solid var(--line-background-color) !important;
     }
     #donate #donateBox li:hover {
-        background: var(--block-background-color) !important;
-        -webkit-filter: grayscale(0);
-        filter: grayscale(0);
-    } */
+        filter: none;
+    }
+    #donate #QRBox {
+        background-color: rgba(255, 255, 255, .1);
+    }
     .post-copyright {
         background: var(--block-background-color) !important;
     }
     .post-copyright span {
         color: var(--disabled-text-color) !important;
+    }
+    .post-copyright .copy-path:hover {
+        color: var(--modium-text-color) !important;
+    }
+    .post-copyright :hover .fa-clipboard {
+        color: var(--modium-text-color) !important;
     }
     .tags a,
     .tags button.submit {
@@ -288,6 +305,9 @@
     .post-nav a:active,
     .post-nav a:hover {
         color: var(--modium-text-color) !important;
+    }
+    .gt-container .gt-meta {
+        border-bottom: 1px solid var(--line-background-color) !important;
     }
     .gt-container .gt-header-textarea {
         border: 1px solid var(--line-background-color) !important;
