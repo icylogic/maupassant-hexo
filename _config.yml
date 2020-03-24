@@ -58,6 +58,7 @@ plantuml: ## Using PlantUML to generate UML diagram, must install hexo-filter-pl
     render: "PlantUMLServer" ## Local or PlantUMLServer.
     outputFormat: "svg" ## Common options: svg/png
 copycode: true ## If you want to enable one-click copy of the code blocks, set the value to true.
+dark: false ## If you want to use dark mode,set the value to true.Note: this feature is not complete，Please submit issues if you have any
 
 menu:
   - page: home
