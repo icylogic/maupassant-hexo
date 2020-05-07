@@ -9,11 +9,11 @@ head
     link(rel='stylesheet', type='text/css', href=url_for(theme.css) + '/style.css' + '?v=' + theme.version)
     if theme.dark == true
         link(rel='stylesheet', type='text/css', href=url_for(theme.css)+'/dark.css' + '?v=' + theme.version)
-    link(rel='stylesheet', type='text/css', href='//lib.baomitu.com/normalize/8.0.1/normalize.min.css')
-    link(rel='stylesheet', type='text/css', href='//lib.baomitu.com/pure/1.0.1/pure-min.css')
-    link(rel='stylesheet', type='text/css', href='//lib.baomitu.com/pure/1.0.1/grids-responsive-min.css')
-    link(rel='stylesheet', href='//lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css')
-    script(type='text/javascript', src='//lib.baomitu.com/jquery/3.4.1/jquery.min.js')
+    link(rel='stylesheet', type='text/css', href='//cdn.jsdelivr.net/npm/normalize.css/normalize.min.css')
+    link(rel='stylesheet', type='text/css', href='//cdn.jsdelivr.net/npm/purecss/build/pure-min.min.css')
+    link(rel='stylesheet', type='text/css', href='//cdn.jsdelivr.net/npm/purecss/build/grids-responsive-min.css')
+    link(rel='stylesheet', href='//cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css')
+    script(type='text/javascript', src='//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js')
     link(rel='icon', mask='',sizes='any', href=url_for('favicon.ico'))
     link(rel='Shortcut Icon', type='image/x-icon', href=url_for('favicon.ico'))
     link(rel='apple-touch-icon', href=url_for('apple-touch-icon.png'))
@@ -39,7 +39,7 @@ head
           })();
 
     if !(theme.copycode == false && (theme.donate.enable == false && page.donate != true) && theme.post_copyright.enable == false)
-      script(type='text/javascript',src='//lib.baomitu.com/clipboard.js/2.0.4/clipboard.min.js')
-      script(type='text/javascript', src='//lib.baomitu.com/toastr.js/2.1.4/toastr.min.js')
-      link(rel='stylesheet', href='//lib.baomitu.com/toastr.js/2.1.4/toastr.min.css')
+      script(type='text/javascript',src='//cdn.jsdelivr.net/npm/clipboard/dist/clipboard.min.js')
+      script(type='text/javascript', src='//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.js')
+      link(rel='stylesheet', href='//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.css')
 

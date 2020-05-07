@@ -1,24 +1,7 @@
 if theme.fancybox == true
-  script(type='text/javascript', src='//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', async)
+  script(type='text/javascript', src='//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.js', async)
   script(type='text/javascript', src=url_for(theme.js) + '/fancybox.js' + '?v=' + theme.version, async)
-  link(rel='stylesheet', type='text/css', href='//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css')
-
-if theme.tinysou
-  script.
-    var option = {
-      engineKey: '#{theme.tinysou}'
-    };
-    (function(w,d,t,u,n,s,e){
-      s = d.createElement(t);
-      s.src = u;
-      s.async = 1;
-      w[n] = function(r){
-        w[n].opts = r;
-      };
-      e = d.getElementsByTagName(t)[0];
-      e.parentNode.insertBefore(s, e);
-    })(window,document,'script','//tinysou-cdn.b0.upaiyun.com/ts.js','_ts');
-    _ts(option);
+  link(rel='stylesheet', type='text/css', href='//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.css')
 
 if theme.swiftype
   script.
@@ -44,7 +27,7 @@ if theme.canvas_nest.enable == true
     - var opacity=theme.canvas_nest.opacity || "0.5"
     - var zIndex=theme.canvas_nest.zIndex || "-2"
     - var count=theme.canvas_nest.count || "50"
-    script(type='text/javascript', color=color, opacity=opacity, zIndex=zIndex, count=count,src='//lib.baomitu.com/canvas-nest.js/2.0.4/canvas-nest.umd.js')
+    script(type='text/javascript', color=color, opacity=opacity, zIndex=zIndex, count=count,src='//cdn.jsdelivr.net/npm/canvas-nest.js/dist/canvas-nest.min.js')
 
 if theme.love == true
     script(type='text/javascript',src='/js/love.js')
