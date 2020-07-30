@@ -12,8 +12,8 @@ block content
       h1.label-title=  __('reading_label', page.category || page.tag)
   .post
     .post-archive
-        //Use lodash to classify posts. See https://lodash.com/docs#groupBy
-        each posts, year in _.groupBy(page.posts.toArray(), function(p){return -p.date.format('YYYY')})
+        - var allposts = page.posts.toArray().reduce((r, v, i, a, k = -v.date.format('YYYY')) => ((r[k] || (r[k] = [])).push(v), r), {})
+        each posts, year in allposts
           h2= -year
           ul.listing
             for post in posts
