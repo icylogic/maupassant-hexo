@@ -82,10 +82,11 @@ post_copyright:
   copyright_text: ## Your copyright text, e.g. The author owns the copyright, please indicate the source reproduced.
 love: false ## If you want the peach heart to appear when you click anywhere, set the value to true.
 plantuml: ## Using PlantUML to generate UML diagram, must install hexo-filter-plantuml (https://github.com/miao1007/hexo-filter-plantuml).
-    render: "PlantUMLServer" ##  Local or PlantUMLServer.
-    outputFormat: "svg" ## common options: svg/png
+  render: "PlantUMLServer" ##  Local or PlantUMLServer.
+  outputFormat: "svg" ## common options: svg/png
 copycode: true ## If you want to enable one-click copy of the code blocks, set the value to true.
 dark: false ## If you want to use the dark mode theme, set the value to true. Note: This feature is not complete, please open an issue if you have any problem.
+totop: true ## If you want the to-top rocketship, set the value to true.
 
 menu:
   - page: home
