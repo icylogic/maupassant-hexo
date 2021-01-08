@@ -73,8 +73,9 @@ plantuml: ## Using PlantUML to generate UML diagram, must install hexo-filter-pl
   outputFormat: "svg" ## Common options: svg/png
 copycode: true ## If you want to enable one-click copy of the code blocks, set the value to true.
 dark: false ## If you want to use the dark mode theme, set the value to true. Note: This feature is not complete, please open an issue if you have any problem.
-totop: true ## If you want the to-top rocketship, set the value to true.
-external_css: false ## Create a file named 'external.css' in source/css and enable it
+totop: true ## If you want to use the rocketship button to return to the top, set the value to true.
+external_css: false ## If you want to load an external CSS file, set the value to true and create a file named "external.css" in the source/css folder.
+
 menu:
   - page: home
     directory: .
