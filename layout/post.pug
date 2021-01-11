@@ -19,7 +19,7 @@ block content
           span= ' ' + __('Hits')
       if theme.wordcount == true
         include _partial/wordcount.pug
-    if theme.disqus
+    if theme.disqus.enable == true
       a.disqus-comment-count(data-disqus-identifier=page.path, href=url_for(page.path) + '#disqus_thread')
     if theme.changyan
       a.ds-thread-count(href=url_for(page.path) + '#SOHUCS')
