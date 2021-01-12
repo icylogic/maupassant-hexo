@@ -166,6 +166,7 @@ version: 1.0.0
 - changyan - [Changyan](http://changyan.kuaizhan.com) appid
 - gitalk - [Gitalk](https://github.com/gitalk/gitalk) comment system
 - valine - [Valine](https://valine.js.org) comment system
+- minivaline - [MiniValine](https://github.com/MiniValine/MiniValine) comment system
 - utterances - [Utterances](https://utteranc.es) comment system
 - google_search - Default search engine
 - baidu_search - Search engine for users in China
@@ -180,7 +181,7 @@ version: 1.0.0
 - busuanzi - Enable [Busuanzi](http://busuanzi.ibruce.info) page views
 - wordcount - Enable [hexo-wordcount](https://github.com/willin/hexo-wordcount) of each post
 - widgets_on_small_screens - Show the widgets at the bottom of small screens
-- [canvas_nest](https://github.com/hustcc/canvas-nest.js) - Enable dynamic background
+- canvas_nest - Enable [canvas-nest.js](https://github.com/hustcc/canvas-nest.js/blob/master/README-zh.md) dynamic background
 - donate - Enable donate button after each post
 - post_copyright - Enable copyright info after each post
 - love - Enable peach heart when clicking anywhere
