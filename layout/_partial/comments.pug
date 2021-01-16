@@ -25,7 +25,7 @@ if theme.disqus.enable == true
       function loadComments() {
         window.dsqjs = new DisqusJS({
           shortname: '#{theme.disqus.shortname}',
-          siteName: '#{config.title}',
+          siteName: '#{config.title.replace("\'","\\\'")}',
           identifier: '#{page.path}',
           url: '#{config.url}/#{page.path}',
           title: '#{page.title}',
