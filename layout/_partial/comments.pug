@@ -145,3 +145,14 @@ if theme.minivaline.enable == true
 
 if theme.utterances.enable == true
   script(src='https://utteranc.es/client.js', repo=theme.utterances.repo, issue-term=theme.utterances.identifier, theme=theme.utterances.theme, crossorigin='anonymous', async)  
+
+if theme.twikoo.enable == true
+  #tcomment
+  script(src='https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js')
+  script.
+    twikoo.init({
+      envId: '#{theme.twikoo.envId}',
+      el: '#tcomment',
+      region: '#{theme.twikoo.region}',
+      path: '#{theme.twikoo.path}'
+    })
