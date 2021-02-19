@@ -72,6 +72,11 @@ utterances: ## See: https://utteranc.es
   repo: ## The repository utterances will connect to, e.g. tufu9441/comments
   identifier: title ## The mapping between blog posts and GitHub issues.
   theme: github-light ## Choose an Utterances theme which matches your blog.
+twikoo: ## See: https://twikoo.js.org
+  enable: false ## If you want to use twikoo comment system, please set the value to true.
+  envId: ## Tencent CloudBase envId
+  region: ## Tencent CloudBase region, e.g. ap-shanghai
+  path: ## Article path, e.g. window.location.pathname
 
 google_search: true ## Use Google search, true/false.
 baidu_search: false ## Use Baidu search, true/false.
@@ -168,6 +173,7 @@ version: 1.0.0
 - valine - [Valine](https://valine.js.org) comment system
 - minivaline - [MiniValine](https://github.com/MiniValine/MiniValine) comment system
 - utterances - [Utterances](https://utteranc.es) comment system
+- twikoo - [Twikoo](https://twikoo.js.org) comment system
 - google_search - Default search engine
 - baidu_search - Search engine for users in China
 - swiftype - [Swiftype Search](https://swiftype.com) key
