@@ -177,7 +177,7 @@ version: 1.0.0
 - google_search - Default search engine
 - baidu_search - Search engine for users in China
 - swiftype - [Swiftype Search](https://swiftype.com) key
-- self_search - A jQuery-based [local search engine](http://hahack.com/codes/local-search-engine-for-hexo), with the dependency on the plugin [hexo-generator-search](https://github.com/PaicHyperionDev/hexo-generator-search)
+- self_search - A jQuery-based [local search engine](https://www.hahack.com/codes/local-search-engine-for-hexo/), with the dependency on the plugin [hexo-generator-search](https://github.com/wzpan/hexo-generator-search)
 - google_analytics - [Google Analytics](https://www.google.com/analytics/) tracking id
 - baidu_analytics - [Baidu Analytics](http://tongji.baidu.com) tracking id
 - fancybox - Enable [Fancybox](http://fancyapps.com/fancybox/)
