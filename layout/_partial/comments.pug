@@ -143,6 +143,16 @@ if theme.minivaline.enable == true
       md: #{theme.minivaline.md}
     })
 
+if theme.waline.enable == true
+  #waline
+  script(src='https://cdn.jsdelivr.net/npm/@waline/client')
+  script.
+    Waline({
+      el: '#waline',
+      serverURL: '#{theme.waline.serverURL}',
+      avatar: '#{theme.waline.avatar}',
+    })
+
 if theme.utterances.enable == true
   script(src='https://utteranc.es/client.js', repo=theme.utterances.repo, issue-term=theme.utterances.identifier, theme=theme.utterances.theme, crossorigin='anonymous', async)  
 

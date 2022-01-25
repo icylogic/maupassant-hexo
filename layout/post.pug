@@ -26,9 +26,13 @@ block content
         span#changyan_count_unit(style='font-size: 15px; color: #6E7173;') 0
         span= ' ' + __('Comment')
       script(src='https://assets.changyan.sohu.com/upload/plugins/plugins.count.js', async)
-    if theme.valine.enable
-      a.disqus-comment-count( href=url_for(page.path) + '#vcomment')
+    if theme.valine.enable == true
+      a.disqus-comment-count(href=url_for(page.path) + '#vcomment')
         span.valine-comment-count(data-xid=url_for(page.path))
+        span= ' ' + __('Comment')
+    if theme.waline.enable == true
+      a.disqus-comment-count(href=url_for(page.path) + '#vcomment')
+        span.waline-comment-count(id=url_for(page.path))
         span= ' ' + __('Comment')
     if page.toc
       div(class='clear')

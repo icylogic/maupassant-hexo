@@ -67,6 +67,10 @@ minivaline: ## See: https://github.com/MiniValine/MiniValine
   # Available values: en  | zh-CN | (and many more)
   # More i18n info: https://github.com/MiniValine/minivaline-i18n
   lang:
+waline: ## See: https://waline.js.org/
+  enable: false ## If you want to use Waline comment system, please set the value to true.
+  serverURL: ## Your server url, e.g. https://your-domain.vercel.app
+  avatar: ## You can set the avatar display mode, e.g. mp, wavatar, retro, robohash or hide.
 utterances: ## See: https://utteranc.es
   enable: false ## If you want to use Utterances comment system, please set the value to true.
   repo: ## The repository utterances will connect to, e.g. tufu9441/comments
@@ -172,6 +176,7 @@ version: 1.0.0
 - gitalk - [Gitalk](https://github.com/gitalk/gitalk) comment system
 - valine - [Valine](https://valine.js.org) comment system
 - minivaline - [MiniValine](https://github.com/MiniValine/MiniValine) comment system
+- waline - [Waline](https://waline.js.org) comment system
 - utterances - [Utterances](https://utteranc.es) comment system
 - twikoo - [Twikoo](https://twikoo.js.org) comment system
 - google_search - Default search engine
