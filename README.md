@@ -211,7 +211,7 @@ version: 1.0.0
 
 ## Features
 #### Logo
-You can set a **favicon.ico** for your website, please put it into  `source` folder of hexo directory, recommended size: 32px*32px.
+You can set a **favicon.ico** for your website, please put it into `source` folder of hexo directory, recommended size: 32px*32px.
 
 You can add a website logo for apple devices, please put an image named **apple-touch-icon.png** into `source` folder of hexo directory, recommended size: 114px*114px.
 
@@ -265,8 +265,6 @@ mathjax2: true
 in Hexo's `_config.yml` instead of `mathjax: true`. Correspondingly, add `mathjax2: true` to the `front-matter` of the post in which
 you would like to use math equation.
 
-See the [example](http://zhongpu.info/2016/05/06/Mathjax%20and%20Hexo/).
-
 #### Languages
 Seven languages are available for this theme currently: Simplified Chinese (zh-CN), Traditional Chinese (zh-TW), English (en), French (fr-FR), German (de-DE), Korean (ko) and Spanish (es-ES). Contributions of translating to other languages will be highly appreciated.
 
@@ -278,14 +276,14 @@ Seven languages are available for this theme currently: Simplified Chinese (zh-C
 ## Browsers Support
 | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="IE / Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/>IE / Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/>Safari | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/opera/opera_48x48.png" alt="Opera" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/>Opera |
 | --------- | --------- | --------- | --------- | --------- |
-| IE11, Edge| last 10 versions| last 10 versions| last 7 versions| last 10 versions
+| IE9+, Edge| last 10 versions| last 10 versions| last 7 versions| last 10 versions
 
 ## Contributing
 All kinds of contributions (enhancements, new features, documentation & code improvements, issues & bugs reporting) are welcome.
 
-Looking forward to your pull request.
+Looking forward to your [pull request](https://github.com/tufu9441/maupassant-hexo/pulls).
 
-## Acknowledgements
+## Contributors
 Thanks for all contributors of this repo.
 
 <a href="https://github.com/tufu9441/maupassant-hexo/graphs/contributors">
