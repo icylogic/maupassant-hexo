@@ -275,8 +275,10 @@ Seven languages are available for this theme currently: Simplified Chinese (zh-C
 
 - If you have any trouble in using this theme, please feel free to open an [issue](https://github.com/tufu9441/maupassant-hexo/issues).
 
-## Browser Support
-![Imgur](http://i.imgur.com/iO9L5ty.png)
+## Browsers Support
+| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="IE / Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/>IE / Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/>Safari | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/opera/opera_48x48.png" alt="Opera" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)<br/>Opera |
+| --------- | --------- | --------- | --------- | --------- |
+| IE11, Edge| last 10 versions| last 10 versions| last 7 versions| last 10 versions
 
 ## Contributing
 All kinds of contributions (enhancements, new features, documentation & code improvements, issues & bugs reporting) are welcome.
@@ -284,12 +286,14 @@ All kinds of contributions (enhancements, new features, documentation & code imp
 Looking forward to your pull request.
 
 ## Acknowledgements
-Thanks for all the [contributors](https://github.com/tufu9441/maupassant-hexo/graphs/contributors) of this theme.
-.
+Thanks for all contributors of this repo.
+
+<a href="https://github.com/tufu9441/maupassant-hexo/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=tufu9441/maupassant-hexo" />
+</a>
+
 ## Maupassant on other platforms:
 + Typecho：https://github.com/pagecho/maupassant/
 + Octopress：https://github.com/pagecho/mewpassant/
 + Farbox：https://github.com/pagecho/Maupassant-farbox/
-+ Wordpress：https://github.com/iMuFeng/maupassant/
-+ Ghost: https://github.com/LjxPrime/maupassant/
 + Hugo: https://github.com/rujews/maupassant-hugo/
