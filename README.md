@@ -119,7 +119,7 @@ plantuml: ## Using PlantUML to generate UML diagram, must install hexo-filter-pl
   render: "PlantUMLServer" ##  Local or PlantUMLServer.
   outputFormat: "svg" ## common options: svg/png
 copycode: true ## If you want to enable one-click copy of the code blocks, set the value to true.
-dark: false ## If you want to use the dark mode theme, set the value to true. Note: This feature is not complete, please open an issue if you have any problem.
+dark: false ## If you want to toggle between light/dark themes, set the value to true.
 totop: true ## If you want to use the rocketship button to return to the top, set the value to true.
 external_css: false ## If you want to load an external CSS file, set the value to true and create a file named "external.css" in the source/css folder.
 
@@ -199,7 +199,7 @@ version: 1.0.0
 - love - Enable peach heart when clicking anywhere
 - plantuml - Enable PlantUML to generate UML diagram
 - copycode - Enable one-click copy of code blocks
-- dark - Enable the dark mode of the theme
+- dark - Enable to toggle between light/dark modes of the theme
 - totop - Enable the rocketship to-top button
 - external_css - Enable loading an external CSS file
 - menu - Customize your menu of pages here, just follow the format of existied items. Don't forget to create corresponding folders inlcuding `index.md` in `source` folder to ensure the pages will correctly display. [FontAwesome](http://fontawesome.io) icon fonts have been integrated, and you can choose other icons which you like [here](http://fontawesome.io/icons/) and use them according to the instruction.

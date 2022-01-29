@@ -14,7 +14,12 @@ with `html`, `button`, `input`, `select`, and `textarea`. Pure Grids use
 specific font stacks to ensure the greatest OS/browser compatibility.
 */
 
-html,
+html {
+    filter: invert(1) hue-rotate(.5turn);
+}
+html, img {
+    filter: invert(1) hue-rotate(.5turn);
+}
 button,
 input,
 select,
@@ -194,7 +199,6 @@ div {
         }
     }
 }
-
 
 /* title for search result or tagged posts*/
 
@@ -1874,9 +1878,74 @@ em.search-keyword {
     text-shadow: 0
 }
 
+.github-badge {
+    display: inline-block;
+    border-radius: 4px;
+    text-shadow: none;
+    font-size: 12px;
+    color: #fff;
+    line-height: 1.25;
+    background-color: #ABBAC3;
+    margin-bottom: 5px;
+    a {
+      color: #fff;
+    }
+    img {
+      /*height: "calc(%s * 1.25)" % $fontsize-footnote*/
+      height: 1.25em;
+      vertical-align: top;
+    }
+    .badge-subject {
+      display: inline-block;
+      background-color: #555;
+      padding: 4px 4px 4px 6px;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+    }
+    .badge-value {
+      display: inline-block;
+      padding: 4px 6px 4px 4px;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+    }
+    .bg-brightgreen {
+      background-color: #4c1 !important;
+    }
+    .bg-green {
+      background-color: #97ca00 !important;
+    }
+    .bg-yellowgreen {
+      background-color: #a4a61d !important;
+    }
+    .bg-orange {
+      background-color: #FE7D37 !important;
+    }
+    .bg-yellow {
+      background-color: #dfb317 !important;
+    }
+    .bg-blueviolet {
+      background-color: #8A2BE2 !important;
+    }
+    .bg-pink {
+      background-color: #FFC0CB !important;
+    }
+    .bg-red {
+      background-color: #e05d44 !important;
+    }
+    .bg-blue {
+      background-color: #007EC6 !important;
+    }
+    .bg-grey,
+    .bg-gray {
+      background-color: #555 !important;
+    }
+    .bg-lightgrey,
+    .bg-lightgray {
+      background-color: #9f9f9f !important;
+    }
+  }
 
 /* Waline CSS*/
-
 #waline {
     /* 字体大小 */
   --waline-font-size: 16px;
@@ -1924,7 +1993,6 @@ em.search-keyword {
 
 
 /* Darkmode Switch Toggle*/
-
 .darkmode-toggle {
     background: #a2a2a2;
     width: 3rem;
