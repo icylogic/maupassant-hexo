@@ -1923,7 +1923,17 @@ em.search-keyword {
 }
 
 
-/* Darkmode Switch Toggle*/
+/* Darkmode CSS*/
+
+html[data-dark='true'] {
+    background-color: #121212 !important;
+    filter: invert(100%) hue-rotate(180deg) brightness(105%) contrast(85%);
+    -webkit-filter: invert(100%) hue-rotate(180deg) brightness(105%) contrast(85%);
+    img {
+      filter: hue-rotate(180deg) contrast(100%) invert(100%);
+      -webkit-filter: hue-rotate(180deg) contrast(100%) invert(100%);
+    }
+}
 
 .darkmode-toggle {
     background: #a2a2a2;

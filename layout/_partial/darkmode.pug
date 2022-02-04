@@ -1,3 +1,13 @@
-.darkmode-toggle(onclick='toggleStyle()') 🌓
+.darkmode-toggle 🌓
 
-script(type='text/javascript', src=url_for(theme.js) + '/darkmode.js' + '?v=' + theme.version, async)
+script.
+  var prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
+  var toggle = document.querySelector('.darkmode-toggle');
+  var html = document.querySelector('html');
+
+  html.dataset.dark = localStorage.dark || prefersDarkMode.matches;
+
+  toggle.addEventListener('click', () => {
+  localStorage.dark = !(html.dataset.dark == 'true');
+  html.dataset.dark = localStorage.dark;
+  });
