@@ -70,7 +70,6 @@ minivaline: ## See: https://github.com/MiniValine/MiniValine
 waline: ## See: https://waline.js.org/
   enable: false ## If you want to use Waline comment system, please set the value to true.
   serverURL: ## Your server url, e.g. https://your-domain.vercel.app
-  avatar: ## Avatar display mode, e.g. mp, wavatar, retro, robohash or hide.
   pageSize: ## The desired number of comments shown in each page.
 utterances: ## See: https://utteranc.es
   enable: false ## If you want to use Utterances comment system, please set the value to true.
