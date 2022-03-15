@@ -1940,6 +1940,7 @@ html[data-dark='true'] {
     width: 3rem;
     height: 3rem;
     position: fixed;
+    z-index: 999;
     border-radius: 50%;
     left: 32px;
     bottom: 32px;
