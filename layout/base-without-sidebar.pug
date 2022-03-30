@@ -15,9 +15,7 @@ if config.feed
 
 doctype html
 html(lang=config.language)
-
   include _partial/head.pug
-
   body: .body_container
     #header
       .site-name
@@ -36,4 +34,5 @@ html(lang=config.language)
 
     if theme.totop == true
       include _partial/totop.pug
+
     include _partial/after_footer.pug

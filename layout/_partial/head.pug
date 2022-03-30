@@ -1,48 +1,46 @@
 head
-    meta(http-equiv='content-type', content='text/html; charset=utf-8')
-    meta(content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0', name='viewport')
-    meta(content='yes', name='apple-mobile-web-app-capable')
-    meta(content='black-translucent', name='apple-mobile-web-app-status-bar-style')
-    meta(content='telephone=no', name='format-detection')
-    meta(name='description', content=config.description)
-    block title
-    link(rel='stylesheet', type='text/css', href=url_for(theme.css) + '/style.css' + '?v=' + theme.version)
-    if theme.dark == true
-        link(rel='stylesheet', type='text/css', href=url_for(theme.css)+'/dark.css' + '?v=' + theme.version)
-    link(rel='stylesheet', type='text/css', href='//cdn.jsdelivr.net/npm/normalize.css/normalize.min.css')
-    link(rel='stylesheet', type='text/css', href='//cdn.jsdelivr.net/npm/purecss/build/pure-min.min.css')
-    link(rel='stylesheet', type='text/css', href='//cdn.jsdelivr.net/npm/purecss/build/grids-responsive-min.css')
-    link(rel='stylesheet', href='//cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css')
-    script(type='text/javascript', src='//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js')
-    link(rel='icon', mask='',sizes='any', href=url_for('favicon.ico'))
-    link(rel='Shortcut Icon', type='image/x-icon', href=url_for('favicon.ico'))
-    link(rel='apple-touch-icon', href=url_for('apple-touch-icon.png'))
-    link(rel='apple-touch-icon-precomposed', href=url_for('apple-touch-icon.png'))
-    if config.feed
-      link(rel='alternate', type=feed_type, href=url_for(config.feed.path))
-    if theme.google_analytics
-      script(src='https://www.googletagmanager.com/gtag/js?id=' + theme.google_analytics, async)
-      script.
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', '#{theme.google_analytics}');
+  meta(http-equiv='content-type', content='text/html; charset=utf-8')
+  meta(content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0', name='viewport')
+  meta(content='yes', name='apple-mobile-web-app-capable')
+  meta(content='black-translucent', name='apple-mobile-web-app-status-bar-style')
+  meta(content='telephone=no', name='format-detection')
+  meta(name='description', content=config.description)
+  block title
+  link(rel='stylesheet', type='text/css', href=url_for(theme.css) + '/style.css' + '?v=' + theme.version)
+  link(rel='stylesheet', type='text/css', href='//cdn.jsdelivr.net/npm/normalize.css/normalize.min.css')
+  link(rel='stylesheet', type='text/css', href='//cdn.jsdelivr.net/npm/purecss/build/pure-min.min.css')
+  link(rel='stylesheet', type='text/css', href='//cdn.jsdelivr.net/npm/purecss/build/grids-responsive-min.css')
+  link(rel='stylesheet', href='//cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css')
+  script(type='text/javascript', src='//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js')
+  link(rel='icon', mask='',sizes='any', href=url_for('favicon.ico'))
+  link(rel='Shortcut Icon', type='image/x-icon', href=url_for('favicon.ico'))
+  link(rel='apple-touch-icon', href=url_for('apple-touch-icon.png'))
+  link(rel='apple-touch-icon-precomposed', href=url_for('apple-touch-icon.png'))
+  if config.feed
+    link(rel='alternate', type=feed_type, href=url_for(config.feed.path))
+  if theme.google_analytics
+    script(src='https://www.googletagmanager.com/gtag/js?id=' + theme.google_analytics, async)
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '#{theme.google_analytics}');
 
-    if theme.baidu_analytics
-      script.
-        var _hmt = _hmt || [];
-        (function() {
-          var hm = document.createElement("script");
-          hm.src = 'https://hm.baidu.com/hm.js?' + '#{theme.baidu_analytics}';
-          var s = document.getElementsByTagName("script")[0];
-          s.parentNode.insertBefore(hm, s);
-          })();
+  if theme.baidu_analytics
+    script.
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement('script');
+        hm.src = 'https://hm.baidu.com/hm.js?' + '#{theme.baidu_analytics}';
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+        })();
 
-    if !(theme.copycode == false && (theme.donate.enable == false && page.donate != true) && theme.post_copyright.enable == false)
-      script(type='text/javascript',src='//cdn.jsdelivr.net/npm/clipboard/dist/clipboard.min.js')
-      script(type='text/javascript', src='//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.js')
-      link(rel='stylesheet', href='//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.css')
+  if !(theme.copycode == false && (theme.donate.enable == false && page.donate != true) && theme.post_copyright.enable == false)
+    script(type='text/javascript', src='//cdn.jsdelivr.net/npm/clipboard/dist/clipboard.min.js')
+    script(type='text/javascript', src='//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.js')
+    link(rel='stylesheet', href='//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.css')
 
-    if theme.dark == true
-      include darkmode.pug
+  if theme.dark == true
+    include darkmode.pug
 

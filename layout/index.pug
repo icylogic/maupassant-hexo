@@ -41,12 +41,12 @@ block content
         else
           .post-content
             != post.content.substring(0, br)
-      p(class='readmore')
+      p.readmore
         a(href=url_for(post.path))= __('Readmore')
 
   include _partial/paginator.pug
   if theme.disqus.enable == true
-    script(id='dsq-count-scr', src='//'+ theme.disqus.shortname + '.disqus.com/count.js', async)
+    script#dsq-count-scr(src='//'+ theme.disqus.shortname + '.disqus.com/count.js', async)
   if theme.changyan
     script#cy_cmt_num(src='https://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId=' + theme.changyan, async)
   if config.mathjax

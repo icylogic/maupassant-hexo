@@ -35,9 +35,9 @@ block content
         span.waline-comment-count(id=url_for(page.path))
         span= ' ' + __('Comment')
     if page.toc
-      div(class='clear')
-        div(id='toc' class='toc-article')
-          div(class='toc-title')= __('contents')
+      .clear
+        #toc.toc-article
+          .toc-title= __('contents')
           != toc(page.content, {list_number: theme.toc_number})
     .post-content
       != page.content

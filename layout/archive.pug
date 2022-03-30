@@ -2,23 +2,23 @@ extends base
 
 block title
   if page.category
-     title= page.category + ' | ' + config.title
+    title= page.category + ' | ' + config.title
   if page.tag
-     title= page.tag + ' | ' + config.title
+    title= page.tag + ' | ' + config.title
   if page.archive
-     title= __('archive') + ' | ' + config.title
+    title= __('archive') + ' | ' + config.title
 block content
   if page.category || page.tag
-      h1.label-title=  __('reading_label', page.category || page.tag)
+    h1.label-title=  __('reading_label', page.category || page.tag)
   .post
     .post-archive
-        - var allposts = page.posts.toArray().reduce((r, v, i, a, k = -v.date.format('YYYY')) => ((r[k] || (r[k] = [])).push(v), r), {})
-        each posts, year in allposts
-          h2= -year
-          ul.listing
-            for post in posts
-              li
-                span.date= post.date.format(config.date_format)
-                a(href=url_for(post.path), title=post.title)
-                  +title(post)
+      - var allposts = page.posts.toArray().reduce((r, v, i, a, k = -v.date.format('YYYY')) => ((r[k] || (r[k] = [])).push(v), r), {})
+      each posts, year in allposts
+        h2= -year
+        ul.listing
+          for post in posts
+            li
+              span.date= post.date.format(config.date_format)
+              a(href=url_for(post.path), title=post.title)
+                +title(post)
   include _partial/paginator.pug

@@ -15,29 +15,29 @@ if theme.self_search == true
   link(rel='stylesheet', type='text/css', href=url_for(theme.css)+'/search.css' + '?v=' + theme.version)
   script(type='text/javascript', src=url_for(theme.js) + '/search.js' + '?v=' + theme.version)
   script.
-     var search_path = '#{config.search.path}';
-     if (search_path.length == 0) {
-        search_path = 'search.xml';
-     }
-     var path = '#{config.root}' + search_path;
-     searchFunc(path, 'local-search-input', 'local-search-result');
+    var search_path = '#{config.search.path}';
+    if (search_path.length == 0) {
+      search_path = 'search.xml';
+    }
+    var path = '#{config.root}' + search_path;
+    searchFunc(path, 'local-search-input', 'local-search-result');
 
 if theme.canvas_nest.enable == true
-    - var color=theme.canvas_nest.color || "0,0,0"
-    - var opacity=theme.canvas_nest.opacity || "0.5"
-    - var zIndex=theme.canvas_nest.zIndex || "-2"
-    - var count=theme.canvas_nest.count || "50"
-    script(type='text/javascript', color=color, opacity=opacity, zIndex=zIndex, count=count,src='//cdn.jsdelivr.net/npm/canvas-nest.js/dist/canvas-nest.min.js')
+  - var color=theme.canvas_nest.color || "0,0,0"
+  - var opacity=theme.canvas_nest.opacity || "0.5"
+  - var zIndex=theme.canvas_nest.zIndex || "-2"
+  - var count=theme.canvas_nest.count || "50"
+  script(type='text/javascript', color=color, opacity=opacity, zIndex=zIndex, count=count, src='//cdn.jsdelivr.net/npm/canvas-nest.js/dist/canvas-nest.min.js')
 
 if theme.love == true
-    script(type='text/javascript',src='/js/love.js')
+  script(type='text/javascript', src=url_for(theme.js) + '/love.js' + '?v=' + theme.version)
 
 if theme.copycode == true
-    script(type='text/javascript',src='/js/copycode.js',successtext=__('copy_success_text'))
-    link(rel='stylesheet', type='text/css', href='/css/copycode.css')
+  script(type='text/javascript', src=url_for(theme.js) + '/copycode.js' + '?v=' + theme.version, successtext=__('copy_success_text'))
+  link(rel='stylesheet', type='text/css', href=url_for(theme.css) + '/copycode.css' + '?v=' + theme.version)
 
 if theme.external_css == true
-    link(rel='stylesheet', type='text/css', href='/css/external.css')
+  link(rel='stylesheet', type='text/css', href=url_for(theme.css) + '/external.css' + '?v=' + theme.version)
 
 if page.mathjax
   include mathjax.pug
