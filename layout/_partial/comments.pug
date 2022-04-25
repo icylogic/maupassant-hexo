@@ -145,10 +145,12 @@ if theme.minivaline.enable == true
 
 if theme.waline.enable == true
   #waline
-  script(src='https://cdn.jsdelivr.net/npm/@waline/client')
+  script(src='https://cdn.jsdelivr.net/npm/@waline/client/dist/waline.js')
+  link(rel='stylesheet', type='text/css', href='https://cdn.jsdelivr.net/npm/@waline/client/dist/waline.css')
   script.
-    Waline({
+    Waline.init({
       el: '#waline',
+      comment: true,
       serverURL: '#{theme.waline.serverURL}',
       pageSize: '#{theme.waline.pageSize}',
     })
