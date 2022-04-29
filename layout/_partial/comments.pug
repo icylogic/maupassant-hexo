@@ -1,6 +1,6 @@
 if theme.disqus.enable == true
-  link(rel='stylesheet', type='text/css', href='https://cdn.jsdelivr.net/gh/sukkaw/disqusjs/dist/disqusjs.css')
-  script(type='text/javascript', src='https://cdn.jsdelivr.net/gh/sukkaw/disqusjs/dist/disqus.js')
+  link(rel='stylesheet', type='text/css', href='https://unpkg.com/disqusjs@1.3/dist/disqusjs.css')
+  script(type='text/javascript', src='https://unpkg.com/disqusjs@1.3/dist/disqus.js')
   script(type='text/javascript', id='disqus-count-script').
     $(function() {
       var xhr = new XMLHttpRequest();
@@ -145,8 +145,8 @@ if theme.minivaline.enable == true
 
 if theme.waline.enable == true
   #waline
-  script(src='https://cdn.jsdelivr.net/npm/@waline/client/dist/waline.js')
-  link(rel='stylesheet', type='text/css', href='https://cdn.jsdelivr.net/npm/@waline/client/dist/waline.css')
+  script(src='//unpkg.com/@waline/client@v2/dist/waline.js')
+  link(rel='stylesheet', type='text/css', href='//unpkg.com/@waline/client@v2/dist/waline.css')
   script.
     Waline.init({
       el: '#waline',
@@ -160,7 +160,7 @@ if theme.utterances.enable == true
 
 if theme.twikoo.enable == true
   #tcomment
-  script(src='https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js')
+  script(src='https://unpkg.com/twikoo@1.5.7/dist/twikoo.all.min.js')
   script.
     twikoo.init({
       envId: '#{theme.twikoo.envId}',
