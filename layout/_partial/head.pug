@@ -35,6 +35,13 @@ head
         var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(hm, s);
         })();
+  if theme.microsoft_clarity
+    script.
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "#{theme.microsoft_clarity}");
 
   if !(theme.copycode == false && (theme.donate.enable == false && page.donate != true) && theme.post_copyright.enable == false)
     script(type='text/javascript', src='//lib.baomitu.com/clipboard.js/latest/clipboard.min.js')
