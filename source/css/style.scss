@@ -192,6 +192,24 @@ div {
                 box-shadow: none;
             }
         }
+        
+        // 个人信息widget样式
+        .author-info{
+            text-align: center;
+            a.info-avatar{
+                img{
+                    border-radius: 50%;
+                    padding: 4px;
+                    width: 96px;
+                    height: 96px;
+                    background-color: #fff;
+                    box-shadow:0 0 10px rgba(0, 0, 0, .2);
+                }
+            }
+            a.info-icon{
+                font-size: 25px;
+            }
+        }
     }
 }
 

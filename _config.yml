@@ -60,7 +60,7 @@ swiftype: ## Your swiftype_key, e.g. m7b11ZrsT8Me7gzApciT
 self_search: false ## Use a jQuery-based local search engine, true/false.
 google_analytics: ## Your Google Analytics tracking id, e.g. UA-42425684-2
 baidu_analytics: ## Your Baidu Analytics tracking id, e.g. 8006843039519956000
-microsoft_clarity:  ## Your Microsoft Clarity tracking id, e.g. zg2ctuea9j
+microsoft_clarity: ## Your Microsoft Clarity tracking id, e.g. zg2ctuea9j
 fancybox: true ## If you want to use fancybox please set the value to true.
 show_category_count: false ## If you want to show the count of categories in the sidebar widget please set the value to true.
 toc_number: true ## If you want to add list number to toc please set the value to true.
@@ -111,11 +111,30 @@ menu:
 
 widgets: ## Six widgets in sidebar provided: search, category, tag, recent_posts, recent_comments and links.
   - search
+  - detailInfo # 新增的widget
   - category
   - tag
   - recent_posts
   - recent_comments
   - links
+
+# widgetinfo
+widgetinfo:
+  avatar: /images/avatar.png #可以直接将头像放在source/下，也可以用图床链接套个url(),这里选择的是前者
+  discription: 今日事，今日毕
+  outlinkitem:
+    - name: steam
+      outlink: http://www.example1.com/
+      message: Nikki's Steam page
+    - name: envelope
+      outlink: 123@qq.com
+      message: xxx
+    - name: github
+      outlink: http://www.example1.com/
+      message: xxx Github page
+    - name: rss
+      outlink: atom.xml
+      message: xxx Blog的rss
 
 links:
   - title: site-name1
