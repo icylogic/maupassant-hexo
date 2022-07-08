@@ -109,32 +109,31 @@ menu:
     directory: atom.xml
     icon: fa-rss
 
-widgets: ## Six widgets in sidebar provided: search, category, tag, recent_posts, recent_comments and links.
+widgets: ## Seven widgets in sidebar provided: search, detailInfo, category, tag, recent_posts, recent_comments and links.
   - search
-  - detailInfo # 新增的widget
+  - detailInfo
   - category
   - tag
   - recent_posts
   - recent_comments
   - links
 
-# widgetinfo
-widgetinfo:
-  avatar: /images/avatar.png #可以直接将头像放在source/下，也可以用图床链接套个url(),这里选择的是前者
-  discription: 今日事，今日毕
+detailInfo:
+  avatar: /img/avatar.png
+  discription: To be a better man.
   outlinkitem:
-    - name: steam
-      outlink: http://www.example1.com/
-      message: Nikki's Steam page
+    - name: twitter
+      outlink: https://twitter.com/username
+      message: Twitter
     - name: envelope
-      outlink: 123@qq.com
-      message: xxx
+      outlink: mailto:admin@domain.com
+      message: Email
     - name: github
-      outlink: http://www.example1.com/
-      message: xxx Github page
+      outlink: https://github.com/username
+      message: Github
     - name: rss
       outlink: atom.xml
-      message: xxx Blog的rss
+      message: RSS
 
 links:
   - title: site-name1
