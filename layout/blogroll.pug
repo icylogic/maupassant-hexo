@@ -1,0 +1,20 @@
+extends base
+block title
+  title= page.title + ' | ' + config.title
+block content
+  .post
+    .post-content
+      ul.link-items
+        - for (var i in theme.links)
+          li.link-item
+            a.link-url(target='_blank', href=theme.links[i].url)
+              .link-left
+                img.link-avatar(src=theme.links[i].src, title=theme.links[i].title)
+              .link-info
+                .link-blog #{theme.links[i].title}
+                .link-desc #{theme.links[i].desc}
+
+  if page.donate
+    include _widget/donate.pug
+  if page.comments
+    include _partial/comments.pug

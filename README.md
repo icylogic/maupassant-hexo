@@ -166,10 +166,16 @@ detailInfo:
 links:
   - title: site-name1
     url: http://www.example1.com/
+    src: https://www.example1.com/favicon.ico
+    desc: XXX's Blog
   - title: site-name2
     url: http://www.example2.com/
+    src: https://www.example1.com/favicon.ico
+    desc: YYY's Blog
   - title: site-name3
     url: http://www.example3.com/
+    src: https://www.example3.com/favicon.ico
+    desc: ZZZ's Blog
 
 timeline:
   - num: 1
@@ -224,7 +230,7 @@ version: 1.0.0
 - menu - Customize your menu of pages here, just follow the format of existied items. Don't forget to create corresponding folders inlcuding `index.md` in `source` folder to ensure the pages will correctly display. [FontAwesome](https://fontawesome.com) icon fonts have been integrated, and you can choose other icons which you like [here](https://fontawesome.com/icons/) and use them according to the instruction.
 - widgets - Choose and arrange the widgets in sidebar here.
 - detailInfo - Set your personal information of the detailInfo widget here.
-- links - Edit your blogroll here.
+- links - Edit your blogroll here, and an independent blogroll page can be displayed by setting `layout: blogroll` of a page.
 - timeline - Show a timeline of the website by setting `layout: timeline` of a page.
 - Static files - Static files directory, for convenience of CDN usage.
 - Theme version - For automatic refresh of static files on CDN.
