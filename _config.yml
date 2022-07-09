@@ -109,16 +109,16 @@ menu:
     directory: atom.xml
     icon: fa-rss
 
-widgets: ## Seven widgets in sidebar provided: search, detailInfo, category, tag, recent_posts, recent_comments and links.
+widgets: ## Seven widgets in sidebar provided: search, info, category, tag, recent_posts, recent_comments and links.
   - search
-  - detailInfo
+  - info
   - category
   - tag
   - recent_posts
   - recent_comments
   - links
 
-detailInfo:
+info:
   avatar: /img/avatar.png
   discription: To be a better man.
   outlinkitem:

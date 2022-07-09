@@ -137,16 +137,16 @@ menu:
     directory: atom.xml
     icon: fa-rss
 
-widgets: ## Seven widgets in sidebar provided: search, detailInfo, category, tag, recent_posts, recent_comments and links.
+widgets: ## Seven widgets in sidebar provided: search, info, category, tag, recent_posts, recent_comments and links.
   - search
-  - detailInfo
+  - info
   - category
   - tag
   - recent_posts
   - recent_comments
   - links
 
-detailInfo:
+info:
   avatar: /img/avatar.png
   discription: To be a better man.
   outlinkitem:
@@ -229,7 +229,7 @@ version: 1.0.0
 - external_css - Enable loading an external CSS file
 - menu - Customize your menu of pages here, just follow the format of existied items. Don't forget to create corresponding folders inlcuding `index.md` in `source` folder to ensure the pages will correctly display. [FontAwesome](https://fontawesome.com) icon fonts have been integrated, and you can choose other icons which you like [here](https://fontawesome.com/icons/) and use them according to the instruction.
 - widgets - Choose and arrange the widgets in sidebar here.
-- detailInfo - Set your personal information of the detailInfo widget here.
+- info - Set your personal information of the info widget here.
 - links - Edit your blogroll here, and an independent blogroll page can be displayed by setting `layout: blogroll` of a page.
 - timeline - Show a timeline of the website by setting `layout: timeline` of a page.
 - Static files - Static files directory, for convenience of CDN usage.

@@ -1,8 +1,0 @@
-.widget
-  .author-info
-    a.info-avatar(href='/about/', title=__('about'))
-      img(src=theme.detailInfo.avatar)
-    p #{theme.detailInfo.discription}
-    - for (var i in theme.detailInfo.outlinkitem)
-      a.info-icon(href=theme.detailInfo.outlinkitem[i].outlink, title=theme.detailInfo.outlinkitem[i].message, target='_blank', style='margin-inline:5px')  
-        i.fa(class='fa-' + theme.detailInfo.outlinkitem[i].name + '-square', style='margin-inline:5px')
