@@ -132,7 +132,7 @@ info:
       outlink: https://github.com/username
       message: Github
     - name: rss
-      outlink: atom.xml
+      outlink: /atom.xml
       message: RSS
 
 links:
