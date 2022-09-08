@@ -153,10 +153,12 @@ if theme.waline.enable == true
       comment: true,
       serverURL: '#{theme.waline.serverURL}',
       pageSize: '#{theme.waline.pageSize}',
+      wordLimit: '#{theme.waline.wordLimit}',
+      requiredMeta:'#{theme.waline.requiredMeta}',
     })
 
 if theme.utterances.enable == true
-  script(src='https://utteranc.es/client.js', repo=theme.utterances.repo, issue-term=theme.utterances.identifier, theme=theme.utterances.theme, crossorigin='anonymous', async)  
+  script(src='https://utteranc.es/client.js', repo=theme.utterances.repo, issue-term=theme.utterances.identifier, theme=theme.utterances.theme, crossorigin='anonymous', async)
 
 if theme.twikoo.enable == true
   #tcomment
