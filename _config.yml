@@ -43,8 +43,9 @@ waline: ## See: https://waline.js.org/
   enable: false ## If you want to use Waline comment system, please set the value to true.
   serverURL: ## Your server url, e.g. https://your-domain.vercel.app
   pageSize: ## The desired number of comments shown in each page.
-  wordLimit: 0 ## Limit input word count, 0 means no limit
-  requiredMeta: [] ## required user information e.g. ['nick','email']
+  wordLimit: 500 ## Limit input word count, 0 means no limit
+  requiredMeta: ['nick','mail'] ## required user information e.g. ['nick','mail','link']
+  count:  ## The number of recent comments,default: 10red user information e.g. ['nick','email']
 utterances: ## See: https://utteranc.es
   enable: false ## If you want to use Utterances comment system, please set the value to true.
   repo: ## The repository utterances will connect to, e.g. tufu9441/comments

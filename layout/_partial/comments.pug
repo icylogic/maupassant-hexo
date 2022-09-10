@@ -148,6 +148,10 @@ if theme.waline.enable == true
   script(src='//unpkg.com/@waline/client@v2/dist/waline.js')
   link(rel='stylesheet', type='text/css', href='//unpkg.com/@waline/client@v2/dist/waline.css')
   script.
+    let metaInfo = ['nick', 'mail', 'link']
+    let requiredMeta = '#{theme.waline.requiredMeta}'.split(',').filter(item => {
+      return metaInfo.indexOf(item) > -1
+    })
     Waline.init({
       el: '#waline',
       comment: true,
@@ -155,6 +159,8 @@ if theme.waline.enable == true
       pageSize: '#{theme.waline.pageSize}',
       wordLimit: '#{theme.waline.wordLimit}',
       requiredMeta:'#{theme.waline.requiredMeta}',
+      wordLimit: '#{theme.waline.wordLimit}',
+      requiredMeta,
     })
 
 if theme.utterances.enable == true
