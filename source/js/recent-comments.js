@@ -13,7 +13,7 @@
     success: function ( response ) {
       let comments = '<ul>'
       response.forEach(( comment, index ) => {
-        comments += '<li>' + (index + 1) + '、' + comment.nick + '<a href="https://cirry.cn' + comment.url + '">在此篇文章中</a>'
+        comments += '<li>' + (index + 1) + '、' + comment.nick + '<a href=' + window.location.origin + comment.url + '>在此篇文章中</a>'
         comments += comment.pid ? '回复到：' : '评论到：'
         comments += comment.comment + '</li>'
       })
