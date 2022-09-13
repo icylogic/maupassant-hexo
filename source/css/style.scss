@@ -191,7 +191,7 @@ div {
                 -moz-box-shadow: none;
                 box-shadow: none;
             }
-        }        
+        }
         .author-info {
             text-align: center;
             a.info-avatar {
@@ -657,6 +657,7 @@ screen and (min-width: 48em) {
 
 #process .timeline-centered {
     position: relative;
+    min-height: 14px;
     margin-bottom: 30px;
 }
 
@@ -858,9 +859,9 @@ screen and (min-width: 48em) {
     display: block;
     width: 4px;
     background: #eee;
-    top: -3%;
+    top: -18px;
     right: -30px;
-    bottom: -3%;
+    bottom: -8px;
 }
 
 #process .present,
@@ -893,7 +894,7 @@ screen and (min-width: 48em) {
 
 #process .present {
     position: absolute;
-    top: -3%;
+    top: -18px;
     right: 0;
     margin-top: -20px;
     line-height: 100%;
@@ -901,7 +902,7 @@ screen and (min-width: 48em) {
 
 #process .born {
     position: absolute;
-    bottom: -3%;
+    bottom: -8px;
     right: 0;
     margin-bottom: -20px;
     line-height: 100%;
@@ -909,7 +910,7 @@ screen and (min-width: 48em) {
 
 #process .dot_tp {
     position: absolute;
-    top: -3%;
+    top: -18px;
     right: -35px;
     background-color: transparent;
     height: 15px;
@@ -923,7 +924,7 @@ screen and (min-width: 48em) {
 
 #process .dot_bt {
     position: absolute;
-    bottom: -3%;
+    bottom: -8px;
     right: -35px;
     background-color: transparent;
     height: 15px;
