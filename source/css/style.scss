@@ -161,6 +161,9 @@ div {
             li {
                 margin: 5px 0;
                 line-height: 1.5;
+                .wl-emoji{
+                    width: 16px;
+                }
             }
         }
         .category-list-count {
