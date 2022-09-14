@@ -161,6 +161,8 @@ div {
             li {
                 margin: 5px 0;
                 line-height: 1.5;
+                border-bottom: 1px solid #eef2f8;
+
                 .wl-emoji{
                     width: 16px;
                 }
@@ -2030,4 +2032,26 @@ html[data-dark='true'] {
             }
         }
     }
+}
+
+
+/* recent-comments waline style*/
+.waline-comment-content {
+    margin: 6px;
+    padding: 6px;
+    background-color: #f8f8f8;
+    border-radius: 6px;
+
+    p {
+        margin: 0;
+        display : -webkit-box;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3; /*这里设置第几行显示省略号，可以设置第一行或者其他行*/
+    }
+}
+
+.waline-comment-content-author {
+    text-align: end;
+    margin-bottom: 6px;
 }
