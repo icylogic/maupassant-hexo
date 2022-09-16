@@ -34,3 +34,4 @@ word_cnt: Words
 read_time: Minutes
 copy_success_text: "Copy Successed!"
 Copy_address_and_show_QRCode: "Copy address and show QRCode"
+Sticky: Top

@@ -10,6 +10,8 @@ block content
   for post in page.posts.toArray()
     .post
       h1.post-title
+        if post.sticky
+          span(class="top-post")= __('Sticky') 
         include _partial/helpers.pug
         a(href=url_for(post.path))
           +title(post)
