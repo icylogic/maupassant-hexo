@@ -11,7 +11,7 @@ block content
     .post
       h1.post-title
         if post.sticky
-          span(class="top-post")= __('Sticky') 
+          span(class="top-post")= __('Sticky')
         include _partial/helpers.pug
         a(href=url_for(post.path))
           +title(post)
@@ -29,20 +29,11 @@ block content
         .post-content
           != post.excerpt
       else if post.content
-        - var br = 0
-        - for (var i = 0; i < 5; ++i) {
-          - br = post.content.indexOf('\n',br+1)
-          if br<0
-            - break
-          if br >150
-            - break
-        - }
-        if br < 0
-          .post-content
-            != post.content
-        else
-          .post-content
-            != post.content.substring(0, br)
+        - const content = strip_html(post.content)
+        - let expert = content.substring(0,theme.post_content_length)
+        - content.length > theme.post_content_length ? expert += '...' : ''
+        .post-content
+          != expert
       p.readmore
         a(href=url_for(post.path))= __('Readmore')
 
