@@ -125,6 +125,7 @@ copycode: true ## If you want to enable one-click copy of the code blocks, set t
 dark: false ## If you want to toggle between light/dark themes, set the value to true.
 totop: true ## If you want to use the rocketship button to return to the top, set the value to true.
 external_css: false ## If you want to load an external CSS file, set the value to true and create a file named "external.css" in the source/css folder.
+post_content_length: 180 ## Set the length of the post summary displayed on home page when no description written.
 
 menu:
   - page: home
@@ -230,6 +231,7 @@ version: 1.0.0
 - dark - Enable to toggle between light/dark modes of the theme
 - totop - Enable the rocketship to-top button
 - external_css - Enable loading an external CSS file
+- post_content_length - Abstract length of each post
 - menu - Customize your menu of pages here, just follow the format of existied items. Don't forget to create corresponding folders inlcuding `index.md` in `source` folder to ensure the pages will correctly display. [FontAwesome](https://fontawesome.com) icon fonts have been integrated, and you can choose other icons which you like [here](https://fontawesome.com/icons/) and use them according to the instruction.
 - widgets - Choose and arrange the widgets in sidebar here.
 - info - Set your personal information of the info widget here.

@@ -97,7 +97,7 @@ copycode: true ## If you want to enable one-click copy of the code blocks, set t
 dark: false ## If you want to toggle between light/dark themes, set the value to true.
 totop: true ## If you want to use the rocketship button to return to the top, set the value to true.
 external_css: false ## If you want to load an external CSS file, set the value to true and create a file named "external.css" in the source/css folder.
-post_content_length: 180 ## Set the length of characters displayed on the home page
+post_content_length: 180 ## Set the length of the post summary displayed on home page when no description written.
 
 menu:
   - page: home
