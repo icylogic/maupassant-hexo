@@ -29,7 +29,7 @@ copyright_date_prefix: "Dato: "
 copyright_update_prefix: "Sist oppdatert: "
 copyright_author_prefix: "Forfatter: "
 copyright_declare_prefix: "Erklæring om opphavsrett: "
-copyright_default_text: "Alle artikler på denne bloggen er lisensierte under <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0 CN</a> med mindre annet er angitt. Vennligst oppgi kilde når du reposter."
+copyright_default_text: "Alle artikler på denne bloggen er lisensierte under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/no/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0 NO</a> med mindre annet er angitt. Vennligst oppgi kilde når du reposter."
 word_cnt: Ord
 read_time: Minutter
 copy_success_text: "Kopiert!"
