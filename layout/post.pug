@@ -31,7 +31,7 @@ block content
         span.valine-comment-count(data-xid=url_for(page.path))
         span= ' ' + __('Comment')
     if theme.waline.enable == true
-      a.disqus-comment-count(href=url_for(page.path) + '#vcomment')
+      a.disqus-comment-count(href=url_for(page.path) + '#waline')
         span.waline-comment-count(id=url_for(page.path))
         span= ' ' + __('Comment')
     if page.toc
