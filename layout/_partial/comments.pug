@@ -105,7 +105,7 @@ if theme.gitalk.enable == true
     gitalk.render('container')
 
 if theme.valine.enable == true
-  #vcomment
+  #vcomment.nofancybox
   script(src='//cdn1.lncld.net/static/js/3.0.4/av-min.js')
   script(src='//unpkg.com/valine@latest/dist/Valine.min.js')
   script.
@@ -129,7 +129,7 @@ if theme.valine.enable == true
     })
 
 if theme.minivaline.enable == true
-  #minivaline-container
+  #minivaline-container.nofancybox
   script(src='https://unpkg.com/minivaline/dist/MiniValine.min.js')
   script.
     new MiniValine({
