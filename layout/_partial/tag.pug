@@ -1,5 +1,5 @@
 if page.tags
   .tags
     for tag in page.tags.toArray()
-      a(href=url_for(config.tag_dir) + '/' + tag.name)
+      a(href=url_for(config.tag_dir) + '/' + tag.name + '/')
         i.fa.fa-tag= tag.name
