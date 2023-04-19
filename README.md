@@ -17,7 +17,7 @@ Install theme and renderers:
 ```shell
 $ git clone https://github.com/tufu9441/maupassant-hexo.git themes/maupassant
 $ npm install hexo-renderer-pug --save
-$ npm install hexo-renderer-sass --save
+$ npm install hexo-renderer-sass-next --save
 ```
 
 Then change your `theme` setting in `_config.yml` to `maupassant`.
